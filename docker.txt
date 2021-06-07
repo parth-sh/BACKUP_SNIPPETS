@@ -1,0 +1,78 @@
+sudo snap install docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+# Run the following command or Logout and login again
+newgrp docker
+
+docker version
+
+#remove images
+docker images rm ubuntu:18.04
+
+# open shell
+docker run busybox sh
+
+#conatainer
+docker ps -a
+
+
+
+
+#One liner to stop / remove all of Docker containers:
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+curl --remote-name --location <url.tar.gz>
+
+
+docker rmi python-containerize:v1
+docker images -a
+docker rmi 33cf0930cb70
+docker system prune -a
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+docker build . -t python-containerize:v1
+aws ecr create-repository --repository-name python-containerize --image-scanning-configuration scanOnPush=true --region ap-south-1
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:ap-south-1:656866979097:repository/python-containerize",
+        "registryId": "656866979097",
+        "repositoryName": "python-containerize",
+        "repositoryUri": "656866979097.dkr.ecr.ap-south-1.amazonaws.com/python-containerize",
+        "createdAt": "2021-05-19T07:11:06+05:30",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": true
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}
+
+docker build . -t python-containerize:v1
+docker images -a
+
+
+aws ecr get-login-password --region ap-south-1
+docker login -u AWS -p <auth_token> 656866979097.dkr.ecr.ap-south-1.amazonaws.com/python-containerize
+
+
+docker tag python-containerize:v1 656866979097.dkr.ecr.ap-south-1.amazonaws.com/python-containerize:v1
+docker push 656866979097.dkr.ecr.ap-south-1.amazonaws.com/python-containerize:v1
+
+
+docker build . -t python-containerize:v2
+docker tag python-containerize:v2 656866979097.dkr.ecr.ap-south-1.amazonaws.com/python-containerize:v2
+docker push 656866979097.dkr.ecr.ap-south-1.amazonaws.com/python-containerize:v2
+
+
+docker run -p 9000:8080 python-containerize:v1
+curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{"body": {"file_url": "https://filesamples.comsamples/image/heic/sample1.heic","content_type": "image/heic"}}
+
+
+
+
+
+

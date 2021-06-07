@@ -1,0 +1,44 @@
+# To Get Oauth Token from Api
+POST /api/v1/oauth/token/ HTTP/1.1
+Host: staging-backend.tradecred.com
+Content-Type: application/json
+X-WWW-CUSTOM-REQUESTER: admin
+Cache-Control: no-cache
+Postman-Token: 1d7ab131-0f3f-3008-caf4-6a6eeaca1b71
+
+{"email":"parth+1@tradecred.com","password":"parth1234","grant_type":"password"}
+
+
+
+# Wallet Transactions Example With Auth Token
+POST /api/v1/wallets/af91a978-e2bc-457f-b031-0e211a95b0c4/wallet_transactions/ HTTP/1.1
+Host: staging-backend.tradecred.com
+Content-Type: application/json
+Authorization: Bearer K2MURGOLqQH1uKcoj6XQvk4VWnvjii3eDekX8_nFHQI
+X-WWW-CUSTOM-REQUESTER: admin
+Cache-Control: no-cache
+Postman-Token: be5fb978-e4ed-a181-29be-f88d2394f76d
+
+{
+	"id":"807c3e2a-b771-464e-9cfb-9d0e46d2e5e4",
+	"meta":"ECOLLECTION-19423",
+	"transaction_amount":25000,
+	"type":"DEBIT",
+	"wallet_id":"af91a978-e2bc-457f-b031-0e211a95b0c4",
+	"transacted_on":"2020-03-07T08:19:22.178Z"
+}
+
+
+
+# Get Cashback Wallet Transactions
+GET /api/v1/wallets/buyer_cashback_wallet/ HTTP/1.1
+Host: staging-backend.tradecred.com
+Authorization: Bearer K2MURGOLqQH1uKcoj6XQvk4VWnvjii3eDekX8_nFHQI
+X-WWW-CUSTOM-REQUESTER: admin
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 12214cfa-45b2-a87d-8e25-31207dc45f9b
+
+
+
+

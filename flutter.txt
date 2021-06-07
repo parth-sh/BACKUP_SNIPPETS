@@ -1,0 +1,41 @@
+# Add flutter path to rc file
+export PATH="$PATH:$HOME/Desktop/flutter-dev/flutter/bin"
+
+
+flutter precache
+flutter upgrade
+flutter docter
+
+
+# If the Android SDK has been installed to a custom location, set
+# ANDROID_SDK_ROOT to that location.
+# You may also want to add it to your PATH environment variable.
+flutter config --android-studio-dir /home/z/Desktop/android-studio
+flutter config --android-sdk /home/z/Desktop/Android-SDK
+
+
+flutter doctor -v
+
+
+# install android studio flutter plugin
+
+
+# run with logs
+flutter run
+flutter run -v
+
+
+
+
+!!!! Dont now what this is for in .bashrc
+
+export ANDROID_HOME=$HOME/Desktop/Android-SDK
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+
+
+export JAVA_HOME=$HOME/Desktop/android-studio/jre
+

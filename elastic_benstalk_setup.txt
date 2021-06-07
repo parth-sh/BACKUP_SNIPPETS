@@ -1,0 +1,56 @@
+sudo su
+pip3 install --upgrade pip
+pip3 install --upgrade virtualenv
+mkdir Desktop/eb_test && cd Desktop/eb_test
+virtualenv eb-ve
+source eb-ve/bin/activate
+pip install awsebcli --upgrade	or	pip install -r requirements.txt
+pip freeze > requirements.txt
+
+//-------------------------------------------------------------------------------
+
+rvm uninstall 2.6.7
+rvm remove 2.6.7
+
+rvm install 2.6.7
+gem update --system		# RubyGems 3.2.17 suggested in Supported platforms
+
+bundle update --bundler		# do not run eb logs suggesting version 2.2.17
+gem install bundler:2.2.17
+gem install rails
+
+//-------------------------------------------------------------------------------
+
+rails new eb-rails -d postgresql --api && cd eb-rails/
+rake db:create && rake db:migrate
+
+bundle lock --add-platform x86_64-linux		# only for Mac m1 users
+
+zip ../rails-default.zip -r * .[^.]* && cd ..
+
+bundle package --all		# only for local packages var/cache
+write Procfile			# if necessary
+
+//-------------------------------------------------------------------------------
+
+eb init
+
+# place in config.yml
+nano .elasticbeanstalk/config.yml
+deploy:
+  artifact: rails-default.zip
+
+eb create
+
+//-------------------------------------------------------------------------------
+
+eb ssh --setup		#if ssh not seated up while eb init
+eb ssh && sudo -i
+
+# only if databse doesn't exist
+psql -h database-devp.cwz0mfsk8zht.ap-south-1.rds.amazonaws.com -p 5432 -U tradecred -d postgres
+
+
+
+
+

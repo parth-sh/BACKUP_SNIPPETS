@@ -1,0 +1,70 @@
+#Always use lts versions
+
+
+#for nvm https://github.com/nvm-sh/nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+source .bashrc
+nvm --version
+nvm ls-remote
+nvm install --lts #"node" is an alias for the latest version
+which node
+
+
+#extract jdk in HOME /home/z/jdk-11.0.11
+export PATH="$PATH:$HOME/jdk-11.0.11/bin"	#double quotes not necessary found that😎️
+source .bashrc
+java --version
+
+
+#https://developer.android.com/studio/index.html
+#install sdk via android studio /home/z/Android/Sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+source .bashrc
+echo $ANDROID_HOME
+
+
+#move to project dir
+npx react-native init AwesomeProject
+
+
+#Running On Device
+lsusb
+#grab identifier 2717:ff48
+echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="2717", MODE="0666", GROUP="plugdev"' | sudo tee /etc/udev/rules.d/51-android-usb.rules
+adb devices
+
+
+sudo ufw status/enable/disable #disable firewall (not needed)
+
+
+npx react-native start		#Metro Bundler
+npx react-native run-android	#Run App
+
+
+$ANDROID_HOME/tools/bin/sdkmanager --licenses
+#https://github.com/flutter/flutter/issues/56778#issuecomment-850756423
+#Android licenses not getting signed
+Android Studio > Configure > SDK Manager > Android SDK > SDK Tools and check Android SDK Command-line Tools (latest).
+
+
+##REFERENCEs
+#https://reactnative.dev/docs/environment-setup
+#https://reactnative.dev/docs/running-on-device
+#https://docs.oracle.com/cd/E19062-01/sun.mgmt.ctr36/819-5418/gaznb/index.html
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+SETUP FOR TRADECRED APP (After these steps)
+
+npm install
+npx react-native start
+npx react-native run-android
+
+hostname -I
+sudo ufw disable
+rails s -b 192.168.1.14 -p 3300     #Not similar to react native docs last step
+#also change base url in app

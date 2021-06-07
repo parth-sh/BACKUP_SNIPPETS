@@ -1,0 +1,113 @@
+rvm list known
+rvm install 2.6.5
+rvm alias delete default
+rvm list
+ruby -v
+sudo apt install nodejs
+sudo apt install npm
+gem install rails
+gem install bundler
+gem list --local
+
+
+
+git clone https://github.com/tradecred-eng/backend_api.git
+bundle install
+rails s
+rails server -p 3300
+
+#bundle exec backburner  // backburner error
+
+#sudo apt-get install libpq-dev  #pg (1.2.3) error
+#sudo apt-get install libmagickwand-dev   #rmagick error
+
+# apt-get install beanstalkd #beanstalkd -p 11300  benstalk error
+# sudo apt install redis-server   redis error
+
+
+-----------------------
+
+macos errors
+
+brew install imagemagick@6
+and remove not needed from Gemfile
+skip_client_authentication_for_password_grant true		#doorkeper updated to latest and config added
+
+------------------------------------------------------------------------------------------
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+aws configure
+
+
+------------------------------------------------------------------------------------------
+sudo apt install postgresql postgresql-contrib
+ls /etc/postgresql/12/main
+service postgresql
+service postgresql status
+
+
+---------------------
+sudo su postgres
+psql
+
+OR-----------------
+
+psql postgres
+
+--------------------
+
+CREATE USER z;			#not needed maybe
+ALTER USER z WITH SUPERUSER;	#not needed maybe
+\du
+CREATE DATABASE backend_api_development;
+\l
+\q
+postgres@z-hp:/home/z/Downloads$ psql backend_api_development < local_dump.backup
+
+psql
+\c backend_api_development
+\dt
+
+
+
+// DROP DATABASE
+SELECT * FROM pg_stat_activity WHERE datname = 'backend_api_development';
+40558
+SELECT pg_terminate_backend (40588) FROM pg_stat_activity WHERE pg_stat_activity.datname = 'backend_api_development';
+
+DROP DATABASE backend_api_development;
+
+
+
+// if database error comes in agreement_service
+rake db:create
+rake db:migrate
+
+
+
+// pg_dump by pg_restore
+pg_restore --verbose --clean --no-acl --no-owner -d backend_api_development production.backup
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+linux commands for backend server for full storage
+
+df -h    describes storage
+
+Locating large files: sudo find / -type f -size +10M -exec ls -lh {} \;
+Deleting large files: /bin/rm -f <path-to-large-file>
+Restart server instance
+
+
+
+
+
+
+
+
+
+

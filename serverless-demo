@@ -1,0 +1,25 @@
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+aws configure
+
+
+npm install -g serverless
+npm install npm@latest -g
+npm update -g serverless
+
+serverless create --template
+serverless create --template aws-python3
+
+sls config credentials --provider aws --key YOUR-KEY --secret YOUR-SECRET -o
+
+
+
+
+sls plugin install -n serverless-python-requirements
+
+sls logs -f <func>
+
+
+sls deploy --stage dev
+sls remove
