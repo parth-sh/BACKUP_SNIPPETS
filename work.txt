@@ -3,13 +3,10 @@ rvm install 2.6.5
 rvm alias delete default
 rvm list
 ruby -v
-sudo apt install nodejs
-sudo apt install npm
-gem install rails
 gem install bundler
 gem list --local
 
-
+------------------------------------------------------------------------------------------
 
 git clone https://github.com/tradecred-eng/backend_api.git
 bundle install
@@ -24,6 +21,8 @@ rails server -p 3300
 # apt-get install beanstalkd #beanstalkd -p 11300  benstalk error
 # sudo apt install redis-server   redis error
 
+chmod 400 caped-crusader.txt
+scp -i ~/.aws/caped-crusader.txt ubuntu@65.0.114.90:~/production.backup ~/Desktop
 
 -----------------------
 
@@ -49,14 +48,12 @@ service postgresql status
 
 
 ---------------------
-sudo su postgres
-psql
+psql postgres
 
 OR-----------------
 
-psql postgres
-
---------------------
+sudo su postgres
+psql
 
 CREATE USER z;			#not needed maybe
 ALTER USER z WITH SUPERUSER;	#not needed maybe
@@ -92,7 +89,8 @@ pg_restore --verbose --clean --no-acl --no-owner -d backend_api_development prod
 
 
 
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+------------------------------------------------------------------------------------------
+
 
 linux commands for backend server for full storage
 

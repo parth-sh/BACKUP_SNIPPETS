@@ -4,6 +4,8 @@ sudo apt install curl
 \curl -sSL https://get.rvm.io | bash -s stable
 
 
+echo "source $HOME/.rvm/scripts/rvm" >> ~/.bash_profile
+
 Open console
 Select Edit -> Profile Preferences
 Select tab: Title and Command
