@@ -6,6 +6,9 @@ ruby -v
 gem install bundler
 gem list --local
 
+rvm uninstall 2.6.5
+rvm remove 2.6.5
+
 ------------------------------------------------------------------------------------------
 
 git clone https://github.com/tradecred-eng/backend_api.git
@@ -23,6 +26,8 @@ rails server -p 3300
 
 chmod 400 caped-crusader.txt
 scp -i ~/.aws/caped-crusader.txt ubuntu@65.0.114.90:~/production.backup ~/Desktop
+
+skip_client_authentication_for_password_grant true      #this maybe added (must show up in console when doorkeper updated)
 
 -----------------------
 

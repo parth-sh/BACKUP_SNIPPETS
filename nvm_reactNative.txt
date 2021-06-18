@@ -27,10 +27,6 @@ source .bashrc
 echo $ANDROID_HOME
 
 
-#move to project dir
-npx react-native init AwesomeProject
-
-
 #Running On Device
 lsusb
 #grab identifier 2717:ff48
@@ -41,8 +37,23 @@ adb devices
 sudo ufw status/enable/disable #disable firewall (not needed)
 
 
+#move to project dir
+npx react-native init AwesomeProject
+
+
 npx react-native start		#Metro Bundler
 npx react-native run-android	#Run App
+
+--OR ---- using scripts
+npm install     #not needed as react-native init alerady installs but needed if cloned from github
+npm run start
+npm run android
+
+--OR ---- using binaries
+npm install
+echo $(npm bin)
+$(npm bin)/react-native start
+$(npm bin)/react-native run-android
 
 
 $ANDROID_HOME/tools/bin/sdkmanager --licenses
