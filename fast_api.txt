@@ -1,0 +1,7 @@
+pip install fastapi\[all\]
+
+uvicorn src.main:app --reload   #main.py insoide app folder
+
+pip install mangum
+handler = Mangum(app)
+

@@ -105,12 +105,5 @@ Locating large files: sudo find / -type f -size +10M -exec ls -lh {} \;
 Deleting large files: /bin/rm -f <path-to-large-file>
 Restart server instance
 
-
-
-
-
-
-
-
-
-
+ssh-add -l 
+ssh-add caped-crusader

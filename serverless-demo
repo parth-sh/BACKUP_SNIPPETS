@@ -5,7 +5,6 @@ aws configure
 
 
 npm install -g serverless
-npm install npm@latest -g
 npm update -g serverless
 
 serverless create --template

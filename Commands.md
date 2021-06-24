@@ -11,14 +11,14 @@ sudo ufw status/enable/disable
 hostname -I
 
 
-Install package					apt-get install			apt install
-Remove package					apt-get remove			apt remove
-Update all package	                        apt-get upgrade	             	apt upgrade
-Update all packages (auto handling of dependencies) apt-get dist-upgrade     apt full-upgrade
-Search packages	                                apt-cache search	     	apt search
-Show package information	                apt-cache show	             	apt show
-Remove unwanted dependencies	                apt-get autoremove           	apt autoremove
-Removes package with associated configuration	apt-get purge	apt purge
+Install package					                        apt-get install			        apt install
+Remove package					                        apt-get remove			        apt remove
+Update all package	                                    apt-get upgrade	             	apt upgrade
+Update all packages (auto handling of dependencies)     apt-get dist-upgrade            apt full-upgrade
+Search packages	                                        apt-cache search	     	    apt search
+Show package information	                            apt-cache show	             	apt show
+Remove unwanted dependencies	                        apt-get autoremove           	apt autoremove
+Removes package with associated configuration	        apt-get purge	                apt purge
 
 
 
