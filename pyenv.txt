@@ -1,0 +1,24 @@
+# https://github.com/pyenv/pyenv
+
+
+$ brew update
+$ brew install pyenv
+
+# (The below instructions are intended for common
+# shell setups. See the README for more guidance
+# if they don't apply and/or don't work for you.)
+
+# Add pyenv executable to PATH and
+# enable shims by adding the following
+# to ~/.profile and ~/.zprofile:
+
+echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
+
+
+source .profile
+source .zshrc  
+
+
+# https://github.com/pyenv/pyenv/blob/master/COMMANDS.md
+pyenv versions
+pyenv global 3.8.10
