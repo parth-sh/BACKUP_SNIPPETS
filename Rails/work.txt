@@ -1,5 +1,8 @@
 rvm list known
+
 rvm install 2.6.5
+rvm install 2.6.5 --with-out-ext=fiddle        #only for m1
+
 rvm alias delete default
 rvm list
 ruby -v
@@ -9,7 +12,7 @@ gem list --local
 rvm uninstall 2.6.5
 rvm remove 2.6.5
 
-------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------
 
 git clone https://github.com/tradecred-eng/backend_api.git
 bundle install
@@ -37,22 +40,22 @@ brew install imagemagick@6
 and remove not needed from Gemfile
 skip_client_authentication_for_password_grant true		#doorkeper updated to latest and config added
 
-------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
 aws configure
 
+//-------------------------------------------------------------------------------
 
-------------------------------------------------------------------------------------------
 sudo apt install postgresql postgresql-contrib
 ls /etc/postgresql/12/main
 service postgresql
 service postgresql status
 
+//-------------------------------------------------------------------------------
 
----------------------
 psql postgres
 
 OR-----------------
@@ -92,10 +95,7 @@ rake db:migrate
 // pg_dump by pg_restore
 pg_restore --verbose --clean --no-acl --no-owner -d backend_api_development production.backup
 
-
-
-------------------------------------------------------------------------------------------
-
+//-------------------------------------------------------------------------------
 
 linux commands for backend server for full storage
 
@@ -105,5 +105,9 @@ Locating large files: sudo find / -type f -size +10M -exec ls -lh {} \;
 Deleting large files: /bin/rm -f <path-to-large-file>
 Restart server instance
 
+
+
+git reset -- Gemfile Gemfile.lock config/initializers/doorkeeper.rb
+
 ssh-add -l 
-ssh-add Desktop/caped-crusader
+ssh-add ~/Desktop/caped-crusader

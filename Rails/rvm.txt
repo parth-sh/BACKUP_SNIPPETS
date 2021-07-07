@@ -13,8 +13,6 @@ Check box 'Run command as a login shell'
 Restart terminal
 
 
-
-
 rvm list known
 rvm list
 

@@ -1,0 +1,49 @@
+
+rvm list
+du -hs ~/.rvm
+rvm cleanup all
+
+//-------------------------------------------------------------------------------
+
+rvm uninstall <not-in-use>
+rvm remove <not-in-use>
+
+//-------------------------------------------------------------------------------
+
+rvm list known
+rvm install 3.0.0
+rvm alias delete default
+
+//-------------------------------------------------------------------------------
+
+cd Desktop
+rvm use 3
+ruby -v
+
+//-------------------------------------------------------------------------------
+
+gem install rails
+
+rails new rails_testing -d postgresql --api -T
+rake db:migrate
+rails server
+
+//-------------------------------------------------------------------------------
+
+https://github.com/rspec/rspec-rails
+
+# Run against this stable release
+group :development, :test do
+  gem 'rspec-rails', '~> 5.0.0'
+end
+
+bundle install
+
+//-------------------------------------------------------------------------------
+
+https://relishapp.com/rspec/rspec-core/v/3-10/docs/example-groups/basic-structure-describe-it
+https://relishapp.com/rspec/rspec-rails/v/5-0/docs/gettingstarted
+
+
+
+

@@ -9,12 +9,17 @@ nvm ls-remote
 nvm install --lts #"node" is an alias for the latest version
 which node
 
+-------------------------------------------------------------------------------------------------------------------
 
 #extract jdk in HOME /home/z/jdk-11.0.11
 export PATH="$PATH:$HOME/jdk-11.0.11/bin"	#double quotes not necessary found that😎️
 source .bashrc
 java --version
 
+
+brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
+
+-------------------------------------------------------------------------------------------------------------------
 
 #https://developer.android.com/studio/index.html
 #install sdk via android studio /home/z/Android/Sdk
@@ -27,6 +32,18 @@ source .bashrc
 echo $ANDROID_HOME
 
 
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+source .zshrc
+echo $ANDROID_HOME
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
 #Running On Device
 lsusb
 #grab identifier 2717:ff48
@@ -35,6 +52,9 @@ adb devices
 
 
 sudo ufw status/enable/disable #disable firewall (not needed)
+
+
+-------------------------------------------------------------------------------------------------------------------
 
 
 #move to project dir
