@@ -20,7 +20,8 @@ source .zshrc
 
 
 # https://github.com/pyenv/pyenv/blob/master/COMMANDS.md
-pyenv versions
+
 brew update && brew upgrade pyenv && pyenv install --list
+pyenv versions
 pyenv local 3.8.11
 pyenv global 3.8.10

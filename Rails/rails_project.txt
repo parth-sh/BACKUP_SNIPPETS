@@ -11,7 +11,7 @@ rvm remove <not-in-use>
 //-------------------------------------------------------------------------------
 
 rvm list known
-rvm install 3.0.0
+rvm install 3.0.1
 rvm alias delete default
 
 //-------------------------------------------------------------------------------
@@ -19,6 +19,7 @@ rvm alias delete default
 cd Desktop
 rvm use 3
 ruby -v
+gem install bndler
 
 //-------------------------------------------------------------------------------
 

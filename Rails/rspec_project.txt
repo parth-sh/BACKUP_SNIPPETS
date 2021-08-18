@@ -1,0 +1,11 @@
+https://youtu.be/yP4Fxg0Tdos
+
+echo 3.0.0 > .ruby-version
+bundle init
+
+echo gem 'rspec', '~> 3.10' > Gemfile
+bundle install
+
+bundle binstubs rspec-core
+# run test with bin/rspec
+bin/rspec --init

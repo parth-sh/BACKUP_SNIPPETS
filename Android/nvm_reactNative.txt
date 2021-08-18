@@ -4,7 +4,11 @@
 #for nvm https://github.com/nvm-sh/nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 source .bashrc
+
+
 nvm --version
+nvm ls
+nvm uninstall 14.17.1
 nvm ls-remote
 nvm install --lts #"node" is an alias for the latest version
 which node
@@ -87,15 +91,14 @@ Android Studio > Configure > SDK Manager > Android SDK > SDK Tools and check And
 #https://reactnative.dev/docs/running-on-device
 #https://docs.oracle.com/cd/E19062-01/sun.mgmt.ctr36/819-5418/gaznb/index.html
 
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
-SETUP FOR TRADECRED APP (After these steps)
 
-npm install
-npx react-native start
-npx react-native run-android
 
 hostname -I
 sudo ufw disable
 rails s -b 192.168.1.14 -p 3300     #Not similar to react native docs last step
 #also change base url in app
+
+
+ipconfig getifaddr en0      #Set in react app
+rails s -b 0.0.0.0 -p 3300

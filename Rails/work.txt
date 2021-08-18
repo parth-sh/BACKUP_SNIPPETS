@@ -93,7 +93,11 @@ rake db:migrate
 
 
 // pg_dump by pg_restore
-pg_restore --verbose --clean --no-acl --no-owner -d backend_api_development production.backup
+
+
+ALTER DATABASE backend_api_development RENAME TO backend_api_development_1;
+
+cd ~/Downloads && pg_restore --verbose --clean --no-acl --no-owner -d backend_api_development prod-loc.backup
 
 //-------------------------------------------------------------------------------
 
@@ -111,3 +115,8 @@ git reset -- Gemfile Gemfile.lock config/initializers/doorkeeper.rb
 
 ssh-add -l 
 ssh-add ~/Desktop/caped-crusader
+
+
+rails s -p 3300 -P 1000
+rails s -p 4400 -P 1001
+
