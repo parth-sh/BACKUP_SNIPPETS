@@ -121,4 +121,4 @@ rails s -p 3300 -P 1000
 rails s -p 4400 -P 1001
 
 
-
+psql -h database-devp.cwz0mfsk8zht.ap-south-1.rds.amazonaws.com -p 5432 -U tradecred -d postgres
