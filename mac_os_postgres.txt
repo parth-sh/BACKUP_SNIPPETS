@@ -1,0 +1,37 @@
+https://wiki.postgresql.org/wiki/Homebrew
+
+brew install postgresql
+brew services start postgresql
+
+
+---------------------
+sudo su postgres
+psql
+
+OR-----------------
+
+psql postgres
+
+--------------------
+
+CREATE USER z;
+ALTER USER z WITH SUPERUSER;
+\du
+CREATE DATABASE backend_api_development;
+\l
+\q
+
+psql backend_api_development < local_dump.backup
+
+psql
+\c backend_api_development
+\dt
+
+
+// DROP DATABASE
+DROP DATABASE backend_api_development;
+
+// pg_dump by pg_restore
+pg_restore --verbose --clean --no-acl --no-owner -d backend_api_development production.backup
+
+

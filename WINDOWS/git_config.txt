@@ -1,0 +1,2 @@
+Install git http://git-scm.com/downloads
+git config --global core.autocrlf false
