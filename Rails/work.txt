@@ -111,7 +111,7 @@ Restart server instance
 
 
 
-git reset -- Gemfile Gemfile.lock config/initializers/doorkeeper.rb
+git add . && git reset -- Gemfile Gemfile.lock config/initializers/doorkeeper.rb && git status
 
 ssh-add -l 
 ssh-add ~/Desktop/caped-crusader
