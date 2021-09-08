@@ -38,7 +38,8 @@ macos errors
 
 brew install imagemagick@6
 and remove not needed from Gemfile
-skip_client_authentication_for_password_grant true		#doorkeper updated to latest and config added
+
+skip_client_authentication_for_password_grant true
 
 //-------------------------------------------------------------------------------
 
