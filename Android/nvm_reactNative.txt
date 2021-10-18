@@ -102,3 +102,9 @@ rails s -b 192.168.1.14 -p 3300     #Not similar to react native docs last step
 
 ipconfig getifaddr en0      #Set in react app
 rails s -b 0.0.0.0 -p 3300
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+./gradlew assembleRelease
+adb install -r ./app/build/outputs/apk/release/app-arm64-v8a-release.apk
+./gradlew bundleRelease

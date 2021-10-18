@@ -17,7 +17,8 @@ rvm list known
 rvm list
 
 rvm install 2.6.5 --with-out-ext=fiddle        #only for m1
-CFLAGS="-Wno-error=implicit-function-declaration" rvm install 2.6.7		#only for m1           
+CFLAGS="-Wno-error=implicit-function-declaration" rvm install 2.6.7
+rvm install 2.7.1 --with-out-ext=fiddle
 
 rvm use <version>
 gem -v
