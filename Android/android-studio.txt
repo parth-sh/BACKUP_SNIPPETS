@@ -1,0 +1,2 @@
+# Android SDK Command-line Tools (latest) download SDK section
+# to resolve license not accepted problem
