@@ -23,7 +23,7 @@ pip freeze > requirements.txt
 
 sls config credentials --provider aws --key YOUR-KEY --secret YOUR-SECRET -o
 
-sls create --template aws-python3 --path partner_api
+sls create --template aws-python3 --path testing
 sls plugin install -n serverless-python-requirements
 
 
