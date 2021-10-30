@@ -13,6 +13,10 @@ nvm ls-remote
 nvm install --lts #"node" is an alias for the latest version
 which node
 
+# create symlinks
+sudo ln -s /home/z/.nvm/versions/node/v14.18.1/bin/node /usr/bin/node
+sudo ln -s /home/z/.nvm/versions/node/v14.18.1/bin/npm /usr/bin/npm
+
 -------------------------------------------------------------------------------------------------------------------
 
 # JAVA_HOME added by me for android-studio licenses
