@@ -1,0 +1,33 @@
+# Add flutter path to rc file
+export PATH="$PATH:$HOME/Desktop/flutter/bin"
+source .bashrc
+which flutter dart
+
+flutter precache
+flutter upgrade
+flutter doctor
+
+# If the Android SDK has been installed to a custom location, set
+# ANDROID_SDK_ROOT to that location.
+# You may also want to add it to your PATH environment variable.
+flutter config --android-studio-dir /home/z/Desktop/android-studio
+flutter config --android-sdk /home/z/Desktop/Android/Sdk
+
+# JAVA_HOME added by me for android-studio licenses
+export PATH="$PATH:$HOME/Desktop/android-studio/jre/bin"    #double quotes not necessary found that😎️
+source .bashrc
+java --version
+
+flutter doctor -v
+
+# install sdk cmdline-tools;latest
+
+flutter doctor --android-licenses
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+flutter create myapp
+flutter run
+
+flutter build ios
