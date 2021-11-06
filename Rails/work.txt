@@ -112,7 +112,7 @@ Restart server instance
 
 
 
-git add . && git reset -- Gemfile Gemfile.lock config/initializers/doorkeeper.rb db/schema.rb && git status
+git add . && git reset -- Gemfile Gemfile.lock config/initializers/doorkeeper.rb db/schema.rb .DS_Store && git status
 
 ssh-add -l 
 ssh-add ~/Desktop/caped-crusader
@@ -120,3 +120,6 @@ ssh-add ~/Desktop/caped-crusader
 
 rails s -p 3300 -P 1000
 rails s -p 4400 -P 1001
+
+brew update && brew upgrade && brew cleanup
+brew search <programe_name>
