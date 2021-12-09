@@ -55,3 +55,9 @@ IdfcTradecred2021
 
 psql -h dbs-api-prod-rds.cwz0mfsk8zht.ap-south-1.rds.amazonaws.com -p 5432 -U dbstradecred -d postgres
 DbsTradecred2021
+
+
+###Exceptions with m1
+I have installed postgres@13 on m1 cause of architecture issues
+because of psycopg needing a lib at exact location : (Library not loaded: /opt/homebrew/opt/postgresql/lib/libpq.5.dylib)
+needed to brew install postgresql

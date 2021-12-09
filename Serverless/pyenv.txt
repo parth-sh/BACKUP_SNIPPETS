@@ -23,7 +23,7 @@ source .zshrc
 
 brew update && brew upgrade pyenv && pyenv install --list
 pyenv versions
-pyenv local 3.8.11
+pyenv local 3.8.12
 pyenv global 3.8.10
 
 
@@ -73,8 +73,6 @@ eval "$(pyenv virtualenv-init -)"
 
 
 -----------------------------------------------------------------------------------------------------------------
-# UPDATE
-pyenv update
 
 # Uninstall
 rm -rf ~/.pyenv
