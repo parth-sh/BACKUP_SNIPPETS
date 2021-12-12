@@ -123,3 +123,6 @@ rails s -p 4400 -P 1001
 
 brew update && brew upgrade && brew cleanup
 brew search <programe_name>
+
+# change file permissions recursively
+chmod -R 777 wordpress/
