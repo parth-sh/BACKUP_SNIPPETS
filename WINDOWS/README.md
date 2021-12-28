@@ -12,4 +12,5 @@
 <br>
 
 # WSL installations
-1. git
+1. sudo apt install git
+2. sudo apt install build-essential
