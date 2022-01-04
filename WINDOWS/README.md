@@ -14,3 +14,4 @@
 # WSL installations
 1. sudo apt install git
 2. sudo apt install build-essential
+3. sudo apt install sqlite3
