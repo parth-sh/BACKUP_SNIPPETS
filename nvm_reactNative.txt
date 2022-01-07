@@ -8,7 +8,8 @@ source .bashrc
 
 nvm --version
 nvm ls
-nvm uninstall 14.17.1
+nvm install v14.18.2
+nvm uninstall v16.13.0
 nvm ls-remote
 nvm install --lts #"node" is an alias for the latest version
 which node
