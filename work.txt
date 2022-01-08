@@ -32,6 +32,11 @@ scp -i ~/.aws/caped-crusader.txt ubuntu@65.0.114.90:~/production.backup ~/Deskto
 
 skip_client_authentication_for_password_grant true      #this maybe added (must show up in console when doorkeper updated)
 
+def self.privileged_user? password
+if Rails.env.to_sym === :development
+    return true
+end
+
 -----------------------
 
 macos errors
@@ -112,7 +117,7 @@ Restart server instance
 
 
 
-git add . && git reset -- Gemfile Gemfile.lock config/initializers/doorkeeper.rb db/schema.rb .DS_Store tmp/ && git status
+git add . && git reset -- Gemfile Gemfile.lock config/initializers/doorkeeper.rb db/schema.rb .DS_Store tmp/ app/models/user.rb && git status
 
 ssh-add -l 
 ssh-add ~/Desktop/caped-crusader
