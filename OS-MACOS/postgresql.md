@@ -98,17 +98,18 @@ Password: Tradecred2019
 1. psql: error: could not connect to server: No such file or directory
         Is the server running locally and accepting
         connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
-<br>
-<br>rm /opt/homebrew/var/postgresql@13/postmaster.pid
-<br>brew services restart postgresql@13
+
+rm /opt/homebrew/var/postgresql@13/postmaster.pid
+
+brew services restart postgresql@13
 
 
 2. create symlink for pg gem (Exceptions with m1)
 I have installed postgres@13 on m1 cause of architecture issues
 because of psycopg needing a lib at exact location : (Library not loaded: /opt/homebrew/opt/postgresql/lib/libpq.5.dylib)
 needed to brew install postgresql
-<br>
-<br>brew install postgresql
+
+brew install postgresql
 
 
 ---
