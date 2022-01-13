@@ -1,11 +1,12 @@
 # Setup
+wsl --install
 
-<br>wsl --install
-<br>reboot
+reboot
 
 ---
 ## Useful commands
+wsl --list --online
 
-<br>wsl --list --online
-<br>wsl --list --verbose
-<br>wsl --update
+wsl --list --verbose
+
+wsl --update
