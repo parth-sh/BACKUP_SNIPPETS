@@ -36,34 +36,16 @@ set :branch,        :main
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
-set :keep_releases, 5
+set :keep_releases, 1
 ```
 
 ### modify config/deploy/production.rb to point to our server's IP
 ```
-server '15.206.170.156', user: 'ubuntu', roles: %w{app db web}
+server '1.2.3.4', user: 'ubuntu', roles: %w{app db web}
 ```
+
 ---
-### SSH into the server one last time and add our environment variables.
-```
-ssh ubuntu@15.206.170.156
-mkdir /home/ubuntu/myapp
-nano /home/ubuntu/myapp/.rbenv-vars
-```
-```
-# For Postgres
-DATABASE_URL=postgresql://deploy:PASSWORD@127.0.0.1/myapp
-
-# For MySQL
-DATABASE_URL=mysql2://deploy:$omeFancyPassword123@localhost/myapp
-
-RAILS_MASTER_KEY=ohai
-SECRET_KEY_BASE=1234567890
-
-STRIPE_PUBLIC_KEY=x
-STRIPE_PRIVATE_KEY=y
-# etc...
-```
+# [If setting db move back to app with db guide](./aws-rails-db_app-guide.md)
 
 ---
 ## git push and cap production deploy
