@@ -11,7 +11,7 @@ ssh -i Desktop/tom-riddle.pem ubuntu@15.206.170.156
 sudo apt update && sudo apt upgrade -y && sudo apt install -y curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev dirmngr gnupg apt-transport-https ca-certificates redis-server redis-tools nodejs yarn && sudo apt autoremove -y
 
 ---
-[rbenv installation](./rbenv.md)
+# [rbenv installation](./rbenv.md)
 
 ### Disable generate local documentation for each gem
 echo "gem: --no-document" > ~/.gemrc

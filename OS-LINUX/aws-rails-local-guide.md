@@ -1,7 +1,7 @@
 # Server config for app(with https support)
 ```
 sudo rm /etc/nginx/sites-enabled/default
-sudo nano /etc/nginx/sites-enabled/rails_hello_world
+sudo nano /etc/nginx/sites-enabled/myapp
 
 server {
   listen 80;
@@ -14,13 +14,13 @@ server {
   ssl_certificate_key /home/ubuntu/key.pem;
 
   server_name _;
-  root /home/ubuntu/rails_hello_world/current/public;
+  root /home/ubuntu/myapp/current/public;
 
   passenger_enabled on;
   passenger_app_env production;
 
   location /cable {
-    passenger_app_group_name rails_hello_world_websocket;
+    passenger_app_group_name myapp_websocket;
     passenger_force_max_concurrent_requests_per_process 0;
   }
 
@@ -38,7 +38,7 @@ sudo service nginx reload
 
 ---
 # [rails setup with no db](https://gorails.com/deploy/ubuntu/20.04#:~:text=Setting%20Up%20Capistrano)
-rails new rails_hello_world --skip-active-record --skip-sprockets --api 
+rails new agreement_service --skip-active-record --skip-sprockets --api 
 
 ## Setting Up Capistrano
 Add to Gemfile
@@ -67,8 +67,8 @@ set :rbenv_ruby, '2.6.5'
 
 ### Then we can modify config/deploy.rb to define our application and git repo
 ```
-set :application, "rails_hello_world"
-set :repo_url, "git@github.com:tradecred-eng/rails_hello_world.git"
+set :application, "myapp"
+set :repo_url, "git@github.com:tradecred-eng/agreement_service.git"
 
 set :deploy_to, "/home/ubuntu/#{fetch :application}"
 set :branch,        :main
@@ -86,8 +86,8 @@ server '15.206.170.156', user: 'ubuntu', roles: %w{app db web}
 ### SSH into the server one last time and add our environment variables.
 ```
 ssh ubuntu@15.206.170.156
-mkdir /home/ubuntu/rails_hello_world
-nano /home/ubuntu/rails_hello_world/.rbenv-vars
+mkdir /home/ubuntu/myapp
+nano /home/ubuntu/myapp/.rbenv-vars
 ```
 ```
 # For Postgres
@@ -111,7 +111,7 @@ STRIPE_PRIVATE_KEY=y
 # Errors
 
 ## To view the Rails logs
-sudo tail -10 /home/ubuntu/rails_hello_world/current/log/production.log
+sudo tail -10 /home/ubuntu/myapp/current/log/production.log
 ## To view the NGINX and Passenger logs
 sudo less /var/log/nginx/error.log
 sudo tail -15 /var/log/nginx/error.log
