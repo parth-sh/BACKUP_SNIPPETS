@@ -38,7 +38,7 @@ sudo service nginx reload
 
 ---
 # [rails setup with no db](https://gorails.com/deploy/ubuntu/20.04#:~:text=Setting%20Up%20Capistrano)
-rails new agreement_service --skip-active-record --skip-sprockets --api 
+rails new agreement_service --skip-active-record --api 
 
 ## Setting Up Capistrano
 Add to Gemfile
