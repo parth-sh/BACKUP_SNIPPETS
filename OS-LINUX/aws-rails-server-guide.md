@@ -111,8 +111,8 @@ sudo service nginx reload
 ```
 
 ---
-# [Setup rails api postgres db](./aws-rails-db_app-guide.md)
-# [Setup rails api no db no assets](./aws-rails-no_db_app-guide.md)
+# [Setup rails api postgres-db](./aws-rails-db_app-guide.md)
+# [Setup rails api no-db no-assets](./aws-rails-no_db_app-guide.md)
 
 ---
 # Errors
