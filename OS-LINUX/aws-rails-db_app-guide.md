@@ -63,7 +63,6 @@ sudo tail -10 /home/ubuntu/myapp/current/log/production.log
 sudo less /var/log/nginx/error.log
 sudo tail -15 /var/log/nginx/error.log
 
-
 ```
 net-ssh requires the following gems for ed25519 support:
  * ed25519 (>= 1.2, < 2.0)
@@ -87,4 +86,12 @@ ssh-add -D
 ssh-agent
 ssh-add
 ssh-add ~/Desktop/tom-riddle.pem
+```
+
+```
+Your bundle only supports platforms ["-darwin-20"] but your local platform is
+x86_64-linux. Add the current platform to the lockfile with `bundle lock
+--add-platform x86_64-linux` and try again.
+
+bundle lock --add-platform x86_64-linux
 ```

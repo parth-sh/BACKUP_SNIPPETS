@@ -60,14 +60,6 @@ sudo less /var/log/nginx/error.log
 sudo tail -15 /var/log/nginx/error.log
 
 ```
-Your bundle only supports platforms ["-darwin-20"] but your local platform is
-x86_64-linux. Add the current platform to the lockfile with `bundle lock
---add-platform x86_64-linux` and try again.
-
-bundle lock --add-platform x86_64-linux
-```
-
-```
 Don't know how to build task 'assets:precompile' (See the list of available tasks with `rake --tasks`)
 
 https://stackoverflow.com/questions/17116173/capistrano-disable-dbmigrate
