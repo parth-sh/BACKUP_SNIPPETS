@@ -111,8 +111,8 @@ sudo service nginx reload
 ```
 
 ---
-# [Setup rails app without database and without assets api only](./aws-rails-no_db_app-guide.md)
 # [Setup rails app with database](./aws-rails-db_app-guide.md)
+# [Setup rails app without database and without assets api only](./aws-rails-no_db_app-guide.md)
 
 ---
 # Errors
