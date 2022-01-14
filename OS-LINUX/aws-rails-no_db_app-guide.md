@@ -60,31 +60,6 @@ sudo less /var/log/nginx/error.log
 sudo tail -15 /var/log/nginx/error.log
 
 ```
-net-ssh requires the following gems for ed25519 support:
- * ed25519 (>= 1.2, < 2.0)
- * bcrypt_pbkdf (>= 1.0, < 2.0)
-See https://github.com/net-ssh/net-ssh/issues/565 for more information
-Gem::LoadError : "ed25519 is not part of the bundle. Add it to your Gemfile."
-
-gem 'ed25519'
-gem 'bcrypt_pbkdf'
-```
-
-```
-git@github.com: Permission denied (publickey).
-fatal: Could not read from remote repository.
-
-Please make sure you have the correct access rights
-and the repository exists.
-
-https://stackoverflow.com/questions/7968656/why-is-a-cap-deploy-giving-permission-denied-publickey
-ssh-add -D
-ssh-agent
-ssh-add
-ssh-add ~/Desktop/tom-riddle.pem
-```
-
-```
 Your bundle only supports platforms ["-darwin-20"] but your local platform is
 x86_64-linux. Add the current platform to the lockfile with `bundle lock
 --add-platform x86_64-linux` and try again.
