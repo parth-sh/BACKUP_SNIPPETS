@@ -52,7 +52,7 @@ sudo service nginx restart
 # HTTPS support
 
 ---
-# [rails locla setup](./aws-rails-local-guide.md)
+# [rails local setup](./aws-rails-local-guide.md)
 
 ---
 # Errors
