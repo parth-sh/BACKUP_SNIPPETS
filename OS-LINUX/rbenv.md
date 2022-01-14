@@ -21,11 +21,7 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 ## ruby installations
 rbenv install --list-all
 
-rbenv install 2.6.5
-
-rbenv versions
-
-rbenv global 2.6.5
+rbenv install 2.6.5 && rbenv global 2.6.5 && rbenv versions
 
 ## Upgrading
 cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd ~
