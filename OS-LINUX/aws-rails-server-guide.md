@@ -58,7 +58,7 @@ https://stackoverflow.com/questions/56668320/no-ssl-certificate-is-defined-for-t
 
 https://linuxize.com/post/creating-a-self-signed-ssl-certificate/
 
-<!-- openssl req -newkey rsa:4096 \
+openssl req -newkey rsa:4096 \
             -x509 \
             -sha256 \
             -days 3650 \
@@ -66,7 +66,7 @@ https://linuxize.com/post/creating-a-self-signed-ssl-certificate/
             -out cert.pem \
             -keyout key.pem \
             -subj "/C=SI/ST=Ljubljana/L=Ljubljana/O=Security/OU=IT Department/CN=www.tradecred.com"
- -->
+
 
 https://github.com/pirple/The-NodeJS-Master-Class/blob/master/Section%203/Adding%20HTTPS%20support/https/keyGeneration.txt
 openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
