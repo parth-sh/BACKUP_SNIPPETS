@@ -1,6 +1,6 @@
 # [Using psql to connect to a PostgreSQL DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.PostgreSQL.html#CHAP_GettingStarted.Connecting.PostgreSQL.psql)
 
-sudo apt install -y postgresql postgresql-contrib
+sudo apt install -y libpq-dev postgresql postgresql-contrib
 
 service postgresql status
 
@@ -94,4 +94,15 @@ x86_64-linux. Add the current platform to the lockfile with `bundle lock
 --add-platform x86_64-linux` and try again.
 
 bundle lock --add-platform x86_64-linux
+```
+
+```
+An error occurred while installing pg (1.2.3), and Bundler cannot continue.
+
+https://stackoverflow.com/questions/52339221/rails-gem-error-while-installing-pg-1-1-3-and-bundler-cannot-continue/56756396
+sudo apt install -y libpq-dev
+```
+
+```
+Don't know how to build task 'assets:precompile' (See the list of available tasks with `rake --tasks`)
 ```
