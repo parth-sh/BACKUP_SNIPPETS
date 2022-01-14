@@ -1,4 +1,4 @@
-# Server config for app
+# Server config for app(with https support)
 ```
 sudo rm /etc/nginx/sites-enabled/default
 sudo nano /etc/nginx/sites-enabled/rails_hello_world
@@ -6,6 +6,12 @@ sudo nano /etc/nginx/sites-enabled/rails_hello_world
 server {
   listen 80;
   listen [::]:80;
+  listen 443 ssl;
+  ssl_certificate /home/ubuntu/cert.pem;
+  ssl_certificate_key /home/ubuntu/key.pem;
+  listen [::]:443 ssl;
+  ssl_certificate /home/ubuntu/cert.pem;
+  ssl_certificate_key /home/ubuntu/key.pem;
 
   server_name _;
   root /home/ubuntu/rails_hello_world/current/public;

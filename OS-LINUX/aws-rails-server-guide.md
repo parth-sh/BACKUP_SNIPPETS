@@ -51,6 +51,26 @@ sudo service nginx restart
 ---
 # HTTPS support
 
+https://serverfault.com/questions/10854/nginx-https-serving-with-same-config-as-http
+
+https://stackoverflow.com/questions/56668320/no-ssl-certificate-is-defined-for-the-listen-ssl-directive
+
+https://linuxize.com/post/creating-a-self-signed-ssl-certificate/
+
+<!-- openssl req -newkey rsa:4096 \
+            -x509 \
+            -sha256 \
+            -days 3650 \
+            -nodes \
+            -out cert.pem \
+            -keyout key.pem \
+            -subj "/C=SI/ST=Ljubljana/L=Ljubljana/O=Security/OU=IT Department/CN=www.tradecred.com"
+ -->
+
+https://github.com/pirple/The-NodeJS-Master-Class/blob/master/Section%203/Adding%20HTTPS%20support/https/keyGeneration.txt
+openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+
+
 ---
 # [rails local setup](./aws-rails-local-guide.md)
 
