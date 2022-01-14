@@ -105,9 +105,10 @@ STRIPE_PRIVATE_KEY=y
 # Errors
 
 ## To view the Rails logs
-less /home/deploy/myapp/current/log/production.log
+sudo tail -10 /home/ubuntu/rails_hello_world/current/log/production.log
 ## To view the NGINX and Passenger logs
 sudo less /var/log/nginx/error.log
+sudo tail -15 /var/log/nginx/error.log
 
 ```
 net-ssh requires the following gems for ed25519 support:
@@ -173,4 +174,27 @@ https://stackoverflow.com/questions/47914115/rails-manifest-file-not-found-deplo
 Don't know how to build task 'db:migrate' (See the list of available tasks with `rake --tasks`)
 
 https://stackoverflow.com/questions/17116173/capistrano-disable-dbmigrate
+```
+
+```
+@��'��'esponse received from application
+
+sudo less /var/log/nginx/error.log
+
+*** Exception ArgumentError in Rack application object (Missing `secret_key_base` for 'production' environment, set this string with `rails credentials:edit`) (process 18743, thread 0x000055e74f59fce0(Worker 1)):
+
+EDITOR="mate --wait" bin/rails credentials:edit
+# Ignore master key for decrypting credentials and more.
+```
+
+```
+ActionController::RoutingError (No route matches [GET] "/"):
+
+https://stackoverflow.com/questions/23194386/actioncontrollerroutingerror-no-route-matches-get
+```
+
+```
+The application encountered the following error: undefined method `root' for main:Object (NoMethodError)
+
+https://gorails.com/blog/how-to-add-a-root-route-to-your-rails-app
 ```
