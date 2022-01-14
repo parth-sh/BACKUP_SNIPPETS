@@ -45,7 +45,7 @@ server '1.2.3.4', user: 'ubuntu', roles: %w{app db web}
 ```
 
 ---
-# [If setting db move back to app with db guide](./aws-rails-db_app-guide.md)
+# [If setting db move back to app with db guide](./aws-rails-db_app-guide.md#:~:text=Production%20DB%20config)
 
 ---
 ## git push and cap production deploy
