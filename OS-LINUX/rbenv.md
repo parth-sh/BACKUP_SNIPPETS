@@ -18,9 +18,6 @@ mkdir -p "$(rbenv root)"/plugins
 
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build && cd ~
 
-## Upgrading
-cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd ~
-
 ## ruby installations
 rbenv install --list-all
 
@@ -29,3 +26,6 @@ rbenv install 2.6.5
 rbenv versions
 
 rbenv global 2.6.5
+
+## Upgrading
+cd ~/.rbenv && git pull && cd ~/.rbenv/plugins/ruby-build && git pull && cd ~
