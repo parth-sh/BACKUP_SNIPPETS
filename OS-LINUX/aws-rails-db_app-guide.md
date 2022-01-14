@@ -105,4 +105,28 @@ sudo apt install -y libpq-dev
 
 ```
 Don't know how to build task 'assets:precompile' (See the list of available tasks with `rake --tasks`)
+
+https://stackoverflow.com/questions/7205964/how-to-build-task-assetsprecompile
+require 'sprockets/railtie'
+
+Sprockets::Railtie::ManifestNeededError: Expected to find a manifest file in `app/assets/config/manifest.js`
+But did not, please create this file and use it to link any assets that need
+to be rendered by your app:
+
+Example:
+  //= link_tree ../images
+  //= link_directory ../javascripts .js
+  //= link_directory ../stylesheets .css
+and restart your server
+```
+
+```
+@��'��'esponse received from application
+
+sudo less /var/log/nginx/error.log
+
+*** Exception ArgumentError in Rack application object (Missing `secret_key_base` for 'production' environment, set this string with `rails credentials:edit`) (process 18743, thread 0x000055e74f59fce0(Worker 1)):
+
+EDITOR="mate --wait" bin/rails credentials:edit
+# Remove master key from .gitignore
 ```

@@ -95,17 +95,6 @@ Rake::Task["deploy:migrate"].clear_actions
 ```
 
 ```
-@��'��'esponse received from application
-
-sudo less /var/log/nginx/error.log
-
-*** Exception ArgumentError in Rack application object (Missing `secret_key_base` for 'production' environment, set this string with `rails credentials:edit`) (process 18743, thread 0x000055e74f59fce0(Worker 1)):
-
-EDITOR="mate --wait" bin/rails credentials:edit
-# Ignore master key for decrypting credentials and more.
-```
-
-```
 ActionController::RoutingError (No route matches [GET] "/"):
 
 https://stackoverflow.com/questions/23194386/actioncontrollerroutingerror-no-route-matches-get
