@@ -174,12 +174,14 @@ end
 Rails assets manifest file not found. (Capistrano::FileNotFound)
 
 https://stackoverflow.com/questions/47914115/rails-manifest-file-not-found-deploying-with-capistrano
+Rake::Task["deploy:assets:backup_manifest"].clear_actions
 ```
 
 ```
 Don't know how to build task 'db:migrate' (See the list of available tasks with `rake --tasks`)
 
 https://stackoverflow.com/questions/17116173/capistrano-disable-dbmigrate
+Rake::Task["deploy:migrate"].clear_actions
 ```
 
 ```
