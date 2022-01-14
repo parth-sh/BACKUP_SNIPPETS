@@ -1,12 +1,11 @@
-# AWS setup
+# AWS instance
 [Create an EC2 instance and install a web server](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html)
 
 [Create a VPC with private and public subnets](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateVPC.html#CHAP_Tutorials.WebServerDB.CreateVPC.VPCAndSubnets)
 
 ---
-# [Deployment](https://gorails.com/deploy/ubuntu/20.04#nginx)
-## AWS ubuntu instance
-ssh -i Desktop/tom-riddle.pem ubuntu@15.206.170.156
+# [Deployment](https://gorails.com/deploy/ubuntu/20.04#:~:text=edit%20config%20files.-,Installing%20Ruby,-We%27re%20going%20to)
+ssh -i Desktop/tom-riddle.pem ubuntu@1.2.3.4
 
 sudo apt update && sudo apt upgrade -y && sudo apt install -y curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev dirmngr gnupg apt-transport-https ca-certificates redis-server redis-tools nodejs yarn && sudo apt autoremove -y
 
