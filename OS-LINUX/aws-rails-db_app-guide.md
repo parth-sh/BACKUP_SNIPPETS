@@ -10,5 +10,6 @@ psql
 
 psql -h tutorial-db-instance.ctm6hygv8ovv.ap-south-1.rds.amazonaws.com -p 5432 -U tutorial_user -d postgres
 
+# [Setup app](./aws-rails-no_db_app-guide.md#:~:text=Setting%20Up%20Capistrano)
 
 
