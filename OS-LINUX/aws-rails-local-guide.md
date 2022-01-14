@@ -128,6 +128,10 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 https://stackoverflow.com/questions/7968656/why-is-a-cap-deploy-giving-permission-denied-publickey
+ssh-add -D
+ssh-agent
+ssh-add
+ssh-add ~/Desktop/tom-riddle.pem
 ```
 
 ```
@@ -141,7 +145,32 @@ bundle lock --add-platform x86_64-linux
 ```
 Don't know how to build task 'assets:precompile' (See the list of available tasks with `rake --tasks`)
 
+https://stackoverflow.com/questions/17116173/capistrano-disable-dbmigrate
+https://capistranorb.com/documentation/advanced-features/overriding-capistrano-tasks/
+
+https://stackoverflow.com/questions/11492625/conditionally-disable-asset-precompile-in-capistrano
+https://gist.github.com/xdite/3072362
+
+https://makandracards.com/makandra/51467-how-to-skip-sprockets-asset-compile-during-capistrano-deployment
+
+namespace :deploy do
+    namespace :assets do
+        Rake::Task['precompile'].clear_actions
+        task :precompile do
+            puts "Skipping asset pre-compilation because there were no asset changes"
+        end
+    end
+end
 ```
 
+```
+Rails assets manifest file not found. (Capistrano::FileNotFound)
 
+https://stackoverflow.com/questions/47914115/rails-manifest-file-not-found-deploying-with-capistrano
+```
 
+```
+Don't know how to build task 'db:migrate' (See the list of available tasks with `rake --tasks`)
+
+https://stackoverflow.com/questions/17116173/capistrano-disable-dbmigrate
+```
