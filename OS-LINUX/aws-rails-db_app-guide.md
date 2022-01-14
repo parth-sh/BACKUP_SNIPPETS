@@ -130,3 +130,15 @@ sudo less /var/log/nginx/error.log
 EDITOR="mate --wait" bin/rails credentials:edit
 # Remove master key from .gitignore
 ```
+
+```
+ActionController::RoutingError (No route matches [GET] "/"):
+
+https://stackoverflow.com/questions/23194386/actioncontrollerroutingerror-no-route-matches-get
+```
+
+```
+The application encountered the following error: undefined method `root' for main:Object (NoMethodError)
+
+https://gorails.com/blog/how-to-add-a-root-route-to-your-rails-app
+```

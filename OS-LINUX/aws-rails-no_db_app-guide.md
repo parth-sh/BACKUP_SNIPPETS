@@ -93,15 +93,3 @@ Don't know how to build task 'db:migrate' (See the list of available tasks with 
 https://stackoverflow.com/questions/17116173/capistrano-disable-dbmigrate
 Rake::Task["deploy:migrate"].clear_actions
 ```
-
-```
-ActionController::RoutingError (No route matches [GET] "/"):
-
-https://stackoverflow.com/questions/23194386/actioncontrollerroutingerror-no-route-matches-get
-```
-
-```
-The application encountered the following error: undefined method `root' for main:Object (NoMethodError)
-
-https://gorails.com/blog/how-to-add-a-root-route-to-your-rails-app
-```
