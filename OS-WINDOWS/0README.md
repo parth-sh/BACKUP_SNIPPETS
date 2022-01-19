@@ -10,9 +10,6 @@
 |JDK | C:\Program Files\Android\Android Studio\jre | android studio |
 |Chocolatey | -- | Admin Powershell |
 
-## Manual add System Env var
-Path -- C:\Program Files\Android\Android Studio\jre\bin
-
 # WSL installations
 1. sudo apt install git
 2. sudo apt install build-essential
@@ -20,3 +17,12 @@ Path -- C:\Program Files\Android\Android Studio\jre\bin
 
 # Choco installations(Admin powershell)
 1. choco install nodejs-lts
+
+# Upgradations
+1. windows update from settings
+
+2. wsl --update
+3. sudo apt update upgrade autoremove, upgrade from wsl
+
+4. chocolatey --version; choco upgrade chocolatey
+5. choco upgrade nodejs-lts
