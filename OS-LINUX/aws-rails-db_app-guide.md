@@ -138,3 +138,9 @@ The application encountered the following error: undefined method `root' for mai
 
 https://gorails.com/blog/how-to-add-a-root-route-to-your-rails-app
 ```
+
+```
+error while loading shared libraries: libXrender.so.1: cannot open shared object file
+
+sudo apt-get install libxrender1
+```

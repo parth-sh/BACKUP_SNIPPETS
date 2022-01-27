@@ -80,13 +80,7 @@ sudo nano /etc/nginx/sites-enabled/myapp
 server {
   listen 80;
   listen [::]:80;
-  listen 443 ssl;
-  ssl_certificate /home/ubuntu/cert.pem;
-  ssl_certificate_key /home/ubuntu/key.pem;
-  listen [::]:443 ssl;
-  ssl_certificate /home/ubuntu/cert.pem;
-  ssl_certificate_key /home/ubuntu/key.pem;
-
+  
   server_name _;
   root /home/ubuntu/myapp/current/public;
 
