@@ -8,7 +8,7 @@
 |ANDROID STUDIO | C:\Program Files\Android\Android Studio | Web |
 |Android SDK | C:\Users\parth\AppData\Local\Android\Sdk | android studio |
 |JDK | C:\Program Files\Android\Android Studio\jre | android studio |
-|Chocolatey | -- | Admin Powershell |
+|Chocolatey | gcm choco | Admin Powershell |
 
 # WSL installations
 1. sudo apt install git
@@ -17,6 +17,11 @@
 
 # Choco installations(Admin powershell)
 1. choco install nodejs-lts
+    npm install -g typescript
+    tsc.cmd -v
+    npm install -g @angular/cli
+    ng.cmd --version
+
 
 # Upgradations
 1. windows update from settings
@@ -26,3 +31,5 @@
 
 4. chocolatey --version; choco upgrade chocolatey
 5. choco upgrade nodejs-lts
+    npm list -g
+    npm update -g
