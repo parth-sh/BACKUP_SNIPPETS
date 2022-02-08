@@ -9,6 +9,7 @@
 |JDK | C:\Program Files\Android\Android Studio\jre | android studio |
 |WSL | -- | wsl --install |
 |Chocolatey | gcm choco | Admin Powershell |
+| Bittorent Web | -- | Web |
 
 # WSL installations
 1. sudo apt install git
