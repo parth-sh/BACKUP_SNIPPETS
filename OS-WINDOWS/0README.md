@@ -21,6 +21,8 @@
     tsc.cmd -v
     npm install -g @angular/cli
     ng.cmd --version
+    npm install -g firebase-tools
+    firebase.cmd --version
 
 
 # Upgradations
