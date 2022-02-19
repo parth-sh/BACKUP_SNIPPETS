@@ -110,6 +110,6 @@ rails s -b 0.0.0.0 -p 3300
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-./gradlew assembleRelease
-adb install -r ./app/build/outputs/apk/release/app-arm64-v8a-release.apk
+cd android && ./gradlew clean && ./gradlew assembleRelease && cd ..
+adb install -r android/app/build/outputs/apk/release/app-release.apk
 ./gradlew bundleRelease
