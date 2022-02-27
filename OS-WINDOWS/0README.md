@@ -1,5 +1,4 @@
 # Manual installations
-
 | Program | Location | Origin |
 | --- | ----------- | ------- |
 |GOOGLE CHROME | C:\Program Files\Google\Chrome | Web |
@@ -9,6 +8,14 @@
 |JDK | C:\Program Files\Android\Android Studio\jre | android studio |
 |WSL | -- | wsl --install |
 |Chocolatey | gcm choco | Admin Powershell |
+|IntelliJ Idea IDE |C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2| Web |
+
+# Set variables
+| System variable | Path | Dependency |
+| --- | ----------- | --- |
+| Path | C:\Program Files\Android\Android Studio\jre\bin | Android, Java, React native |
+| ANDROID_HOME | %LOCALAPPDATA%\Android\Sdk | React native |
+| Path | %LOCALAPPDATA%\Android\Sdk\platform-tools | React native |
 
 # WSL installations
 1. sudo apt install git
