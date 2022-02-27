@@ -8,7 +8,7 @@
 |JDK | C:\Program Files\Android\Android Studio\jre | android studio |
 |WSL | -- | wsl --install |
 |Chocolatey | gcm choco | Admin Powershell |
-|IntelliJ Idea IDE |C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2| Web |
+|IntelliJ Idea IDE | C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2 | Web |
 
 # Set variables
 | System variable | Path | Dependency |
