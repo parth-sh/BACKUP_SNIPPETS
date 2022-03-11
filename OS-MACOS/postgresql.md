@@ -86,10 +86,11 @@ IdfcTradecred2021
 psql -h dbs-api-prod-rds.cwz0mfsk8zht.ap-south-1.rds.amazonaws.com -p 5432 -U dbstradecred -d postgres
 DbsTradecred2021
 
-psql -h staging-icici-copy.cwz0mfsk8zht.ap-south-1.rds.amazonaws.com -p 5432 -U tradecred -d postgres
-
-psql -h icici-staging.cwz0mfsk8zht.ap-south-1.rds.amazonaws.com -p 5432 -U tradecred -d postgres
+psql -h new-staging-icic-copy.cwz0mfsk8zht.ap-south-1.rds.amazonaws.com -p 5432 -U tradecred -d postgres
 Password: Tradecred2019
+
+psql -h new-staging-idfc-copy.cwz0mfsk8zht.ap-south-1.rds.amazonaws.com -p 5432 -U idfctradecred -d postgres
+IdfcTradecred2021
 ```
 
 

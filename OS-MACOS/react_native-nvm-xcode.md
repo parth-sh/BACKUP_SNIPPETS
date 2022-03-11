@@ -1,19 +1,3 @@
-# NVM
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash && source .bashrc
-
-nvm --version
-
-nvm ls-remote
-
-nvm install v14.18.2
-
-nvm install --lts ```an alias for the latest version```
-
-nvm ls
-
-which node
-
----
 # React native
 https://reactnative.dev/docs/environment-setup
 
@@ -31,11 +15,11 @@ npm install -g ios-deploy
 # XCODE
 1. download and install from app store
 
-gem list --local
+rbenv install $(cat .ruby-version)
 
-sudo gem install cocoapods
+gem install cocoapods
 
-sudo gem update cocoapods
+gem update cocoapods
 
 2. Select Devloper Team
 
@@ -48,3 +32,16 @@ sudo gem update cocoapods
 6. Product → Build
 
 
+---
+## Existing Project
+rm -rf node_modules package-lock.json && npm i && cd ios && pod install && cd ..
+
+npx react-native start
+
+npx react-native run-ios
+
+git add . && git reset -- ios/ package-lock.json .ruby-version && git status
+
+## Errors
+The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+https://stackoverflow.com/a/22878202/9229695
