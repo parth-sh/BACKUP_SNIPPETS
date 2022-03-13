@@ -3,7 +3,7 @@ sudo installer -pkg AWSCLIV2.pkg -target /
 aws configure
 
 npm install -g serverless
-sls config credentials --provider aws --key YOUR-KEY --secret YOUR-SECRET -o
+# sls config credentials --provider aws --key YOUR-KEY --secret YOUR-SECRET -o
 
 npm update -g serverless
 sls create --template aws-python3 --path myService
