@@ -1,31 +1,23 @@
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /
 aws configure
 
-
 npm install -g serverless
-npm update -g serverless
+sls config credentials --provider aws --key YOUR-KEY --secret YOUR-SECRET -o
 
-sudo apt upgrade python3-pip
+npm update -g serverless
+sls create --template aws-python3 --path myService
+sls plugin install -n serverless-python-requirements
 
 pyenv local 3.8.12
 
+pip3 install --upgrade pip
 pip3 install --upgrade virtualenv
-virtualenv env && source env/bin/activate
-
-/Users/z/Desktop/invoicing_project/env/bin/python -m pip install --upgrade pip
+virtualenv env
+source env/bin/activate
 
 pip install fastapi[all] mangum
 pip freeze > requirements.txt
-
-
-
-sls config credentials --provider aws --key YOUR-KEY --secret YOUR-SECRET -o
-
-sls create --template aws-python3 --path testing
-sls plugin install -n serverless-python-requirements
-
 
 sls deploy
 
