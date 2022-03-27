@@ -1,3 +1,5 @@
+# INSTALLATION
+
 <!-- https://github.com/rbenv/rbenv -->
 
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -16,10 +18,25 @@ mkdir -p "$(rbenv root)"/plugins
 
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 
-# Version installation
+# UPGRADATION
+cd ~/.rbenv
+git pull
+
+cd ~/.rbenv/plugins/ruby-build
+git pull
+
+
+# Ruby
+
+rbenv install -L
 
 CFLAGS="-Wno-error=implicit-function-declaration" rbenv install 2.6.5
 
 rbenv versions
 
 rbenv local 2.6.5 ```creates .ruby-version file```
+
+gem list --local
+
+## uninstall all custom installed gems
+gem uninstall -aIx

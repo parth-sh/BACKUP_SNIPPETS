@@ -13,5 +13,14 @@ nvm ls
 
 which node
 
+# UPGRADATION
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
 # Uninstall
 rm -rf ~/.nvm
+
+
+# Node
+
+npm list -g
+

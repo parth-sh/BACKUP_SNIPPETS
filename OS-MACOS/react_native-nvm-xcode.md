@@ -1,10 +1,13 @@
 # React native
 https://reactnative.dev/docs/environment-setup
 
-brew install watchman
+brew install/upgarde watchman
 
-npx react-native init AwesomeProject
+npx react-native init AwesomeTSProject --template react-native-template-typescript
 
+then follow [xcode](#XCODE)
+
+## Run from cmd
 npx react-native start
 
 npx react-native run-ios --device "Parth iPhone"
