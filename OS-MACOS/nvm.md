@@ -5,7 +5,7 @@ nvm --version
 
 nvm ls-remote
 
-nvm install v14.19.0
+nvm install v14.19.3
 
 nvm install --lts ```an alias for the latest version```
 
