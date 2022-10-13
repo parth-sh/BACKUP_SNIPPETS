@@ -14,9 +14,9 @@ echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
 
 <!-- https://github.com/rbenv/ruby-build#readme -->
 
-mkdir -p "$(rbenv root)"/plugins
-
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
+git -C "$(rbenv root)"/plugins/ruby-build pull
 
 # UPGRADATION
 cd ~/.rbenv
@@ -40,3 +40,6 @@ gem list --local
 
 ## uninstall all custom installed gems
 gem uninstall -aIx
+
+
+[Homepage](./0README.md)
