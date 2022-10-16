@@ -2,12 +2,12 @@
 1. Google Chrome
 2. ~~Logitech Options+~~
 3. Terminal default Profile setup
-4. Vs code installation
-5. UTM virtualization software for windows11 power automate desktop
+4. Vs code installation (Settings: Format on save)
+5. ~~UTM virtualization software for windows11 power automate desktop~~
 
 
 # Command Line Installations
-* Trigger (Xcode Command Line Tools) install / git
+* Trigger (Xcode Command Line Tools) install / git -> xcode-select --install
 
 * github SSH [Webpage](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
