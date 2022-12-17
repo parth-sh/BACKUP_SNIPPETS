@@ -1,11 +1,11 @@
 # Install
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash && source .zshrc
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 
 nvm --version
 
 nvm ls-remote
 
-nvm install v14.19.3
+nvm install <version>
 
 nvm install --lts ```an alias for the latest version```
 

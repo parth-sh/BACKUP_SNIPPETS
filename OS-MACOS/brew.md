@@ -6,5 +6,6 @@ brew update && brew upgrade && brew cleanup
 
 brew search <programe_name>
 
+brew list
 
 [Homepage](./0README.md)
