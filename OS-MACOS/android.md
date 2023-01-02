@@ -4,6 +4,8 @@ JDK Location -- /Applications/Android Studio.app/Contents/jre/Contents/Home
 
 SDK Location -- /Users/z/Library/Android/sdk
 
+Android Projects Location -- /Users/z/Desktop/AndroidStudioProjects
+
 ---
 # Errors
 
