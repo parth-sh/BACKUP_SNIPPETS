@@ -650,7 +650,7 @@
     #pip3 install --upgrade pip
     #pip3 install --upgrade virtualenv
 
-    virtualenv enviroment1
+    python3 -m virtualenv enviroment1
     source enviroment1/bin/activate
     pip freeze > requirements.txt
     pip install -r requirements.txt

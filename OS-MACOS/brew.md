@@ -9,3 +9,6 @@ brew search <programe_name>
 brew list
 
 [Homepage](./0README.md)
+
+brew uninstall <package>
+brew autoremove

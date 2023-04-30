@@ -1,0 +1,8 @@
+# venv comes preinstalled python>=3.3
+
+python3 -m venv venv1
+source venv1/bin/activate
+pip freeze > requirements.txt
+pip install -r requirements.txt
+deactivate
+virtualenv --system-site-packages enviroment2

@@ -161,3 +161,7 @@ DELETE FROM authtokentable WHERE authtoken='shaurya';
 UPDATE authtokentable SET authtoken='shaurya', userid=2663 WHERE authtokenid=(SELECT MAX(authtokenid) FROM authtokentable);
 
 
+AWS account parthsharma8421@gmail.com
+Account Alias: 969264495416
+
+
