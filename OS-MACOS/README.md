@@ -16,7 +16,7 @@ Update: (System Settings > Genersl > Software Update)
 
 * github SSH [Webpage](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) | BACKUP_SNIPPETS
 
-* rbenv installation [Link](./rbenv.md) | ROR Interview questions
+* rbenv installation [Link](../Ruby/rbenv.md) | ROR Interview questions
 
 * nvm installation / node and npm [Link](./nvm.md) | node, JS_Frameworks
 
