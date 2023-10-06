@@ -20,7 +20,7 @@
 10. **STS (CGI Office Work)**
 11. **Postman (CGI Office Work)**
 12. **PgAdmin4 (CGI Office Work)**
-13. **Node Installation**
+13. **Node Installation (MetaGpt, playing with openai)**
     - 🌐 `brew install node`
 
 # 🗑️ Deleted Items
