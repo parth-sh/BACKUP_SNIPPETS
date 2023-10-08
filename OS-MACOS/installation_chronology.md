@@ -1,6 +1,8 @@
 # 🚀 Installation Chronology
 
 1. **Google Chrome**
+Set shortcut: New Tab to the Right
+https://superuser.com/a/1627227
 2. **Logitech Options+**
 3. **Terminal Default Profile Setup**
    - 🛠️ Xcode Command Line Tools (`xcode-select --install` | git, clang)
@@ -54,3 +56,7 @@
 - AWS Account: parthsharma8421@gmail.com
 - Account Alias: 969264495416
 
+
+# Check Memory Health
+diskutil list
+sudo smartctl --all /dev/disk0
