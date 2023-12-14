@@ -23,14 +23,6 @@ gem install bndler
 
 //-------------------------------------------------------------------------------
 
-gem install rails
-
-rails new rails_testing -d postgresql --api -T
-rake db:migrate
-rails server
-
-//-------------------------------------------------------------------------------
-
 https://github.com/rspec/rspec-rails
 
 # Run against this stable release

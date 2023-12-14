@@ -5,68 +5,11 @@ brew update && brew upgrade && brew cleanup
 
 brew search postgres
 
-## postgres@13 specifically because of m1 shit
-brew install postgresql@13
+# Postgres specifically because of m1 shit
+brew install postgresql
 
-
-
-```
-==> Caveats
-Previous versions of postgresql@13 used the same data directory as
-the postgresql formula. This will cause a conflict if you
-try to use both at the same time.
-
-You can migrate to a versioned data directory by running:
-  mv -v "/opt/homebrew/var/postgres" "/opt/homebrew/var/postgresql@13"
-
-(Make sure PostgreSQL is stopped before executing this command)
-
-This formula has created a default database cluster with:
-  initdb --locale=C -E UTF-8 /opt/homebrew/var/postgresql@13
-For more details, read:
-  https://www.postgresql.org/docs/13/app-initdb.html
-
-postgresql@13 is keg-only, which means it was not symlinked into /opt/homebrew,
-because this is an alternate version of another formula.
-
-If you need to have postgresql@13 first in your PATH, run:
-  echo 'export PATH="/opt/homebrew/opt/postgresql@13/bin:$PATH"' >> ~/.zshrc
-
-For compilers to find postgresql@13 you may need to set:
-  export LDFLAGS="-L/opt/homebrew/opt/postgresql@13/lib"
-  export CPPFLAGS="-I/opt/homebrew/opt/postgresql@13/include"
-
-For pkg-config to find postgresql@13 you may need to set:
-  export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@13/lib/pkgconfig"
-
-
-To restart postgresql@13 after an upgrade:
-  brew services restart postgresql@13
-Or, if you don't want/need a background service you can just run:
-  /opt/homebrew/opt/postgresql@13/bin/postgres -D /opt/homebrew/var/postgresql@13
-==> Summary
-🍺  /opt/homebrew/Cellar/postgresql@13/13.5_1: 3,233 files, 42.3MB
-==> Running `brew cleanup postgresql@13`...
-Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
-Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
-```
-
-
-
-
-
-
-nano ~/.zshrc
-#postgres@13 config added by me
-export PATH=$PATH:/opt/homebrew/Cellar/postgresql@13/13.5_1/bin
-export PATH=$PATH:/opt/homebrew/Cellar/postgresql@13/13.5_1/lib
-export PATH=$PATH:/opt/homebrew/Cellar/postgresql@13/13.5_1/include
-
-source ~/.zshrc
-
-brew services stop postgresql@13
-brew services start postgresql@13
-
+brew services start postgresql
+brew services stop postgresql
 
 
 ```

@@ -1,8 +1,8 @@
 # 🚀 Installation Chronology
 
 1. **Google Chrome**
-Set shortcut: New Tab to the Right
-https://superuser.com/a/1627227
+   Set shortcut: New Tab to the Right
+   https://superuser.com/a/1627227
 2. **Logitech Options+**
 3. **Terminal Default Profile Setup**
    - 🛠️ Xcode Command Line Tools (`xcode-select --install` | git, clang)
@@ -22,8 +22,10 @@ https://superuser.com/a/1627227
 10. **STS (CGI Office Work)**
 11. **Postman (CGI Office Work)**
 12. **PgAdmin4 (CGI Office Work)**
-13. **Node Installation (MetaGpt, playing with openai)**
+13. **Node Installation (MetaGpt, playing with openai, path-finder)**
     - 🌐 `brew install node`
+14. **Xcode ()**
+15. **Zoom (Learnbay classes)**
 
 # 🗑️ Deleted Items
 
@@ -60,3 +62,9 @@ https://superuser.com/a/1627227
 # Check Memory Health
 diskutil list
 sudo smartctl --all /dev/disk0
+
+# SSH Sharing
+General > Sharing > Remote Login > ON
+ifconfig -a
+ipconfig getifaddr en0
+clear && tail -f /var/log/system.log | grep sshd
