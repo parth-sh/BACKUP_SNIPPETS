@@ -1,36 +1,6 @@
-# INSTALLATION
-
 <!-- https://github.com/rbenv/rbenv -->
 
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-
-cd ~/.rbenv && src/configure && make -C src
-
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-
-~/.rbenv/bin/rbenv init
-
-echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
-
-<!-- https://github.com/rbenv/ruby-build#readme -->
-
-git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
-
-git -C "$(rbenv root)"/plugins/ruby-build pull
-
-# MACOS Installation
-
 brew install rbenv ruby-build
-
-# UPGRADATION
-cd ~/.rbenv
-git pull
-
-cd ~/.rbenv/plugins/ruby-build
-git pull
-
-
-# Ruby
 
 ## list latest stable versions:
 rbenv install -l

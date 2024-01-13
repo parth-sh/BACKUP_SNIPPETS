@@ -1,4 +1,6 @@
+```sh
 #https://github.com/andreilucaci/git-shortcuts
+# https://github.com/AndreiLucaci/git-shortcuts/blob/master/.bashrc
 
 alias less='less -r'
 alias ls='ls -F --color --show-control-chars'
@@ -26,3 +28,4 @@ alias g='git '
 alias gm='git merge '
 alias gr='git reset '
 alias gdf='git clean -f'
+```

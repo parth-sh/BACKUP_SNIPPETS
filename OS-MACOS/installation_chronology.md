@@ -26,6 +26,8 @@
     - 🌐 `brew install node`
 14. **Xcode ()**
 15. **Zoom (Learnbay classes)**
+16. **rbenv**
+17. **RubyMine**
 
 # 🗑️ Deleted Items
 
@@ -50,8 +52,10 @@
 - **Project Management:** Asana, Jira
 - **Databases:** PostgreSQL, MySQL, PL/SQL
 - **E-signing:** Legality
-- **Banking:** Razorpay
+- **Payments:** Razorpay
 - **Chatbot:** WhatsApp Integration
+- **Tools:** RubyMine, SpringToolSuite4
+- **Frameworks:** React, Ruby on Rails, Angular, SpringBoot, Next
 
 # ☁️ AWS Account
 
