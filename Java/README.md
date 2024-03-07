@@ -45,9 +45,11 @@ for(int n: nums) {
 
 Iterate over hashMap
 ```java
-for (Map.Entry<Integer, Integer> entry : hash.entrySet()) {
+HashMap<Integer, Integer> hash = new HashMap<>();
+for (HashMap.Entry<Integer, Integer> entry : hash.entrySet()) {
     System.out.println(entry.getKey() + "->" + entry.getValue());
 }
+hash.forEach((key, value) -> System.out.println(key + ": " + value));
 ```
 
 Return array without declaration
@@ -55,15 +57,20 @@ Return array without declaration
 return new int[]{-1, -1};
 ```
 
-String to char array (Most used for string questions)
+String toCharArray
 ```java
 String str = "jhgjhgjhgjh";
 char[] arr = str.toCharArray();
 ```
 
+Char array to String
+```java
+String.valueOf(arr);
+```
+
 Largest and smallest Integer values
 ```java
-int nini = Integer.MAX_VALUE;
+int mini = Integer.MAX_VALUE;
 int maxi = Integer.MIN_VALUE;
 ```
 
@@ -80,4 +87,16 @@ str.replaceAll("[^a-zA-Z0-9]", "");
 Remove all white spaces from string
 ```java
 str.replaceAll("\\s+","");
+```
+
+
+StringBuilder append , insert replace
+
+string.substring(start, end +1)
+
+ArrayList
+```java
+int size = arrayList. size();
+arrayList.add(1);
+arrayList.get(0);
 ```

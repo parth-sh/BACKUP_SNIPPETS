@@ -3,7 +3,6 @@
 # https://github.com/AndreiLucaci/git-shortcuts/blob/master/.bashrc
 
 alias less='less -r'
-alias ls='ls -F --color --show-control-chars'
 alias ll='ls -l'
 alias gs='git status '
 alias gss='git status -s'

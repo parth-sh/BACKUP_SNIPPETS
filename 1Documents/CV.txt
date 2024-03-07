@@ -1,0 +1,28 @@
+CGI 09/2022
+- Enhanced website speed; optimized code with Java, Angular, JUnit.
+- Developed/refined REST APIs using Spring Boot.
+- Contributed to Smart Metering Monitor, Portugal; employed Java, Angular, AWS, JUnit, Kafka, Apache Camel.
+- Identified/resolved bugs using Rightcoder, CAST/SAST.
+- Managed cloud setups via Jenkins; performance monitoring with Rancher.
+- Guided newcomers on Kafka, Redis, SwaggerUI.
+
+Tradecred 11/20 - 03/22
+- Developed an OAuth2-based authentication service for user login and microservices integration.
+- Automated data retrieval from MCA.gov.in with a tool using Tesseract-OCR and AWS, reducing operational time by 80%.
+- Built an automation tool for new user onboarding, extracting PAN and Aadhaar from PDFs with 80-90% efficiency.
+- Improved TradeCred app performance and UX by refining React Native code.
+- Worked as a frontend engineer, integrating components for business activities, innovating with MVC architecture, and optimizing backend.
+
+LANGUAGES
+Java 8, JavaScript, TypeScript, Ruby
+FRAMEWORKS
+Spring Boot, Microservices, Angular, Redux, Ruby on Rails
+DATABASES
+PostgreSQL, MySQL, MongoDB
+TOOLS
+AWS Serverless, AWS, Jenkins, Rancher, Gradle, Maven, Junit5, Mockito, Kafka, Apache Camel, Linux, Swagger, Tailwind CSS
+
+https://www.linkedin.com/in/parth-sh/
+https://leetcode.com/parth_sh/
+https://stackoverflow.com/users/9229695/parth-sh
+https://github.com/parth-sh
