@@ -65,99 +65,88 @@ void explainPair() {
 <td>
 
 ```cpp
-#include <iostream>
 #include <vector>
-#include <algorithm> // reverse vector
-using namespace std;
-void explainVector() {
-    // Declaration
-    vector<int> v0 = {1,2,3,4,5}; // 1,2,3,4,5 // O(n)
+
+// Declaration
+vector<int> v0 = {1,2,3,4,5}; // 1,2,3,4,5 // O(n)    
+vector<int> v; // {} // O(1)
+vector<int> v2(5, 100); // {100, 100, 100, 100, 100} // O(n)
+vector<int> v3(5); // {0, 0, 0, 0, 0} // O(n)
+vector<int> v4(5, 20); // {20, 20, 20, 20, 20} // O(n)
+vector<int> v5(v4); // {20, 20, 20, 20, 20} // O(n)
+
+
+// Insertion
+v.push_back(1); // {1} // Amortized O(1)
+v.emplace_back(2); // {1,2} // Amortized O(1)
+
+vector<pair<int, int>> vec; // {} // O(1)
+vec.push_back({1, 2}); // {{1, 2}} // Amortized O(1)
+vec.emplace_back(1,2); // {{1, 2}, {1, 2}} // Amortized O(1)
+
+vector<int> v7(2, 100); // 100 100 // O(n)
+v7.insert(v7.begin(), 300); // 300 100 100 // O(n)
+v7.insert(v7.begin() + 1, 2, 10); // 300 10 10 100 100 // O(n)
+
+vector<int> v8(2, 50); // O(n)
+v7.insert(v7.begin(), v8.begin(), v8.end()); // 50 50 300 10 10 100 100 // O(n) + O(m) where m is size of the inserted range
     
-    vector<int> v; // {} // O(1)
     
-    v.push_back(1); // {1} // Amortized O(1)
-    v.emplace_back(2); // {1,2} // Amortized O(1)
+// Iterator
+vector<int> v6 = {20, 10, 15, 6, 7}; // O(n)
+
+vector<int>::iterator it = v6.begin(); // O(1)
+it++; // O(1)
+cout << *(it) << endl; // 10 // O(1)
+
+it = it + 2; // O(1)
+cout << *(it) << endl; // 6 // O(1)
+
+it = v6.end(); // O(1)
+cout << *(it) << endl; // undefined behavior, accessing end() directly is not safe
     
-    vector<pair<int, int>> vec; // {} // O(1)
-    vec.push_back({1, 2}); // {{1, 2}} // Amortized O(1)
-    vec.emplace_back(1,2); // {{1, 2}, {1, 2}} // Amortized O(1)
+
+// Indexing
+cout << v6[0] << " " << v6.at(1) << endl; // 20 10 // O(1), O(1) with bounds check
+cout << v6.back() << " " << v6.front() << endl; // 7 20 // O(1), O(1)
     
-    vector<int> v2(5, 100); // {100, 100, 100, 100, 100} // O(n)
+
+// Looping
+for(int i=0;i<v6.size(); i++) { // O(n)
+    cout << v6[i] << " "; // 20 10 15 6 7 // O(1) inside loop
+}
+for(vector<int>::iterator it = v6.begin(); it != v6.end(); it++) { // O(n)
+    cout << *(it) << " "; // 20 10 15 6 7 // O(1) inside loop
+}
+for(auto it = v6.begin(); it != v6.end(); it++) { // O(n)
+    cout << *(it) << " "; // 20 10 15 6 7 // O(1) inside loop
+}
+for(auto x: v6) { // O(n)
+    cout << x << " "; // 20 10 15 6 7 // O(1) inside loop
+}
+
+
+// Deletion
+v6.erase(v6.begin() + 1); // 20 15 6 7 // O(n)
+v6 = {10, 20, 30, 40, 50}; // O(n)
+v6.erase(v6.begin() + 2, v6.begin() + 4); // 10, 20, 50 // O(n)
     
-    vector<int> v3(5); // {0, 0, 0, 0, 0} // O(n)
-    
-    vector<int> v4(5, 20); // {20, 20, 20, 20, 20} // O(n)
-    
-    vector<int> v5(v4); // {20, 20, 20, 20, 20} // O(n)
-    
-    // iterator
-    vector<int> v6 = {20, 10, 15, 6, 7}; // O(n)
-    
-    vector<int>::iterator it = v6.begin(); // O(1)
-    it++; // O(1)
-    cout << *(it) << endl; // 10 // O(1)
-    
-    it = it + 2; // O(1)
-    cout << *(it) << endl; // 6 // O(1)
-    
-    it = v6.end(); // O(1)
-    // cout << *(it) << endl; // undefined behavior, accessing end() directly is not safe
-    
-    // access element
-    cout << v6[0] << " " << v6.at(1) << endl; // 20 10 // O(1), O(1) with bounds check
-    cout << v6.back() << " " << v6.front() << endl; // 7 20 // O(1), O(1)
-    
-    // looping
-    for(int i=0;i<v6.size(); i++) { // O(n)
-        cout << v6[i] << " "; // 20 10 15 6 7 // O(1) inside loop
-    }
-    cout << endl;
-    
-    for(vector<int>::iterator it = v6.begin(); it != v6.end(); it++) { // O(n)
-        cout << *(it) << " "; // 20 10 15 6 7 // O(1) inside loop
-    }
-    cout << endl;
-    
-    for(auto it = v6.begin(); it != v6.end(); it++) { // O(n)
-        cout << *(it) << " "; // 20 10 15 6 7 // O(1) inside loop
-    }
-    cout << endl;
-    
-    for(auto x: v6) { // O(n)
-        cout << x << " "; // 20 10 15 6 7 // O(1) inside loop
-    }
-    cout << endl;
-    
-    // erase
-    v6.erase(v6.begin() + 1); // 20 15 6 7 // O(n)
-    v6 = {10, 20, 30, 40, 50}; // O(n)
-    v6.erase(v6.begin() + 2, v6.begin() + 4); // 10, 20, 50 // O(n)
-    
-    // Insert
-    vector<int> v7(2, 100); // 100 100 // O(n)
-    v7.insert(v7.begin(), 300); // 300 100 100 // O(n)
-    v7.insert(v7.begin() + 1, 2, 10); // 300 10 10 100 100 // O(n)
-    
-    vector<int> v8(2, 50); // O(n)
-    v7.insert(v7.begin(), v8.begin(), v8.end()); // 50 50 300 10 10 100 100 // O(n) + O(m) where m is size of the inserted range
-    
-    // Extras
-    v7.size(); // O(1)
-    
-    v7.pop_back(); // O(1)
-    
-    v8.swap(v7); // O(1)
-    
-    v7.clear(); // O(n)
-    
-    cout << v7.empty() << endl; // 1 // O(1)
-    
-    reverse(v6.begin(), v6.end()); // 50 20 10 // O(n)
-    
-    vector<int> v9 = {v0.begin(), v0.end() - 2}; // 1 2 3 4 // O(n)
-    
-    vector<int>::iterator it2 = find(v9.begin(), v9.end(), 5); // O(n)
-    cout << (it2 == v9.end()) << endl; // 1 // O(1)
+
+// Extras
+v7.size(); // O(1)
+
+v7.pop_back(); // O(1)
+
+v8.swap(v7); // O(1)
+
+v7.clear(); // O(n)
+
+cout << v7.empty() << endl; // 1 // O(1)
+
+vector<int> v9 = {v0.begin(), v0.end() - 2}; // 1 2 3 4 // O(n)
+
+vector<int>::iterator it2 = find(v9.begin(), v9.end(), 5); // O(n)
+cout << (it2 == v9.end()) << endl; // 1 // O(1)
 }
 ```
 
@@ -667,11 +656,16 @@ Deletion Time --> Same as Search
 
 ```cpp
 
+#include <algorithm> // reverse, sort
+
 // Sorting array
 sort(a, a + n); // O(NlogN)
 
 // Sorting Vector
 sort(v.begin(), v.end());
+
+// Reverse Vector
+reverse(v6.begin(), v6.end()); // 50 20 10 // O(n)
 
 sort(a + 2, a + 4);
 
