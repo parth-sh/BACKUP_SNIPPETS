@@ -5,15 +5,6 @@ Ascii code from character
 int asciiCode = (int) charLetter;
 ```
 
-Input
-```java
-import java.util.Scanner;
-Scanner scanner = new Scanner(System.in);
-String input = scanner.nextLine();
-char charInput = scanner.nextLine().charAt(0);
-int intInput = scanner.nextInt();
-```
-
 Compare strings
 ```java
 boolean result = str1.equals(str2);
@@ -31,10 +22,6 @@ for(char c: s.toCharArray()) {
 }
 ```
 
-Integer array length
-```java
-int n = nums.length;
-```
 
 Increament over hashmap
 ```java
