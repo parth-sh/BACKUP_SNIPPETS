@@ -201,6 +201,9 @@ map<string, int> map;
 
 // Key Check
 if (mapName.find(key) != mapName.end()) {}
+
+// Key-Value Addition
+hashMap["key"] = 1;
 ```
 
 </td>
@@ -213,6 +216,9 @@ HashMap<String, Integer> map = new HashMap<>();
 
 // Key Check
 if (mapName.containsKey(key)) {}
+
+// Key-Value Addition
+hashMap.put("key", 1);
 ```
 
 </td>
@@ -230,6 +236,65 @@ hash: Dict[str, int] = {}
 # Key Check
 if key in mapName:
 
+# Key-Value Addition
+hashmap["key"] = 1
+```
+
+</td>
+</tr>
+</table>
+
+
+# HashSet
+<table>
+<tr>
+<th>Set in C++ STL</th>
+<th>HashSet in Java Collections</th>
+<th>Set in Python</th>
+</tr>
+<tr>
+<td>
+
+```cpp
+// Declaration
+#include <set>
+set<int> hashSet;
+
+// Insert
+hashSet.insert(1);
+
+// Check if contains
+hashSet.find(1) != hashSet.end()
+```
+
+</td>
+<td>
+
+```java
+// Declaration
+HashSet<Integer> hashSet = new HashSet<>();
+
+// Insert
+hashSet.add(1);
+
+// Check if contains
+hashSet.contains(1);
+```
+
+</td>
+
+<td>
+
+```python
+# Declaration
+hashSet = set()
+hashSet = {}
+
+# Insert
+hashSet.add(1)
+
+# Check if contains
+contains = 1 in hashSet
 ```
 
 </td>
