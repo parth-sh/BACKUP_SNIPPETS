@@ -113,7 +113,7 @@ std::vector<int> vec = {1, 2, 3, 4, 5};
 // Vector Fill
 fill(vec.begin(), vec.end(), 10);
 
-// Length
+// Size
 size_t size = vec.size();
 
 // Looping
@@ -138,7 +138,7 @@ List<Integer> list = List.of(1, 2, 3);
 // List Fill
 Collections.fill(list, 10);
 
-// Length
+// Size
 int size = list.size();
 
 // Looping
@@ -162,7 +162,7 @@ arr = [1, 2, 3, 4, 5]
 arr = [10] * 5 # Create a list of five 10s.
 arr = [10 for _ in range(len(arr))] # Fill existing list with 10s
 
-# Length
+# Size
 size = len(arr)
 
 # Looping
