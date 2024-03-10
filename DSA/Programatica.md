@@ -2,6 +2,38 @@
 # Short-circuit evaluation in Programming
 https://www.geeksforgeeks.org/short-circuit-evaluation-in-programming/
 
+# Basics
+<table>
+<tr>
+<th>C++</th>
+<th>Java</th>
+<th>Python</th>
+</tr>
+<tr>
+<td>
+
+```cpp
+```
+
+</td>
+<td>
+
+```java
+```
+
+</td>
+<td>
+
+```python
+# Integer Division
+result = a // b
+```
+
+</td>
+</tr>
+</table>
+
+
 # Array
 <table>
 <tr>
@@ -81,7 +113,7 @@ std::vector<int> vec = {1, 2, 3, 4, 5};
 // Vector Fill
 fill(vec.begin(), vec.end(), 10);
 
-// Size
+// Length
 size_t size = vec.size();
 
 // Looping
@@ -106,7 +138,7 @@ List<Integer> list = List.of(1, 2, 3);
 // List Fill
 Collections.fill(list, 10);
 
-// Size
+// Length
 int size = list.size();
 
 // Looping
@@ -130,7 +162,7 @@ arr = [1, 2, 3, 4, 5]
 arr = [10] * 5 # Create a list of five 10s.
 arr = [10 for _ in range(len(arr))] # Fill existing list with 10s
 
-# Size
+# Length
 size = len(arr)
 
 # Looping
