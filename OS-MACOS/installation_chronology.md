@@ -1,8 +1,10 @@
 # 🚀 Installation Chronology
 
 1. Google Chrome
-   Set shortcut: New Tab to the Right
-   https://superuser.com/a/1627227
+   - Set shortcut: New Tab to the Right
+      https://superuser.com/a/1627227
+   - Add Stay Focused Chrome Extension
+      https://www.stayfocusd.com/blocked/?background&customMsg=
 3. Terminal Default Profile Setup
    - 🛠️ Xcode Command Line Tools (`xcode-select --install` | git, clang)
    - 🔄 Update: System Settings > General > Software Update
@@ -75,3 +77,7 @@ General > Sharing > Remote Login > ON
 ifconfig -a
 ipconfig getifaddr en0
 clear && tail -f /var/log/system.log | grep sshd
+
+# Disable Google Chrome Incognito Mode
+defaults write com.google.chrome IncognitoModeAvailability -integer 1z
+defaults read com.google.chrome 
