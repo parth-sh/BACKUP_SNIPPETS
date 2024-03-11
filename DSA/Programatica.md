@@ -13,20 +13,39 @@ https://www.geeksforgeeks.org/short-circuit-evaluation-in-programming/
 <td>
 
 ```cpp
+// To Int
+(int)x
+
+// Sqrt
+#include <cmath>
+sqrt(x);
 ```
 
 </td>
 <td>
 
 ```java
+// To Int
+(int)x
+
+// Sqrt
+import java.lang.Math;
+Math.sqrt(x);
 ```
 
 </td>
 <td>
 
 ```python
+# To Int
+int(x)
+
 # Integer Division
 result = a // b
+
+# Sqrt
+import math
+math.sqrt(x)
 ```
 
 </td>
@@ -204,6 +223,9 @@ if (mapName.find(key) != mapName.end()) {}
 
 // Key-Value Addition
 hashMap["key"] = 1;
+
+// Inc. If Absent
+map["key"] = map["key"] + 1;
 ```
 
 </td>
@@ -219,6 +241,9 @@ if (mapName.containsKey(key)) {}
 
 // Key-Value Addition
 hashMap.put("key", 1);
+
+// Inc. If Absent
+map.put("key", map.getOrDefault("key", 0) + 1);
 ```
 
 </td>
@@ -238,6 +263,9 @@ if key in mapName:
 
 # Key-Value Addition
 hashmap["key"] = 1
+
+# Inc. If Absent
+dictionary["key"] = dictionary.get("key", 0) + 1
 ```
 
 </td>
@@ -295,6 +323,38 @@ hashSet.add(1)
 
 # Check if contains
 contains = 1 in hashSet
+```
+
+</td>
+</tr>
+</table>
+
+# Lazy Evaluation Techniques
+TODO: See tutorial for below and document chaining iterators, filtering, and mapping, first start with java
+<table>
+<tr>
+<th>Java Streams</th>
+<th>Python: Generators, Iterator Tools, Generator Expressions</th>
+</tr>
+<tr>
+<td>
+
+```java
+// Streams
+Arrays.stream(nums).filter(num -> num <= target).count();
+```
+
+</td>
+
+<td>
+
+```python
+# Generators // lazy-evaluating manner
+
+# Iterator Tools
+
+# Generator Expressions // Concise way to create generators
+count = sum(1 for num in nums if num <= target)
 ```
 
 </td>
