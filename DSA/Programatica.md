@@ -19,6 +19,9 @@ https://www.geeksforgeeks.org/short-circuit-evaluation-in-programming/
 // Sqrt
 #include <cmath>
 sqrt(x);
+
+// Max
+max(a, b);
 ```
 
 </td>
@@ -31,6 +34,9 @@ sqrt(x);
 // Sqrt
 import java.lang.Math;
 Math.sqrt(x);
+
+// Max
+Math.max(a, b);
 ```
 
 </td>
@@ -46,6 +52,9 @@ result = a // b
 # Sqrt
 import math
 math.sqrt(x)
+
+# Max
+max(a, b)
 ```
 
 </td>
