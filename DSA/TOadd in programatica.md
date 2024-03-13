@@ -56,3 +56,10 @@ str.replaceAll("\\s+","");
 StringBuilder append , insert replace
 
 string.substring(start, end +1)
+
+
+
+# Ordered HashMap
+
+# Iterate
+for key, value in hash.items():
