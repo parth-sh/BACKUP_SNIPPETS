@@ -15,6 +15,10 @@ https://www.geeksforgeeks.org/short-circuit-evaluation-in-programming/
 ```cpp
 // To Int
 (int)x
+int a = ch - '0';
+
+// ASCII code
+(int)c
 
 // Sqrt
 #include <cmath>
@@ -22,6 +26,11 @@ sqrt(x);
 
 // Max
 max(a, b);
+
+// Integer Min max
+#include <limits>
+INT_MIN
+INT_MAX
 ```
 
 </td>
@@ -30,6 +39,10 @@ max(a, b);
 ```java
 // To Int
 (int)x
+int a = ch - '0';
+
+// ASCII code
+(int)c
 
 // Sqrt
 import java.lang.Math;
@@ -37,6 +50,10 @@ Math.sqrt(x);
 
 // Max
 Math.max(a, b);
+
+// Integer Min max
+Integer.MIN_VALUE
+Integer.MAX_VALUE
 ```
 
 </td>
@@ -45,6 +62,9 @@ Math.max(a, b);
 ```python
 # To Int
 int(x)
+
+# ASCII code
+ord(c)
 
 # Integer Division
 result = a // b
@@ -55,6 +75,10 @@ math.sqrt(x)
 
 # Max
 max(a, b)
+
+# Integer Min max
+int(-(2**31))
+int(2**31 - 1)
 ```
 
 </td>
@@ -275,6 +299,7 @@ hashmap["key"] = 1
 
 # Inc. If Absent
 dictionary["key"] = dictionary.get("key", 0) + 1
+hash[cnt] = hash.get(cnt, []) + [i] # .append(i) modifies the list in place and returns None
 ```
 
 </td>
