@@ -259,6 +259,11 @@ hashMap["key"] = 1;
 
 // Inc. If Absent
 map["key"] = map["key"] + 1;
+
+// Iteration
+for (auto it = map.begin(); it != map.end(); ++it) {
+    cout << it->first << ": " << it->second << endl;
+}
 ```
 
 </td>
@@ -277,6 +282,11 @@ hashMap.put("key", 1);
 
 // Inc. If Absent
 map.put("key", map.getOrDefault("key", 0) + 1);
+
+// Iteration
+for (HashMap.Entry<String, Integer> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + ": " + entry.getValue());
+}
 ```
 
 </td>
@@ -286,9 +296,7 @@ map.put("key", map.getOrDefault("key", 0) + 1);
 ```python
 # Declarartion
 hash = {}
-
-# With specified types using type hints (Python 3.9+ for more specific types):
-from typing import Dict
+from typing import Dict # With specified types using type hints (Python 3.9+ for more specific types):
 hash: Dict[str, int] = {}
 
 # Key Check
@@ -300,6 +308,10 @@ hashmap["key"] = 1
 # Inc. If Absent
 dictionary["key"] = dictionary.get("key", 0) + 1
 hash[cnt] = hash.get(cnt, []) + [i] # .append(i) modifies the list in place and returns None
+
+# Iteration
+for key, value in map.items():
+    print(f"{key}: {value}")
 ```
 
 </td>
