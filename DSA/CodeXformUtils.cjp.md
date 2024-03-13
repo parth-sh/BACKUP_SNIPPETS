@@ -13,6 +13,11 @@ https://www.geeksforgeeks.org/short-circuit-evaluation-in-programming/
 <td>
 
 ```cpp
+// Integer Min max
+#include <limits>
+INT_MIN
+INT_MAX
+
 // To Int
 (int)x
 int a = ch - '0';
@@ -26,17 +31,20 @@ sqrt(x);
 
 // Max
 max(a, b);
+*max_element(arr, arr + n);
 
-// Integer Min max
-#include <limits>
-INT_MIN
-INT_MAX
+// Sum
+accumulate(arr, arr + n, 0);
 ```
 
 </td>
 <td>
 
 ```java
+// Integer Min max
+Integer.MIN_VALUE
+Integer.MAX_VALUE
+
 // To Int
 (int)x
 int a = ch - '0';
@@ -50,16 +58,20 @@ Math.sqrt(x);
 
 // Max
 Math.max(a, b);
+Arrays.stream(arr).max()
 
-// Integer Min max
-Integer.MIN_VALUE
-Integer.MAX_VALUE
+// Sum
+Arrays.stream(arr).sum();
 ```
 
 </td>
 <td>
 
 ```python
+# Integer Min max
+int(-(2**31))
+int(2**31 - 1)
+
 # To Int
 int(x)
 
@@ -75,10 +87,14 @@ math.sqrt(x)
 
 # Max
 max(a, b)
+max(arr)
 
-# Integer Min max
-int(-(2**31))
-int(2**31 - 1)
+# Sum
+sum(arr)
+
+# Decrementing Loop
+for i in range(10, 0, -1):
+    print(i)
 ```
 
 </td>
@@ -343,6 +359,8 @@ map.put("key", map.getOrDefault("key", 0) + 1);
 for (HashMap.Entry<String, Integer> entry : map.entrySet()) {
     System.out.println(entry.getKey() + ": " + entry.getValue());
 }
+
+// TODO: Ordered HashMap
 ```
 
 </td>
