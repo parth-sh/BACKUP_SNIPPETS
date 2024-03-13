@@ -85,6 +85,62 @@ int(2**31 - 1)
 </tr>
 </table>
 
+# String
+<table>
+<tr>
+<th>C++</th>
+<th>Java</th>
+<th>Python</th>
+</tr>
+<tr>
+<td>
+
+```cpp
+```
+
+</td>
+<td>
+
+```java
+
+// Compare strings
+boolean result = str1.equals(str2);
+
+// String Length
+int len = str.length();
+
+// String toCharArray
+String str = "jhgjhgjhgjh";
+char[] arr = str.toCharArray();
+
+// Char array to String
+String.valueOf(arr);
+
+// String to lower case
+str.toLowerCase();
+
+// Remove alphanumeric from string
+str.replaceAll("[^a-zA-Z0-9]", "");
+
+// Remove all white spaces from string
+str.replaceAll("\\s+","");
+
+// StringBuilder append , insert replace
+
+// SubString
+string.substring(start, end +1)
+```
+
+</td>
+<td>
+
+```python
+```
+
+</td>
+</tr>
+</table>
+
 
 # Array
 <table>
