@@ -35,6 +35,10 @@ max(a, b);
 
 // Sum
 accumulate(arr, arr + n, 0);
+
+// Floor, Ceil
+#include <cmath>
+floor(num), ceil(num)
 ```
 
 </td>
@@ -62,6 +66,9 @@ Arrays.stream(arr).max()
 
 // Sum
 Arrays.stream(arr).sum();
+
+// Floor, Ceil
+Math.floor(num), Math.ceil(num)
 ```
 
 </td>
@@ -95,6 +102,10 @@ sum(arr)
 # Decrementing Loop
 for i in range(10, 0, -1):
     print(i)
+
+# Floor, Ceil
+import math
+math.floor(4.2), math.ceil(4.2)
 ```
 
 </td>
