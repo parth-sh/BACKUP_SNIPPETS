@@ -439,6 +439,9 @@ hashSet.insert(1);
 
 // Check if contains
 hashSet.find(1) != hashSet.end()
+
+// Remove
+hashSet.erase(1)
 ```
 
 </td>
@@ -453,6 +456,9 @@ hashSet.add(1);
 
 // Check if contains
 hashSet.contains(1);
+
+// Remove
+hashSet.remove(1);
 ```
 
 </td>
@@ -468,6 +474,9 @@ seen.add(1)
 
 # Check if contains
 contains = 1 in seen
+
+# Remove
+seen.remove(1)
 ```
 
 </td>
