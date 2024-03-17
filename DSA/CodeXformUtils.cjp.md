@@ -347,6 +347,7 @@ map["key"] = map["key"] + 1;
 for (auto it = map.begin(); it != map.end(); ++it) {
     cout << it->first << ": " << it->second << endl;
 }
+
 for (const auto& pair : myMap) {
     std::cout << "Key: " << pair.first << std::endl;
 }
@@ -373,8 +374,8 @@ map.put("key", map.getOrDefault("key", 0) + 1);
 for (HashMap.Entry<String, Integer> entry : map.entrySet()) {
     System.out.println(entry.getKey() + ": " + entry.getValue());
 }
-// Iterating through the keys
-for (String key : myMap.keySet()) {
+
+for (String key : myMap.keySet()) { // Iterating through the keys
     System.out.println("Key: " + key);
 }
 
@@ -404,8 +405,8 @@ hash[cnt] = hash.get(cnt, []) + [i] # .append(i) modifies the list in place and 
 # Iteration
 for key, value in map.items():
     print(f"{key}: {value}")
-# Iterating Through Dictionary Keys
-for num in hash:
+
+for num in hash: # Iterating Through Dictionary Keys
     print(num)
 ```
 
