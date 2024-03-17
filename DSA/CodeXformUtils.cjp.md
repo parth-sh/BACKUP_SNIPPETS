@@ -106,6 +106,10 @@ for i in range(10, 0, -1):
 # Floor, Ceil
 import math
 math.floor(4.2), math.ceil(4.2)
+
+# divmod, quotient = dividend / divisor; remainder = dividend % divisor;
+quotient, remainder = divmod(dividend, divisor)
+n, digit = divmod(n, 10)
 ```
 
 </td>
