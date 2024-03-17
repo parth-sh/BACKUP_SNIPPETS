@@ -457,13 +457,13 @@ hashSet.contains(1);
 
 ```python
 # Declaration
-hashSet = set()
+seen = set()
 
 # Insert
-hashSet.add(1)
+seen.add(1)
 
 # Check if contains
-contains = 1 in hashSet
+contains = 1 in seen
 ```
 
 </td>
