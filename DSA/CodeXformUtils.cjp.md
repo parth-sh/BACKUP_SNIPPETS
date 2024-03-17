@@ -347,6 +347,9 @@ map["key"] = map["key"] + 1;
 for (auto it = map.begin(); it != map.end(); ++it) {
     cout << it->first << ": " << it->second << endl;
 }
+for (const auto& pair : myMap) {
+    std::cout << "Key: " << pair.first << std::endl;
+}
 ```
 
 </td>
@@ -369,6 +372,10 @@ map.put("key", map.getOrDefault("key", 0) + 1);
 // Iteration
 for (HashMap.Entry<String, Integer> entry : map.entrySet()) {
     System.out.println(entry.getKey() + ": " + entry.getValue());
+}
+// Iterating through the keys
+for (String key : myMap.keySet()) {
+    System.out.println("Key: " + key);
 }
 
 // TODO: Ordered HashMap
@@ -397,6 +404,9 @@ hash[cnt] = hash.get(cnt, []) + [i] # .append(i) modifies the list in place and 
 # Iteration
 for key, value in map.items():
     print(f"{key}: {value}")
+# Iterating Through Dictionary Keys
+for num in hash:
+    print(num)
 ```
 
 </td>
@@ -447,7 +457,6 @@ hashSet.contains(1);
 ```python
 # Declaration
 hashSet = set()
-hashSet = {}
 
 # Insert
 hashSet.add(1)
