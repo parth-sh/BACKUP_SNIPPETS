@@ -39,6 +39,11 @@ accumulate(arr, arr + n, 0);
 // Floor, Ceil
 #include <cmath>
 floor(num), ceil(num)
+
+// Absolute
+#include <cmath>
+abs(number)
+fabs(floatNumber)
 ```
 
 </td>
@@ -69,6 +74,9 @@ Arrays.stream(arr).sum();
 
 // Floor, Ceil
 Math.floor(num), Math.ceil(num)
+
+// Absolute
+Math.abs(number)
 ```
 
 </td>
@@ -110,6 +118,9 @@ math.floor(4.2), math.ceil(4.2)
 # divmod, quotient = dividend / divisor; remainder = dividend % divisor;
 quotient, remainder = divmod(dividend, divisor)
 n, digit = divmod(n, 10)
+
+# Absolute
+abs(number)
 ```
 
 </td>
