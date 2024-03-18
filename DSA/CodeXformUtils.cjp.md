@@ -451,6 +451,9 @@ hashSet.find(1) != hashSet.end()
 
 // Remove
 hashSet.erase(1)
+
+// Iterate
+for (const auto& item : my_set)
 ```
 
 </td>
@@ -468,6 +471,9 @@ hashSet.contains(1);
 
 // Remove
 hashSet.remove(1);
+
+// Iterate
+for (String item : my_set)
 ```
 
 </td>
@@ -486,6 +492,9 @@ contains = 1 in seen
 
 # Remove
 seen.remove(1)
+
+# Iterate
+for x in seen:
 ```
 
 </td>
