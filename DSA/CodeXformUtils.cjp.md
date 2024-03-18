@@ -355,6 +355,9 @@ for (auto it = map.begin(); it != map.end(); ++it) {
 for (const auto& pair : myMap) {
     std::cout << "Key: " << pair.first << std::endl;
 }
+
+// Remove
+hashmap.erase("key");
 ```
 
 </td>
@@ -382,6 +385,9 @@ for (HashMap.Entry<String, Integer> entry : map.entrySet()) {
 for (String key : myMap.keySet()) { // Iterating through the keys
     System.out.println("Key: " + key);
 }
+
+// Remove
+hashMap.remove("key");
 
 // TODO: Ordered HashMap
 ```
@@ -412,6 +418,9 @@ for key, value in map.items():
 
 for num in hash: # Iterating Through Dictionary Keys
     print(num)
+
+# Remove
+del hashMap["key"]
 ```
 
 </td>
