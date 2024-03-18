@@ -127,13 +127,14 @@ n, digit = divmod(n, 10)
 <td>
 
 ```cpp
+// Sorting
+sort(str.begin(), str.end())
 ```
 
 </td>
 <td>
 
 ```java
-
 // Compare strings
 boolean result = str1.equals(str2);
 
@@ -160,12 +161,19 @@ str.replaceAll("\\s+","");
 
 // SubString
 string.substring(start, end +1)
+
+// Sorting
+char[] charArray = str.toCharArray();
+Arrays.sort(charArray);
+String sortedStr = new String(charArray);
 ```
 
 </td>
 <td>
 
 ```python
+# Sorting
+sorted_str = ''.join(sorted(str))
 ```
 
 </td>
