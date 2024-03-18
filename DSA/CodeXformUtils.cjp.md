@@ -358,6 +358,8 @@ for (const auto& pair : myMap) {
 
 // Remove
 hashmap.erase("key");
+
+// TODO: Ordered HashMap
 ```
 
 </td>
@@ -421,6 +423,8 @@ for num in hash: # Iterating Through Dictionary Keys
 
 # Remove
 del hashMap["key"]
+
+# TODO: Ordered HashMap
 ```
 
 </td>
@@ -454,6 +458,8 @@ hashSet.erase(1)
 
 // Iterate
 for (const auto& item : my_set)
+
+// TODO: Ordered set
 ```
 
 </td>
@@ -474,6 +480,8 @@ hashSet.remove(1);
 
 // Iterate
 for (String item : my_set)
+
+// TODO: Ordered set
 ```
 
 </td>
@@ -495,6 +503,9 @@ seen.remove(1)
 
 # Iterate
 for x in seen:
+
+# Ordered Set
+sorted_list = sorted(seen)
 ```
 
 </td>
