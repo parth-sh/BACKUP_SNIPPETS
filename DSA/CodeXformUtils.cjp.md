@@ -127,6 +127,56 @@ abs(number)
 </tr>
 </table>
 
+
+# Pairs
+<table>
+<tr>
+<th>C++</th>
+<th>Java</th>
+<th>Python</th>
+</tr>
+<tr>
+<td>
+
+```cpp
+// Declaration
+#include <utility>
+pair<int, string> myPair;
+```
+
+</td>
+<td>
+
+```java
+// Declaration https://www.geeksforgeeks.org/creating-a-user-defined-printable-pair-class-in-java/
+class pair {
+    int first, second;
+    pair(int first, int second)
+    {
+        this.first = first;
+        this.second = second;
+    }
+    @Override public String toString()
+    {
+        return first + "," + second;
+    }
+}
+pair p = new pair(i + 1, i + 2);
+```
+
+</td>
+<td>
+
+```python
+# Declaration
+my_pair = (1, "Apple")
+```
+
+</td>
+</tr>
+</table>
+
+
 # String
 <table>
 <tr>
@@ -378,6 +428,12 @@ for (const auto& pair : myMap) {
 // Remove
 hashmap.erase("key");
 
+// Sort by value in decreasing order
+bool sortDesc(const pair<string, int>& a, const pair<string, int>& b) {
+    return a.second > b.second;
+}
+sort(vec.begin(), vec.end(), sortDesc);
+
 // TODO: Ordered HashMap
 ```
 
@@ -409,6 +465,9 @@ for (String key : myMap.keySet()) { // Iterating through the keys
 
 // Remove
 hashMap.remove("key");
+
+// Sort by value in decreasing order
+// Its a complex process
 
 // TODO: Ordered HashMap
 ```
@@ -442,6 +501,9 @@ for num in hash: # Iterating Through Dictionary Keys
 
 # Remove
 del hashMap["key"]
+
+# Sort by value in decreasing order
+hash = dict(sorted(hash.items(), key=lambda item: item[1], reverse=True))
 
 # TODO: Ordered HashMap
 ```
@@ -557,6 +619,14 @@ Arrays.stream(nums).filter(num -> num <= target).count();
 
 # Generator Expressions // Concise way to create generators
 count = sum(1 for num in nums if num <= target)
+
+sumation = sum(num for num in nums)
+
+grades = [88, 92, 79, 85, 67]
+all_passing = all(grade >= 65 for grade in grades) # Output: True
+
+words = ["apple", "banana", "cherry"]
+has_short_word = any(len(word) < 5 for word in words) # Output: False
 ```
 
 </td>
