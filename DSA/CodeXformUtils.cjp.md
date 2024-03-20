@@ -188,6 +188,9 @@ my_pair = (1, "Apple")
 <td>
 
 ```cpp
+// Length
+str.length()
+
 // Sorting
 sort(str.begin(), str.end())
 ```
@@ -199,8 +202,8 @@ sort(str.begin(), str.end())
 // Compare strings
 boolean result = str1.equals(str2);
 
-// String Length
-int len = str.length();
+// Length
+str.length();
 
 // String toCharArray
 String str = "jhgjhgjhgjh";
@@ -233,6 +236,9 @@ String sortedStr = new String(charArray);
 <td>
 
 ```python
+# Length
+len(str)
+
 # Sorting
 sorted_str = ''.join(sorted(str))
 ```
