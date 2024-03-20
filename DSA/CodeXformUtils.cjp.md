@@ -338,6 +338,10 @@ vec.push_back(5);
 
 // Sorting
 sort(vec.begin(), vec.end());
+
+// Sum
+#include <numeric>
+int sum = accumulate(vec.begin(), vec.end(), 0) // `0` is the initial sum value
 ```
 
 </td>
@@ -363,6 +367,9 @@ list.add(5);
 
 // Sorting
 Collections.sort(list);
+
+// Sum
+Arrays.stream(arr).sum()
 ```
 
 </td>
@@ -391,6 +398,9 @@ arr.append(5)
 # Sorting
 arr.sort()
 sorted_arr = sorted(arr) # to get a sorted list without modifying the original
+
+# Sum
+sum(arr)
 ```
 
 </td>
