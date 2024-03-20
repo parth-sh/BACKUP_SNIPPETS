@@ -400,7 +400,7 @@ arr.sort()
 sorted_arr = sorted(arr) # to get a sorted list without modifying the original
 
 # Sum
-sum(arr)
+sum(arr[0: k])
 ```
 
 ```python
