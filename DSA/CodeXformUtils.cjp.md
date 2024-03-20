@@ -557,6 +557,10 @@ hashSet.erase(1)
 for (const auto& item : my_set)
 
 // TODO: Ordered set
+
+// Set to List
+vector<int> ans(st.begin(), st.end());
+return ans;
 ```
 
 </td>
@@ -579,6 +583,9 @@ hashSet.remove(1);
 for (String item : my_set)
 
 // TODO: Ordered set
+
+// Set to List
+new ArrayList<>(hashSet)
 ```
 
 </td>
@@ -603,6 +610,9 @@ for x in seen:
 
 # Ordered Set
 sorted_list = sorted(seen)
+
+# Set to List
+list(seen)
 ```
 
 </td>
