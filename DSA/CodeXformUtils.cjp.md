@@ -403,6 +403,12 @@ sorted_arr = sorted(arr) # to get a sorted list without modifying the original
 sum(arr)
 ```
 
+```python
+# Tuples in Python: Immutable and Hashable
+var = ("Geeks", "for", "Geeks")
+tuple_constructor = tuple(("dsa", "developement", "deep learning"))
+```
+
 </td>
 </tr>
 </table>
