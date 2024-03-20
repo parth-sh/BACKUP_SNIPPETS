@@ -567,6 +567,9 @@ for (const auto& item : my_set)
 // Set to List
 vector<int> ans(st.begin(), st.end());
 return ans;
+
+// Clear
+hashSet.clear()
 ```
 
 </td>
@@ -591,7 +594,10 @@ for (String item : my_set)
 // TODO: Ordered set
 
 // Set to List
-new ArrayList<>(hashSet)
+new ArrayList<>(hashSet);
+
+// Clear
+hashSet.clear();
 ```
 
 </td>
@@ -619,6 +625,9 @@ sorted_list = sorted(seen)
 
 # Set to List
 list(seen)
+
+# Clear
+seen.clear()
 ```
 
 </td>
