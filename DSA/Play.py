@@ -1,17 +1,23 @@
-def inefficientSieveOfEratosthenes(n):
-    prime = [True] * (n+1)
-    prime[0] = prime[1] = False
-    p = 2
-    while(p <= n):
-        if prime[p]:
-            for num in range(p * p, n + 1, p):
-                prime[num] = False
-        p += 1
+def find_peak_element(nums):
+    n = len(nums)
     
-    for p in range(2, n+1):
-        if prime[p]:
-            print(p, end=" ")        
+    if n == 1:
+        return 0
+    if nums[0] > nums[1]:
+        return 0
+    if nums[n-2] < nums[n-1]:
+        return n-1
+    
+    lo, hi = 1, n-2
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        if nums[mid - 1] < nums[mid] and nums[mid] > nums[mid + 1]:
+            return mid
+        elif nums[mid] < nums[mid + 1]:
+            lo = mid + 1
+        else:  # nums[mid - 1] > nums[mid]
+            hi = mid - 1
+    return -1
 
-n = int(input())
-inefficientSieveOfEratosthenes(n)
-
+heights = list(map(int, input().split()))
+print(find_peak_element(heights))

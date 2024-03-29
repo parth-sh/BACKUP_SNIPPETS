@@ -1,6 +1,8 @@
 ## Array Common Questions
 Sub array questions: Prefix sum is commonly used here
 
+Sliding Window protocol: Most Question related to calculation of sub array or substring
+
 ## String Common Properties
 Anagram Problems: Sorted version of anagrams are same, Frequency Count is same
 Palindrome Problem: Two-pointer Technique: Similar from front and back, or reversing a string in place
