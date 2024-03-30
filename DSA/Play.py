@@ -1,16 +1,6 @@
-class Stack:
-    def __init__(self):
-        self.arr = []
-        self.size = 0
-
-    def push(self):
-        pass
-    
-    def pop(self):
-        pass
-
-    def peek(self):
-        pass
-
-    def size(self):
-        pass
+myStack = []
+myStack.append(1)
+myStack.append(2)
+myStack.append(3)
+myStack.pop()
+print(myStack)

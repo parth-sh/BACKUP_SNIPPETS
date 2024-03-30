@@ -193,6 +193,9 @@ str.length()
 
 // Sorting
 sort(str.begin(), str.end())
+
+// Iterate
+for (char ch : str)
 ```
 
 </td>
@@ -230,6 +233,9 @@ string.substring(start, end +1)
 char[] charArray = str.toCharArray();
 Arrays.sort(charArray);
 String sortedStr = new String(charArray);
+
+// Iterate
+for (char ch : str.toCharArray())
 ```
 
 </td>
@@ -241,6 +247,9 @@ len(str)
 
 # Sorting
 sorted_str = ''.join(sorted(str))
+
+# Iterate
+for ch in str:
 ```
 
 </td>
@@ -628,6 +637,72 @@ list(seen)
 
 # Clear
 seen.clear()
+```
+
+</td>
+</tr>
+</table>
+
+# Stack
+<table>
+<tr>
+<th>Stack in C++ STL</th>
+<th>Stack in Java Collections</th>
+<th>Stack in Python</th>
+</tr>
+<tr>
+<td>
+
+```cpp
+// Declaration
+#include <stack>
+stack<int> myStack;
+
+// Push
+myStack.push(1)
+
+// Pop
+myStack.pop()
+
+// isEmpty
+myStack.empty()
+```
+
+</td>
+<td>
+
+```java
+// Declaration
+import java.util.Stack;
+Stack<Integer> myStack = new Stack<>();
+
+// Push
+myStack.push(1)
+
+// Pop
+myStack.pop()
+
+// isEmpty
+myStack.empty()
+```
+
+</td>
+
+<td>
+
+```python
+# Declaration
+myStack = []
+
+# Push
+myStack.append(1)
+
+# Pop
+myStack.pop()
+
+# isEmpty
+if not myStack
+if len(myStack) == 0:
 ```
 
 </td>
