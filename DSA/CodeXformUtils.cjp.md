@@ -512,7 +512,7 @@ hashMap.remove("key");
 hash = {}
 from typing import Dict # With specified types using type hints (Python 3.9+ for more specific types):
 hash: Dict[str, int] = {}
-matches = {"{": "}", "[": "]", "(": ")"}
+matches = {"}": "{", "]": "[", ")": "("}
 
 # Key Check
 if key in mapName:
