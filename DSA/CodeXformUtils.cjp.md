@@ -44,6 +44,21 @@ floor(num), ceil(num)
 #include <cmath>
 abs(number)
 fabs(floatNumber)
+
+// Object Check
+// C++ doesn't have a built-in notion of object identity in the same way as Java and Python, 
+// because it doesn't have garbage-collected objects or a universal object superclass. 
+// However, you can check if two pointers or references refer to 
+// the same memory address, which is effectively checking 
+// if they are the same object:
+MyClass obj1;
+MyClass obj2;
+MyClass* ptr1 = &obj1;
+MyClass* ptr2 = &obj1;
+
+if (ptr1 == ptr2) {
+    // ptr1 and ptr2 point to the same object
+}
 ```
 
 </td>
@@ -77,6 +92,15 @@ Math.floor(num), Math.ceil(num)
 
 // Absolute
 Math.abs(number)
+
+// Object Check
+MyClass obj1 = new MyClass();
+MyClass obj2 = new MyClass();
+MyClass obj3 = obj1;
+
+obj1 == obj2 // false
+
+obj1 == obj3 // true
 ```
 
 </td>
@@ -121,6 +145,14 @@ n, digit = divmod(n, 10)
 
 # Absolute
 abs(number)
+
+# Object Check
+obj1 = MyClass()
+obj2 = MyClass()
+obj3 = obj1
+
+if obj1 is obj2: # false
+if obj1 is obj3: # true
 ```
 
 </td>
