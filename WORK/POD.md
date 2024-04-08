@@ -27,12 +27,32 @@ STRAPI_URL=https://
 #STRAPI_URL=http://ec2-65-0-12-76.ap-south-1.compute.amazonaws.com:1337
 #STRAPI_URL=http://ec2-3-109-208-161.ap-south-1.compute.amazonaws.com:1337
 
+
+## PROD .env
+NEXT_PUBLIC_API_FRONTEND_URL=https://podworld.in
+NEXT_PUBLIC_API_HOST=api.podworld.in
+NEXT_PUBLIC_API_PROTOCOL=https
+NEXT_PUBLIC_BACKEND_URL=https://api.podworld.in
+NEXT_PUBLIC_DO_SPACES_ACCESS_KEY_ID=5CTD6OZL3WNSJG2YGSDG
+NEXT_PUBLIC_DO_SPACES_SECRET_ACCESS_KEY=dNtH4dodDJYsBAt/dFIgm9lqP1xOkgXoZM1VoM0bZEI
+NEXT_PUBLIC_DO_SPACE_BUCKET_NAME=pod-prod
+NEXT_PUBLIC_FACEBOOK_PIXEL_ID=1641888729205413
+NEXT_PUBLIC_FRONTEND_URL=https://podworld.in
+NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID=GTM-W5H2R4S
+NEXT_PUBLIC_IMAGEKIT_URL=https://ik.imagekit.io/q2jhoz54h/pod-prod
+NEXT_PUBLIC_RAZORPAY_KEY=rzp_test_87lAUO23rVNWgu
+NEXT_PUBLIC_SENTRY_DSN=https://93d6065ec33b4663a7f8de4826e96af5@o1431457.ingest.sentry.io/4503895769350144
+NODE_VERSION=16.18.0
+SENTRY_AUTH_TOKEN=d00ec27d523643df94358b694313b75a326c8ef634bf405eb3bf4535ad2e1a93
+STRAPI_URL=https://strapi.podworld.in
+
 ## Deployment
 
 npm run build
 
 PATH=/home/ubuntu/.nvm/versions/node/v16.19.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 export PATH="/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+
 pm2 list
 
 pm2 kill
