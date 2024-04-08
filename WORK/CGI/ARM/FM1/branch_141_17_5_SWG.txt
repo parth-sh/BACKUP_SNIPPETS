@@ -1,0 +1,10 @@
+branch_141_17_5_SWG old code changes for FM1
+http://wutl-svnedg-01.ams.com:18080/svn/rtarm_mobile/branches/branch_141_17_5_SWG
+
+SVN old FM1 repo Link
+http://wutl-svnedg-01.ams.com:18080/svn/ARM/branches
+
+SVN old repo ticket number for FM1 code: ISS00194291
+
+Login Name: parth_sharma
+Password  : Password1
