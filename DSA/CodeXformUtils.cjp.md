@@ -689,16 +689,19 @@ seen.clear()
 ```cpp
 // Declaration
 #include <stack>
-stack<int> myStack;
+stack<int> stk;
 
 // Push
-myStack.push(1)
+stk.push(1)
 
 // Pop
-myStack.pop()
+stk.pop()
 
 // isEmpty
-myStack.empty()
+stk.empty()
+
+// Top
+stk.top()
 ```
 
 </td>
@@ -707,16 +710,19 @@ myStack.empty()
 ```java
 // Declaration
 import java.util.Stack;
-Stack<Integer> myStack = new Stack<>();
+Stack<Integer> stack = new Stack<>();
 
 // Push
-myStack.push(1)
+stack.push(1)
 
 // Pop
-myStack.pop()
+stack.pop()
 
 // isEmpty
-myStack.empty()
+stack.empty()
+
+// Top
+stack.peek()
 ```
 
 </td>
@@ -725,17 +731,20 @@ myStack.empty()
 
 ```python
 # Declaration
-myStack = []
+stack = []
 
 # Push
-myStack.append(1)
+stack.append(1)
 
 # Pop
-myStack.pop()
+stack.pop()
 
 # isEmpty
-if not myStack
-if len(myStack) == 0:
+if not stack
+if len(stack) == 0:
+
+# Top
+stack[-1]
 ```
 
 </td>
