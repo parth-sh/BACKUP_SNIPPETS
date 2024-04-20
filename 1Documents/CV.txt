@@ -1,17 +1,30 @@
-CGI 09/2022
-- Enhanced website speed; optimized code with Java, Angular, JUnit.
-- Developed/refined REST APIs using Spring Boot.
-- Contributed to Smart Metering Monitor, Portugal; employed Java, Angular, AWS, JUnit, Kafka, Apache Camel.
-- Identified/resolved bugs using Rightcoder, CAST/SAST.
-- Managed cloud setups via Jenkins; performance monitoring with Rancher.
-- Guided newcomers on Kafka, Redis, SwaggerUI.
+CGI
+Software Engineer
+Bengaluru, IN
+Oct 2022 - Present
+Focused on debugging, optimizing code, and adding new features based on client feedback. Utilized Java, Angular, JUnit for development, and REST APIs with Spring Boot.
+Contributed To The Smart Metering Monitor Project In Portugal, Using Java, AWS, JUnit, Kafka, Apache Camel For Backend API, And Angular, Jasmine, TailwindCSS For Frontend Development.
+Proactively Identified And Resolved Code Bugs, Employing Rightcoder And CAST/SAST For Detailed Analysis.
+Managed Cloud Setups Via Jenkins, Monitored System Performance With Rancher, And Addressed Issues.
+Guided New Team Members On Kafka, Redis, And Swagger UI Implementation.
 
-Tradecred 11/20 - 03/22
-- Developed an OAuth2-based authentication service for user login and microservices integration.
-- Automated data retrieval from MCA.gov.in with a tool using Tesseract-OCR and AWS, reducing operational time by 80%.
-- Built an automation tool for new user onboarding, extracting PAN and Aadhaar from PDFs with 80-90% efficiency.
-- Improved TradeCred app performance and UX by refining React Native code.
-- Worked as a frontend engineer, integrating components for business activities, innovating with MVC architecture, and optimizing backend.
+Wint Wealth
+Software Development Engineer
+Bengaluru, IN
+Apr 2022 – Sep 2022
+Integrated Redis to the architecture
+Set up CI/CD pipeline and exceeded requirements in each stage.
+Full-stack developer - Wrote and reviewed code for Java Spring Boot and wrote test cases.
+
+TRADECRED
+Software Development Engineer
+Mumbai, IN
+Nov 2020 – Mar 2022
+Developed A Common Authentication Service Using OAuth2, Enhancing User Login And Microservices Integration.
+Created A Tool That Reduced Operational Time By 80\%, Automating Data Retrieval From MCA.Gov.In Using Tesseract-OCR And AWS Serverless Technology.
+Contributed To An Automation Tool For New User Onboarding, Extracting PAN And Aadhaar Details From PDFs With 80-90\% Efficiency, Reducing Manual Sorting.
+Enhanced The TradeCred App's Performance And User Experience By Refining The React Native Codebase.
+
 
 LANGUAGES
 Java 8, JavaScript, TypeScript, Ruby

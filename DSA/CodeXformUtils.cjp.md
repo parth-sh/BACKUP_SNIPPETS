@@ -742,6 +742,97 @@ if len(myStack) == 0:
 </tr>
 </table>
 
+# Queue
+<table>
+<tr>
+<th>Queue in C++ STL</th>
+<th>Queue in Java Collections</th>
+<th>Queue in Python</th>
+</tr>
+<tr>
+<td>
+
+```cpp
+// Declaration
+std::queue<int> q;
+
+// Push
+q.push(1);
+
+// isEmpty
+q.empty()
+
+// Front
+q.front()
+
+// Pop
+q.pop()
+```
+
+</td>
+<td>
+
+```java
+// Declaration
+Queue<Integer> q = new LinkedList<>();
+
+// Push
+q.add(1);
+
+// isEmpty
+q.isEmpty()
+
+// Front
+q.peek()
+
+// Pop
+q.remove()
+```
+
+</td>
+
+<td>
+
+```python
+# Implementation using list
+# Declaration
+queue = []
+
+# Push
+queue.append('a')
+
+# isEmpty
+len(queue) == 0
+not queue
+
+# Front
+queue[0]
+
+# Pop
+queue.pop(0)
+
+# Implementation using queue.Queue
+# Declaration
+from queue import Queue
+q = Queue()
+
+# Push
+q.put(1)
+
+# isEmpty
+q.empty()
+
+# Front
+q.queue[0]
+
+# Pop
+q.get()
+```
+
+</td>
+</tr>
+</table>
+
 # Lazy Evaluation Techniques
 TODO: See tutorial for below and document chaining iterators, filtering, and mapping, first start with java
 <table>
