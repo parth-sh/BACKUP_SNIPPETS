@@ -762,7 +762,7 @@ q.push(1);
 // isEmpty
 q.empty()
 
-// Front
+// Peek
 q.front()
 
 // Pop
@@ -782,7 +782,7 @@ q.add(1);
 // isEmpty
 q.isEmpty()
 
-// Front
+// Peek
 q.peek()
 
 // Pop
@@ -805,7 +805,7 @@ queue.append('a')
 len(queue) == 0
 not queue
 
-# Front
+# Peek
 queue[0]
 
 # Pop
