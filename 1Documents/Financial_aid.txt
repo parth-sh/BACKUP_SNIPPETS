@@ -2,3 +2,24 @@ I’m a student from India and want to learn Front end development. I think it w
 
 My main career goal is to learn every day. I really want to learn and to progress in my career. Programming requires constant learning and improving. Taking this course will help me to learn and study this Data Science and also to implement it. It can help me advance in my knowledge. This course will help me in defining Data Science, understanding how Python could potentially impact our business and industry, to write a thought leadership piece regarding use cases and industry potential of Front end development, explain Front end to clients, friends, joining a community of economists, business leaders, entrepreneurs, and technologists that are shaping this technology as we speak. Identifying which aspects of Front end development seem most important and relevant to us, Walking away with a strong foundation in where Front end development is going, what it does, and how to prepare for it. Frontend development course will help me achieve it to learn. Courses on Coursera helped me to greatly increase my programming knowledge in the past.
 https://github.com/connectaditya/Financial-AID-application-for-coursera-/blob/master/README.md
+
+
+aws
+cgi
+chat.openai.com
+chrome://settings/
+console.aws.amazon.com
+geeksforgeeks
+github.com
+google.com
+laankejkbhbdhmipfmgcngdelahlfoji
+learnbay
+leetcode
+lintcode
+miro
+spring.academy
+stackoverflow.com
+takeuforward.org
+vmware
+wikipedia
+zoom
