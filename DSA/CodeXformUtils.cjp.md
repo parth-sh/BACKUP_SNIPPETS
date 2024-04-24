@@ -364,6 +364,7 @@ Arrays.sort(arr);
 // Initialization
 #include <vector>
 std::vector<int> vec = {1, 2, 3, 4, 5};
+vector<vector<int>> ans(3);
 
 // Vector Fill
 fill(vec.begin(), vec.end(), 10);
