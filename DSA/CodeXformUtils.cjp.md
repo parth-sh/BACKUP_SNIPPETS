@@ -776,6 +776,9 @@ q.front()
 
 // Pop
 q.pop()
+
+// Size
+q.size()
 ```
 
 </td>
@@ -796,6 +799,9 @@ q.peek()
 
 // Pop
 q.remove()
+
+// Size
+q.size()
 ```
 
 </td>
@@ -820,6 +826,9 @@ queue[0]
 # Pop
 queue.pop(0)
 
+# Size
+len(q)
+
 # Implementation using queue.Queue
 # Declaration
 from queue import Queue
@@ -836,6 +845,9 @@ q.queue[0]
 
 # Pop
 q.get()
+
+# Size
+q.qsize()
 ```
 
 </td>
