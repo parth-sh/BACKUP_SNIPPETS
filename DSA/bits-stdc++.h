@@ -1,5 +1,3 @@
-// https://gist.github.com/reza-ryte-club/97c39f35dab0c45a5d924dd9e50c445f
-
 // C++ includes used for precompiling -*- C++ -*-
 
 // Copyright (C) 2003-2013 Free Software Foundation, Inc.
@@ -59,6 +57,8 @@
 #include <ctgmath>
 #include <cwchar>
 #include <cwctype>
+#include <exception>
+#include <stdexcept>
 #endif
 
 // C++
@@ -116,3 +116,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #endif
+
+// Also writing "using namespace std;" here so that you dont need to write it everytime you start a cpp file
+
+using namespace std;
