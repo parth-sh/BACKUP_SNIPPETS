@@ -384,6 +384,9 @@ sort(vec.begin(), vec.end());
 // Sum
 #include <numeric>
 int sum = accumulate(vec.begin(), vec.end(), 0) // `0` is the initial sum value
+
+// Reverse
+reverse(vec.begin(), vec.end());
 ```
 
 </td>
@@ -412,6 +415,9 @@ Collections.sort(list);
 
 // Sum
 Arrays.stream(arr).sum()
+
+// Reverse
+Collections.reverse(list);
 ```
 
 </td>
@@ -443,6 +449,9 @@ sorted_arr = sorted(arr) # to get a sorted list without modifying the original
 
 # Sum
 sum(arr[0: k])
+
+# Reverse
+arr.reverse()
 ```
 
 ```python
