@@ -496,28 +496,28 @@ tuple_constructor = tuple(("dsa", "developement", "deep learning"))
 ```cpp
 // Declarartion
 #include <map>
-map<string, int> map;
+map<string, int> hash;
 
 // Key Check
-if (mapName.find(key) != mapName.end()) {}
+if (hash.find(key) != hash.end()) {}
 
 // Key-Value Addition
-hashMap["key"] = 1;
+hash["key"] = 1;
 
 // Inc. If Absent
-map["key"] = map["key"] + 1;
+hash["key"] = hash["key"] + 1;
 
 // Iteration
-for (auto it = map.begin(); it != map.end(); ++it) {
+for (auto it = hash.begin(); it != hash.end(); ++it) {
     cout << it->first << ": " << it->second << endl;
 }
 
-for (const auto& pair : myMap) {
+for (const auto& pair : hash) {
     std::cout << "Key: " << pair.first << std::endl;
 }
 
 // Remove
-hashmap.erase("key");
+hash.erase("key");
 
 // Sort by value in decreasing order
 bool sortDesc(const pair<string, int>& a, const pair<string, int>& b) {
