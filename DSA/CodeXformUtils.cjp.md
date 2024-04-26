@@ -229,6 +229,9 @@ my_pair = (1, "Apple")
 <td>
 
 ```cpp
+// Declaration
+string str = "Hello, World!";
+
 // Length
 str.length()
 
@@ -243,6 +246,9 @@ for (char ch : str)
 <td>
 
 ```java
+// Declaration
+String str1 = "Hello, World!";
+
 // Compare strings
 boolean result = str1.equals(str2);
 
@@ -283,14 +289,17 @@ for (char ch : str.toCharArray())
 <td>
 
 ```python
+# Declaration
+str_var = "Hello, World!"
+
 # Length
-len(str)
+len(str_var)
 
 # Sorting
-sorted_str = ''.join(sorted(str))
+sorted_str = ''.join(sorted(str_var))
 
 # Iterate
-for ch in str:
+for ch in str_var:
 ```
 
 </td>
