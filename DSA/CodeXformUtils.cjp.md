@@ -323,7 +323,7 @@ int arr[5] = {1, 2, 3, 4, 5}; // With size specification
 int arr[5]; // Default, uninitialized
 
 // Array Fill
-std::fill_n(arr, 5, 10); // Fill an array `arr` of size 5 with 10s.
+fill_n(arr, 5, 10); // Fill an array `arr` of size 5 with 10s.
 
 // Length
 int size = sizeof(arr) / sizeof(arr[0]);
@@ -381,7 +381,7 @@ Arrays.sort(arr);
 ```cpp
 // Initialization
 #include <vector>
-std::vector<int> vec = {1, 2, 3, 4, 5};
+vector<int> vec = {1, 2, 3, 4, 5};
 vector<vector<int>> ans(3);
 
 // Vector Fill
@@ -513,7 +513,7 @@ for (auto it = hash.begin(); it != hash.end(); ++it) {
 }
 
 for (const auto& pair : hash) {
-    std::cout << "Key: " << pair.first << std::endl;
+    cout << "Key: " << pair.first << endl;
 }
 
 // Remove
@@ -523,6 +523,10 @@ hash.erase("key");
 bool sortDesc(const pair<string, int>& a, const pair<string, int>& b) {
     return a.second > b.second;
 }
+// Convert the hashmap to a vector of pairs
+vector<pair<string, int>> vec(hash.begin(), hash.end());
+
+// Sort the vector by value using the custom comparator function
 sort(vec.begin(), vec.end(), sortDesc);
 
 // TODO: Ordered HashMap
@@ -791,7 +795,7 @@ stack[-1]
 
 ```cpp
 // Declaration
-std::queue<int> q;
+queue<int> q;
 
 // Push
 q.push(1);
