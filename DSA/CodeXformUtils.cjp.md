@@ -22,6 +22,9 @@ INT_MAX
 (int)x
 int a = ch - '0';
 
+// To String
+to_string(num)
+
 // ASCII code
 (int)c
 
@@ -73,6 +76,9 @@ Integer.MAX_VALUE
 (int)x
 int a = ch - '0';
 
+// To String
+Integer.toString(num);
+
 // ASCII code
 (int)c
 
@@ -113,6 +119,9 @@ int(2**31 - 1)
 
 # To Int
 int(x)
+
+# To String
+str(num)
 
 # ASCII code
 ord(c)
