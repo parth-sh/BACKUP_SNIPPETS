@@ -621,8 +621,8 @@ hash = dict(sorted(hash.items(), key=lambda item: item[1], reverse=True))
 
 ```cpp
 // Declaration
-#include <set>
-set<int> hashSet;
+#include <unordered_set>
+unordered_set<int> hashSet;
 
 // Insert
 hashSet.insert(1);
