@@ -62,6 +62,10 @@ MyClass* ptr2 = &obj1;
 if (ptr1 == ptr2) {
     // ptr1 and ptr2 point to the same object
 }
+
+// Pow
+#include <cmath>
+pow(base, exponent);
 ```
 
 </td>
@@ -107,6 +111,9 @@ MyClass obj3 = obj1;
 obj1 == obj2 // false
 
 obj1 == obj3 // true
+
+// Pow
+Math.pow(base, exponent);
 ```
 
 </td>
@@ -162,6 +169,9 @@ obj3 = obj1
 
 if obj1 is obj2: # false
 if obj1 is obj3: # true
+
+# Pow
+pow(base, exponent)
 ```
 
 </td>
