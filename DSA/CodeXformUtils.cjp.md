@@ -495,8 +495,8 @@ tuple_constructor = tuple(("dsa", "developement", "deep learning"))
 
 ```cpp
 // Declarartion
-#include <map>
-map<string, int> hash;
+#include <unordered_map>
+unordered_map<string, int> hash;
 
 // Key Check
 if (hash.find(key) != hash.end()) {}
