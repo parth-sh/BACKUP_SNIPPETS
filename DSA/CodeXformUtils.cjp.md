@@ -622,16 +622,16 @@ hash = dict(sorted(hash.items(), key=lambda item: item[1], reverse=True))
 ```cpp
 // Declaration
 #include <unordered_set>
-unordered_set<int> hashSet;
+unordered_set<int> visited;
 
 // Insert
-hashSet.insert(1);
+visited.insert(1);
 
 // Check if contains
-hashSet.find(1) != hashSet.end()
+visited.find(1) != visited.end()
 
 // Remove
-hashSet.erase(1)
+visited.erase(1)
 
 // Iterate
 for (const auto& item : my_set)
@@ -643,7 +643,7 @@ vector<int> ans(st.begin(), st.end());
 return ans;
 
 // Clear
-hashSet.clear()
+visited.clear()
 ```
 
 </td>
