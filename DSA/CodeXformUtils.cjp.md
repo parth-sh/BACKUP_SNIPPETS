@@ -389,10 +389,17 @@ Arrays.sort(arr);
 <td>
 
 ```cpp
-// Initialization
+// Variable Initialization
 #include <vector>
 vector<int> vec = {1, 2, 3, 4, 5};
 vector<vector<int>> ans(3);
+
+// SubList creation / Vector copy initialization
+vector<int> sublist(v.begin(), v.begin() + idx + 1); // 0 to idx
+vector<int> sublist(v.begin() + idx + 1, v.end());  // idx + 1 to n
+
+vector<int> sublist;
+sublist.assign(v.begin() + 1, v.end() - 1)); // 1 to n - 2
 
 // Vector Fill
 fill(vec.begin(), vec.end(), 10);
@@ -421,10 +428,13 @@ reverse(vec.begin(), vec.end());
 <td>
 
 ```java
-// Initialization
+// Variable Initialization
 import java.util.ArrayList;
 ArrayList<Integer> arrayList = new ArrayList<>();
 List<Integer> list = List.of(1, 2, 3);
+
+// SubList creation
+List<Integer> sublist = original.subList(1, 4);
 
 // List Fill
 Collections.fill(list, 10);
@@ -452,8 +462,11 @@ Collections.reverse(list);
 <td>
 
 ```python
-# Initialization
+# Variable Initialization
 arr = [1, 2, 3, 4, 5]
+
+# SubList Creation
+sublist = original[1:4]
 
 # List Fill
 arr = [10] * 5 # Create a list of five 10s.
