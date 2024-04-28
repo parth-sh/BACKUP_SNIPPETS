@@ -156,6 +156,29 @@ class BinaryTree {
             binaryTreeFromPreorderAndInorder(rightpreorder, rightinorder);
         return root;
     }
+
+    // 106. Construct Binary Tree from Inorder and Postorder Traversal
+    Node *binaryTreeFromInorderAndPostorder(vector<int> &inorder,
+                                            vector<int> &postorder) {
+        if (inorder.size() == 0 || postorder.size() == 0) {
+            return NULL;
+        }
+        int x = postorder[postorder.size() - 1];
+        Node *root = new Node(x);
+        int i = findIndex(inorder, x);
+
+        vector<int> leftinorder(inorder.begin(), inorder.begin() + i);
+        vector<int> leftpostorder(postorder.begin(), postorder.begin() + i);
+        root->left =
+            binaryTreeFromInorderAndPostorder(leftinorder, leftpostorder);
+
+        vector<int> rightinorder(inorder.begin() + i + 1, inorder.end());
+        vector<int> rightpostorder(postorder.begin() + i, postorder.end() - 1);
+        root->right =
+            binaryTreeFromInorderAndPostorder(rightinorder, rightpostorder);
+
+        return root;
+    }
 };
 
 int main() {
@@ -181,11 +204,11 @@ int main() {
 
     // bt.allordertraversal(root);
 
-    vector<int> preorder = {3, 9, 20, 15, 7};
-    vector<int> inorder = {9, 3, 15, 20, 7};
-    Node *root = bt.binaryTreeFromPreorderAndInorder(preorder, inorder);
-    bt.levelorder(root);
-    cout << endl;
+    // vector<int> preorder = {3, 9, 20, 15, 7};
+    // vector<int> inorder = {9, 3, 15, 20, 7};
+    // Node *root = bt.binaryTreeFromPreorderAndInorder(preorder, inorder);
+    // bt.levelorder(root);
+    // cout << endl;
 
     return 0;
 }
