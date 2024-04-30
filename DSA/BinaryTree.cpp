@@ -1,11 +1,11 @@
 #include "bits-stdc++.h"
 using namespace std;
 
-struct Node {
-    struct Node *left, *right;
-    int data;
-    Node(int val) {
-        data = val;
+struct TreeNode {
+    struct TreeNode *left, *right;
+    int val;
+    TreeNode(int val) {
+        val = val;
         left = NULL;
         right = NULL;
     }
@@ -28,48 +28,48 @@ class BinaryTree {
     }
 
    public:
-    void preorder(Node *root)  // TC: O(N), SC: O(logN)
+    void preorder(TreeNode *root)  // TC: O(N), SC: O(logN)
     {
         if (root == NULL) {
             return;
         }
-        cout << root->data << " ";
+        cout << root->val << " ";
         preorder(root->left);
         preorder(root->right);
     }
 
-    void inorder(Node *root)  // TC: O(N), SC: O(logN)
+    void inorder(TreeNode *root)  // TC: O(N), SC: O(logN)
     {
         if (root == NULL) {
             return;
         }
         inorder(root->left);
-        cout << root->data << " ";
+        cout << root->val << " ";
         inorder(root->right);
     }
 
-    void postorder(Node *root)  // TC: O(N), SC: O(logN)
+    void postorder(TreeNode *root)  // TC: O(N), SC: O(logN)
     {
         if (root == NULL) {
             return;
         }
         postorder(root->left);
         postorder(root->right);
-        cout << root->data << " ";
+        cout << root->val << " ";
     }
 
-    void levelorder(Node *root) {
+    void levelorder(TreeNode *root) {
         if (root == NULL) {
             return;
         }
-        queue<Node *> q;
+        queue<TreeNode *> q;
         q.push(root);
         while (!q.empty()) {
             int n = q.size();
             for (int i = 0; i < n; i++) {
-                Node *temp = q.front();
+                TreeNode *temp = q.front();
                 q.pop();
-                cout << temp->data << " ";
+                cout << temp->val << " ";
                 if (temp->left) {
                     q.push(temp->left);
                 }
@@ -81,11 +81,11 @@ class BinaryTree {
     }
 
     // Level Order to Binary Tree
-    Node *insertLevelOrder(vector<int> &arr, int i,
-                           int n)  // TC: O(N), SC: O(n) + O(logN)
+    TreeNode *insertLevelOrder(vector<int> &arr, int i,
+                               int n)  // TC: O(N), SC: O(n) + O(logN)
     {
         if (i < n) {
-            Node *root = new Node(arr[i]);
+            TreeNode *root = new TreeNode(arr[i]);
 
             root->left = insertLevelOrder(arr, 2 * i + 1, n);
             root->right = insertLevelOrder(arr, 2 * i + 2, n);
@@ -95,35 +95,35 @@ class BinaryTree {
     }
 
     // All order traversal Preorder, Inorder, Postorder
-    void allordertraversal(Node *root) {
-        stack<pair<Node *, int>> st;
+    void allordertraversal(TreeNode *root) {
+        stack<pair<TreeNode *, int>> st;
         vector<vector<int>> ans(3);
         if (root == NULL) {
             return;
         }
         st.push({root, 1});
         while (!st.empty()) {
-            pair<Node *, int> it = st.top();
-            Node *temp = it.first;
+            pair<TreeNode *, int> it = st.top();
+            TreeNode *temp = it.first;
             int touches = it.second;
             st.pop();
 
             if (touches == 1) {
-                ans[0].push_back(temp->data);
+                ans[0].push_back(temp->val);
                 touches++;
                 st.push({temp, touches});
                 if (temp->left) {
                     st.push({temp->left, 1});
                 }
             } else if (touches == 2) {
-                ans[1].push_back(temp->data);
+                ans[1].push_back(temp->val);
                 touches++;
                 st.push({temp, touches});
                 if (temp->right) {
                     st.push({temp->right, 1});
                 }
             } else {
-                ans[2].push_back(temp->data);
+                ans[2].push_back(temp->val);
             }
         }
         for (auto x : ans) {
@@ -135,13 +135,13 @@ class BinaryTree {
     }
 
     // 105. Construct Binary Tree from Preorder and Inorder Traversal
-    Node *binaryTreeFromPreorderAndInorder(vector<int> &preorder,
-                                           vector<int> &inorder) {
+    TreeNode *binaryTreeFromPreorderAndInorder(vector<int> &preorder,
+                                               vector<int> &inorder) {
         if (preorder.size() == 0 || inorder.size() == 0) {
             return NULL;
         }
         int rootIndexInInorder = findIndex(inorder, preorder[0]);
-        Node *root = new Node(preorder[0]);
+        TreeNode *root = new TreeNode(preorder[0]);
         vector<int> leftinorder(inorder.begin(),
                                 inorder.begin() + rootIndexInInorder);
         vector<int> leftpreorder(preorder.begin() + 1,
@@ -158,13 +158,13 @@ class BinaryTree {
     }
 
     // 106. Construct Binary Tree from Inorder and Postorder Traversal
-    Node *binaryTreeFromInorderAndPostorder(vector<int> &inorder,
-                                            vector<int> &postorder) {
+    TreeNode *binaryTreeFromInorderAndPostorder(vector<int> &inorder,
+                                                vector<int> &postorder) {
         if (inorder.size() == 0 || postorder.size() == 0) {
             return NULL;
         }
         int x = postorder[postorder.size() - 1];
-        Node *root = new Node(x);
+        TreeNode *root = new TreeNode(x);
         int i = findIndex(inorder, x);
 
         vector<int> leftinorder(inorder.begin(), inorder.begin() + i);
@@ -179,13 +179,70 @@ class BinaryTree {
 
         return root;
     }
+
+    vector<int> morrisInorderTraversal(TreeNode *root) {
+        vector<int> inorder;
+        if (root == NULL) {
+            return inorder;
+        }
+        TreeNode *curr = root;
+        while (curr) {
+            if (curr->left != NULL) {
+                TreeNode *prev = curr->left;
+                while (prev->right && prev->right != curr) {
+                    prev = prev->right;
+                }
+                if (prev->right == NULL) {
+                    prev->right = curr;
+                    curr = curr->left;
+                }
+                if (prev->right == curr) {
+                    prev->right = NULL;
+                    inorder.push_back(curr->val);
+                    curr = curr->right;
+                }
+            } else {
+                inorder.push_back(curr->val);
+                curr = curr->right;
+            }
+        }
+    }
+
+    vector<int> morrisPreorderTraversal(TreeNode *root) {
+        vector<int> preorder;
+        if (root == NULL) {
+            return preorder;
+        }
+        TreeNode *curr = root;
+        while (curr) {
+            if (curr->left != NULL) {
+                TreeNode *prev = curr->left;
+                while (prev->right && prev->right != curr) {
+                    prev = prev->right;
+                }
+                if (prev->right == NULL) {
+                    prev->right = curr;
+                    preorder.push_back(curr->val);
+                    curr = curr->left;
+                }
+                if (prev->right == curr) {
+                    prev->right = NULL;
+                    curr = curr->right;
+                }
+            } else {
+                preorder.push_back(curr->val);
+                curr = curr->right;
+            }
+        }
+        return preorder;
+    }
 };
 
 int main() {
-    // Node *root = new Node(1);
-    // root->left = new Node(2);
-    // root->right = new Node(3);
-    // root->left->right = new Node(5);
+    // TreeNode *root = new TreeNode(1);
+    // root->left = new TreeNode(2);
+    // root->right = new TreeNode(3);
+    // root->left->right = new TreeNode(5);
 
     BinaryTree bt;
     // bt.preorder(root);
@@ -198,7 +255,7 @@ int main() {
     // cout << endl;
 
     // vector<int> nums = {1, 2, 3, 4, 5};
-    // Node *root2 = bt.insertLevelOrder(nums, 0, nums.size());
+    // TreeNode *root2 = bt.insertLevelOrder(nums, 0, nums.size());
     // bt.levelorder(root2);
     // cout << endl;
 
@@ -206,7 +263,7 @@ int main() {
 
     // vector<int> preorder = {3, 9, 20, 15, 7};
     // vector<int> inorder = {9, 3, 15, 20, 7};
-    // Node *root = bt.binaryTreeFromPreorderAndInorder(preorder, inorder);
+    // TreeNode *root = bt.binaryTreeFromPreorderAndInorder(preorder, inorder);
     // bt.levelorder(root);
     // cout << endl;
 
