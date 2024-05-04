@@ -425,6 +425,9 @@ int sum = accumulate(vec.begin(), vec.end(), 0) // `0` is the initial sum value
 
 // Reverse
 reverse(vec.begin(), vec.end());
+
+// Delete Element
+vec.erase(vec.begin() + index);
 ```
 
 </td>
@@ -459,6 +462,9 @@ Arrays.stream(arr).sum()
 
 // Reverse
 Collections.reverse(list);
+
+// Delete Element
+list.remove(index);
 ```
 
 </td>
@@ -496,6 +502,9 @@ sum(arr[0: k])
 
 # Reverse
 arr.reverse()
+
+# Delete Element
+arr.pop(index)
 ```
 
 ```python
