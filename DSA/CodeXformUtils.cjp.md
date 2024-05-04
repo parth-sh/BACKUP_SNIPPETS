@@ -418,6 +418,7 @@ vec.push_back(5);
 
 // Sorting
 sort(vec.begin(), vec.end());
+sort(vec.begin(), vec.end(), greater<int>());
 
 // Sum
 #include <numeric>
@@ -456,6 +457,7 @@ list.add(5);
 
 // Sorting
 Collections.sort(list);
+Collections.sort(list, Collections.reverseOrder());
 
 // Sum
 Arrays.stream(arr).sum()
@@ -496,6 +498,7 @@ arr.append(5)
 # Sorting
 arr.sort()
 sorted_arr = sorted(arr) # to get a sorted list without modifying the original
+vec.sort(reverse=True)
 
 # Sum
 sum(arr[0: k])
