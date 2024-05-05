@@ -11,7 +11,7 @@ struct TreeNode {
     }
 };
 
-class BinaryTree {
+class MyBinaryTree {
     // There are 2 type of traversal techniques BFS/DFS
     // Types of DFS techniques: InOrder Traversal, PreOrder Traversal, PostOrder
     // Traversal Types of BFS: Level Order Traversal, Radial Traversal (Radially
@@ -244,7 +244,7 @@ int main() {
     // root->right = new TreeNode(3);
     // root->left->right = new TreeNode(5);
 
-    BinaryTree bt;
+    MyBinaryTree bt;
     // bt.preorder(root);
     // cout << endl;
     // bt.inorder(root);
