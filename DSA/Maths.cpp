@@ -4,6 +4,10 @@ using namespace std;
 // Eculidians Algorithm
 // https://youtu.be/JUzYl1TYMcU
 int gcd(int a, int b) {
+    // b = a * q + r
+    // r = b % a
+    // a = b % a
+    // b = a
     if (a == 0) {
         return b;
     }
