@@ -250,6 +250,9 @@ sort(str.begin(), str.end())
 
 // Iterate
 for (char ch : str)
+
+// SubString
+str.substr(start_index, length);
 ```
 
 </td>
@@ -264,6 +267,17 @@ boolean result = str1.equals(str2);
 
 // Length
 str.length();
+
+// Sorting
+char[] charArray = str.toCharArray();
+Arrays.sort(charArray);
+String sortedStr = new String(charArray);
+
+// Iterate
+for (char ch : str.toCharArray())
+
+// SubString
+string.substring(startIndex, endIndex);
 
 // String toCharArray
 String str = "jhgjhgjhgjh";
@@ -283,16 +297,7 @@ str.replaceAll("\\s+","");
 
 // StringBuilder append , insert replace
 
-// SubString
-string.substring(start, end +1)
 
-// Sorting
-char[] charArray = str.toCharArray();
-Arrays.sort(charArray);
-String sortedStr = new String(charArray);
-
-// Iterate
-for (char ch : str.toCharArray())
 ```
 
 </td>
@@ -310,6 +315,9 @@ sorted_str = ''.join(sorted(str_var))
 
 # Iterate
 for ch in str_var:
+
+# SubString
+str_var[start_index:end_index]
 ```
 
 </td>
@@ -568,6 +576,9 @@ vector<pair<string, int>> vec(hash.begin(), hash.end());
 sort(vec.begin(), vec.end(), sortDesc);
 
 // TODO: Ordered HashMap
+
+// Size
+hash.size();
 ```
 
 </td>
@@ -603,6 +614,9 @@ hashMap.remove("key");
 // Its a complex process
 
 // TODO: Ordered HashMap
+
+// Size
+hashMap.size();
 ```
 
 </td>
@@ -640,6 +654,9 @@ del hashMap["key"]
 hash = dict(sorted(hash.items(), key=lambda item: item[1], reverse=True))
 
 # TODO: Ordered HashMap
+
+# Size
+len(hashMap)
 ```
 
 </td>
