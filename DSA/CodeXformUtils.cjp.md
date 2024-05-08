@@ -981,7 +981,7 @@ has_short_word = any(len(word) < 5 for word in words) # Output: False
 </tr>
 </table>
 
-# Priority queue
+# Priority Queue
 <table>
 <tr>
 <th>Priority Queue in C++ STL</th>
