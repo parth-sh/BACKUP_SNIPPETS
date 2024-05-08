@@ -980,3 +980,110 @@ has_short_word = any(len(word) < 5 for word in words) # Output: False
 </td>
 </tr>
 </table>
+
+# Priority Queue
+<table>
+<tr>
+<th>Priority Queue in C++ STL</th>
+<th>Priority Queue in Java Collections</th>
+<th>Priority Queue in Python</th>
+</tr>
+<tr>
+<td>
+
+```cpp
+#include <queue>
+
+// Declaration
+priority_queue<int> pq;
+
+// Push
+pq.push(10);
+
+// isEmpty
+pq.empty()
+
+// Peek
+pq.top()
+
+// Pop
+pq.pop()
+
+// Size
+pq.size()
+
+// Iterate by popping all elements
+while (!pq.empty()) {
+    cout << pq.top() << " ";
+    pq.pop();
+}
+```
+
+</td>
+<td>
+
+```java
+import java.util.PriorityQueue;
+
+// Declaration
+PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+// Push
+pq.add(10);
+
+// isEmpty
+pq.isEmpty();
+
+// Peek
+pq.peek();
+
+// Pop
+pq.poll();
+
+// Size
+pq.size();
+
+// Iterating with iterator
+for (Integer value : pq) {
+    System.out.println(value);
+}
+
+// Iterating by polling
+while (!pq.isEmpty()) {
+    System.out.println(pq.poll());
+}
+```
+
+</td>
+
+<td>
+
+```python
+import heapq
+
+# Declaration
+pq = []
+
+# Push
+heapq.heappush(pq, 10)
+
+# isEmpty (Not a direct function, so using len())
+len(pq) == 0
+
+# Peek (Directly access the smallest item)
+pq[0] if pq else 'Heap is empty'
+
+# Pop
+heapq.heappop(pq)
+
+# Size (Using len() function for list)
+len(pq)
+
+# Iterating by removing elements
+while not pq.empty():
+    print(pq.get())
+```
+
+</td>
+</tr>
+</table>
