@@ -542,35 +542,35 @@ tuple_constructor = tuple(("dsa", "developement", "deep learning"))
 ```cpp
 // Declarartion
 #include <unordered_map>
-unordered_map<string, int> hash;
+unordered_map<string, int> ump;
 
 // Key Check
-if (hash.find(key) != hash.end()) {}
+if (ump.find(key) != ump.end()) {}
 
 // Key-Value Addition
-hash["key"] = 1;
+ump["key"] = 1;
 
 // Inc. If Absent
-hash["key"] = hash["key"] + 1;
+ump["key"] = ump["key"] + 1;
 
 // Iteration
-for (auto it = hash.begin(); it != hash.end(); ++it) {
+for (auto it = ump.begin(); it != ump.end(); ++it) {
     cout << it->first << ": " << it->second << endl;
 }
 
-for (const auto& pair : hash) {
+for (const auto& pair : ump) {
     cout << "Key: " << pair.first << endl;
 }
 
 // Remove
-hash.erase("key");
+ump.erase("key");
 
 // Sort by value in decreasing order
 bool sortDesc(const pair<string, int>& a, const pair<string, int>& b) {
     return a.second > b.second;
 }
 // Convert the hashmap to a vector of pairs
-vector<pair<string, int>> vec(hash.begin(), hash.end());
+vector<pair<string, int>> vec(ump.begin(), ump.end());
 
 // Sort the vector by value using the custom comparator function
 sort(vec.begin(), vec.end(), sortDesc);
@@ -578,7 +578,7 @@ sort(vec.begin(), vec.end(), sortDesc);
 // TODO: Ordered HashMap
 
 // Size
-hash.size();
+ump.size();
 ```
 
 </td>
