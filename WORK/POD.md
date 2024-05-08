@@ -69,6 +69,7 @@ npm rebuild
 
 npm run start:dev
 
+npm run build
 pm2 start npm --name pod-backend-dev -- run start:prod
 
 ## PROD .env
