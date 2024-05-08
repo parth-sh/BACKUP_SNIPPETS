@@ -70,3 +70,17 @@ npm rebuild
 npm run start:dev
 
 pm2 start npm --name pod-backend-dev -- run start:prod
+
+## PROD .env
+ENCRYPTION_KEY = 'de0UTQqn6YyzsUf5ANU1yev8d7gaMPOX'
+SMTP_EMAIL = 'teampod@podindia.in'
+SMTP_PASS = 'thuu vfmm wufy ktig'
+JWT_SECRET = 'bA2xcjpf8y5aSUFsNB2qN5yymsdFSss6es3qHoFpGkec75RCeBb8cpKauGefw5qy4'
+RAZORPAY_KEY = 'rzp_test_87lAUO23rVNWgu'
+RAZORPAY_SECRET = 'wB48TkPGwXJuUEhbTW1SZU8t'
+DATABASE_URL = 'mongodb+srv://poduser:gsclxjxo7HudKNK5@cluster0.pvx8a.mongodb.net/pod?retryWrites=true&w=majority'
+FRONTEND_URL = 'https://test-frontend.podworld.in'
+BACKEND_URL = 'https://test-backend.podworld.in'
+#FRONTEND_BUILD_WEBHOOK=https://api.cloudflare.com/client/v4/pages/webhooks/deploy_hooks/ab530a21-4fff-4b3a-bcdd-02e838ae5096
+
+
