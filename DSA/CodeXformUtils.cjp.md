@@ -565,14 +565,12 @@ for (const auto& pair : ump) {
 // Remove
 ump.erase("key");
 
-// Sort by value in decreasing order
+// Sort by value in decreasing order 
+/* Convert the hashmap to a vector of pairs, Sort the vector by value using the custom comparator function */
 bool sortDesc(const pair<string, int>& a, const pair<string, int>& b) {
     return a.second > b.second;
 }
-// Convert the hashmap to a vector of pairs
 vector<pair<string, int>> vec(ump.begin(), ump.end());
-
-// Sort the vector by value using the custom comparator function
 sort(vec.begin(), vec.end(), sortDesc);
 
 // TODO: Ordered HashMap
