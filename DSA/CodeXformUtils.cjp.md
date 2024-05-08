@@ -981,12 +981,12 @@ has_short_word = any(len(word) < 5 for word in words) # Output: False
 </tr>
 </table>
 
-# Priority Queue
+# Priority queue
 <table>
 <tr>
 <th>Priority Queue in C++ STL</th>
 <th>Priority Queue in Java Collections</th>
-<th>Priority Queue in Python</th>
+<th>HeapQ in Python</th>
 </tr>
 <tr>
 <td>
