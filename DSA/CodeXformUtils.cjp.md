@@ -28,6 +28,9 @@ to_string(num)
 // ASCII code
 (int)c
 
+// Float Division
+float ans = (float)a / (float)b;
+
 // Sqrt
 #include <cmath>
 sqrt(x);
