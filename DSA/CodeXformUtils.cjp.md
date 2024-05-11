@@ -982,7 +982,7 @@ has_short_word = any(len(word) < 5 for word in words) # Output: False
 </tr>
 </table>
 
-# Priority Queue
+# Priority Queue(Min Heap, Max Heap)
 <table>
 <tr>
 <th>Priority Queue in C++ STL</th>
@@ -1029,6 +1029,7 @@ import java.util.PriorityQueue;
 
 // Declaration
 PriorityQueue<Integer> pq = new PriorityQueue<>();
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
 
 // Push
 pq.add(10);
@@ -1068,15 +1069,21 @@ pq = []
 
 # Push
 heapq.heappush(pq, 10)
+# Insert a negated value to simulate max heap behavior
+heapq.heappush(maxHeap, -val)
 
 # isEmpty (Not a direct function, so using len())
 len(pq) == 0
 
 # Peek (Directly access the smallest item)
 pq[0] if pq else 'Heap is empty'
+# Peek at the max element without removing
+-maxHeap[0]
 
 # Pop
 heapq.heappop(pq)
+# Retrieve the original value by negating again
+-heapq.heappop(maxHeap)
 
 # Size (Using len() function for list)
 len(pq)
