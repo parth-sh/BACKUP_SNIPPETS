@@ -22,6 +22,9 @@ INT_MAX
 (int)x
 int a = ch - '0';
 
+// Int to Float
+float myFloat = myInt * 1.0f;
+
 // To String
 to_string(num)
 
@@ -83,6 +86,9 @@ Integer.MAX_VALUE
 (int)x
 int a = ch - '0';
 
+// Int to Float
+float myFloat = myInt * 1.0f;
+
 // To String
 Integer.toString(num);
 
@@ -129,6 +135,9 @@ int(2**31 - 1)
 
 # To Int
 int(x)
+
+# Int to Float
+my_float = my_int * 1.0
 
 # To String
 str(num)
