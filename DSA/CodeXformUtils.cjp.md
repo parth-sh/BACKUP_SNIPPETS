@@ -438,7 +438,7 @@ vec.push_back(5);
 
 // Sorting
 sort(vec.begin(), vec.end());
-sort(vec.begin(), vec.end(), greater<int>());
+sort(vec.begin(), vec.end(), greater<int>()); // descending order
 
 // Sum
 #include <numeric>
