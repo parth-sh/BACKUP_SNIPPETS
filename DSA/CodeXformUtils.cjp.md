@@ -997,6 +997,7 @@ has_short_word = any(len(word) < 5 for word in words) # Output: False
 
 // Declaration
 priority_queue<int> pq;
+priority_queue<int, vector<int>, greater<int>> minHeap;
 
 // Push
 pq.push(10);
