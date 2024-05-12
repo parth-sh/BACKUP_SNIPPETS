@@ -40,6 +40,7 @@ sqrt(x);
 
 // Max
 max(a, b);
+max({a, b, c});// max of 3 numbers 
 *max_element(arr, arr + n);
 
 // Sum
@@ -101,6 +102,7 @@ Math.sqrt(x);
 
 // Max
 Math.max(a, b);
+Math.max(Math.max(a, b), c);
 Arrays.stream(arr).max()
 
 // Sum
@@ -154,6 +156,7 @@ math.sqrt(x)
 
 # Max
 max(a, b)
+max(a, b, c)
 max(arr)
 
 # Sum
