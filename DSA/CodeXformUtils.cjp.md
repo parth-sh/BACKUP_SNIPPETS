@@ -412,7 +412,13 @@ Arrays.sort(arr);
 // Variable Initialization
 #include <vector>
 vector<int> vec = {1, 2, 3, 4, 5};
-vector<vector<int>> ans(3);
+vector<int> ans(3);
+
+vector<vector<int>> ans2d(3);
+for (int i = 0; i < k; i++) {
+    ans2d[i].resize(m);
+
+vector<vector<int>> array_2d(rows, vector<int>(cols, 0));
 
 // SubList creation / Vector copy initialization
 vector<int> sublist(v.begin(), v.begin() + idx + 1); // 0 to idx
