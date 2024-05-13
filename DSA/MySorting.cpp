@@ -1,4 +1,6 @@
-#include "bits-stdc++.h"
+#include<iostream>
+#include<vector>
+#include<algorithm>
 using namespace std;
 
 class MySorting {
@@ -116,6 +118,18 @@ class MySorting {
         quickSort(nums, low, pivot - 1);
         quickSort(nums, pivot + 1, high);
     }
+
+    void cyclicSort(vector<int> &nums) {
+        int n = nums.size();
+        int i = 0;
+        while(i < n) {
+            if(nums[i] - 1 == i) {
+                i++;
+            } else {
+                swap(nums[i], nums[nums[i] - 1]);
+            }
+        }
+    }
 };
 
 void printArr(vector<int> &nums) {
@@ -139,7 +153,9 @@ int main() {
 
     // sort.mergeSort(nums, 0, nums.size() - 1);
 
-    sort.quickSort(nums, 0, nums.size() - 1);
+    // sort.quickSort(nums, 0, nums.size() - 1);
+
+    sort.cyclicSort(nums);
 
     printArr(nums);
     return 0;
