@@ -1,4 +1,2 @@
-# Greatest Common Divisor/ HCF, GCD
-
-- Used when to find highest common factor
-- Eculidian's Algorithm
+- HCF, Eculidian's Algorithm, Used when to find highest common factors
+- LCM
