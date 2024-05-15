@@ -1,4 +1,18 @@
 - HCF, Eculidian's Algorithm, Used when to find highest common factors
+```cpp
+// https://youtu.be/JUzYl1TYMcU
+int gcd(int a, int b) {
+    // b = a * q + r
+    // r = b % a
+    // a = b % a
+    // b = a
+    if (a == 0) {
+        return b;
+    }
+    return gcd(b % a, a);
+}
+```
+
 - LCM
 
 - Iterating Over Adjacent Cells in a Grid

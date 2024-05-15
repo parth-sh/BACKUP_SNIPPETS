@@ -131,7 +131,7 @@ class MySorting {
         }
     }
 
-    // 268. Missing Number,
+    // 268. Missing Number
     // https://leetcode.com/problems/missing-number/submissions/1257064517/
     // 448. Find All Numbers Disappeared in an Array
     // https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/submissions/1257074682/
