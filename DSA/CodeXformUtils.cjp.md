@@ -436,7 +436,7 @@ vector<int> vec = {1, 2, 3, 4, 5}; // Initialize vec with values
 vector<int> indeg(n, 0); // Initialize with n zeros
 
 vector<vector<int>> vec_2d(3); // 2D vector with 3 rows
-for (int i = 0; i < 3; i++) {
+for (int i = 0; i < 3; i++)
     vec_2d[i].resize(4); // Resize each row to 4 columns
 
 vector<vector<int>> vec_2d_initialized(rows, vector<int>(cols, 0)); // 2D vector with rows x cols, initialized to 0
