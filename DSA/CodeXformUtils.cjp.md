@@ -354,6 +354,7 @@ str_var[start_index:end_index]
 int arr[] = {1, 2, 3, 4, 5}; // Explicit initialization
 int arr[5] = {1, 2, 3, 4, 5}; // With size specification
 int arr[5]; // Default, uninitialized
+vector<int> adjacencyList[N]; // Array of N vectors for adjacency list
 
 // Array Fill
 fill_n(arr, 5, 10); // Fill an array `arr` of size 5 with 10s.
@@ -414,14 +415,15 @@ Arrays.sort(arr);
 ```cpp
 // Variable Initialization
 #include <vector>
-vector<int> vec = {1, 2, 3, 4, 5};
-vector<int> ans(3);
+vector<int> vec = {1, 2, 3, 4, 5}; // Initialize vec with values
+vector<int> ans(3); // Initialize ans with 3 elements
 
-vector<vector<int>> ans2d(3);
-for (int i = 0; i < k; i++) {
-    ans2d[i].resize(m);
+vector<vector<int>> vec_2d(3); // 2D vector with 3 rows
+for (int i = 0; i < 3; i++) {
+    vec_2d[i].resize(4); // Resize each row to 4 columns
 
-vector<vector<int>> array_2d(rows, vector<int>(cols, 0));
+vector<vector<int>> vec_2d_initialized(rows, vector<int>(cols, 0)); // 2D vector with rows x cols, initialized to 0
+
 
 // SubList creation / Vector copy initialization
 vector<int> sublist(v.begin(), v.begin() + idx + 1); // 0 to idx
