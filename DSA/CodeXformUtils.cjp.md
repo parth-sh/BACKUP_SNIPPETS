@@ -433,7 +433,7 @@ Arrays.sort(arr);
 // Variable Initialization
 #include <vector>
 vector<int> vec = {1, 2, 3, 4, 5}; // Initialize vec with values
-vector<int> ans(3); // Initialize ans with 3 elements
+vector<int> indeg(n, 0); // Initialize with n zeros
 
 vector<vector<int>> vec_2d(3); // 2D vector with 3 rows
 for (int i = 0; i < 3; i++) {
