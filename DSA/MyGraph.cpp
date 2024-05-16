@@ -58,13 +58,34 @@ void dfs(int node) {
 
 void toplogicalSort(int nodes_count, int edges_count,
                     vector<pair<int, int>> edges) {
-    vector<int> indeg(nodes_count, 0);
+    vector<int> indegree(nodes_count, 0);
+    int cnt = 0;
+
     rep(i, 0, edges_count) {
         int u = edges[i].ff, v = edges[i].ss;
         adjacencyList[u].push_back(v);
-        indeg[v]++;
+        indegree[v]++;
     }
+
     queue<int> q;
+    rep(i, 0, nodes_count) {
+        if (indegree[i] == 0) {
+            q.push(i);
+        }
+    }
+    while (!q.empty()) {
+        cnt++;
+        int x = q.front();
+        q.pop();
+
+        cout << x << " ";
+        for (int it : adjacencyList[x]) {
+            indegree[it]--;
+            if (indegree[it] == 0) {
+                q.push(it);
+            }
+        }
+    }
 }
 
 /* g++ -std=c++11 MyGraph.cpp && ./a.out
@@ -89,13 +110,25 @@ int main() {
         edges.push_back({u, v});
     }
 
-    intiAdjacencyMatrix(n, m, edges);
-    initAdjacencyList(n, m, edges);
+    // intiAdjacencyMatrix(n, m, edges);
+    // initAdjacencyList(n, m, edges);
 
     // bfs(0);
     // dfs(0);
 
-    // toplogicalSort(n, m, edges);
+    /*
+    4 3
+    0 1
+    1 2
+    2 3
+    */
+    /*
+    3 3
+    0 1
+    1 2
+    2 0
+    */
+    toplogicalSort(n, m, edges);
 
     return 0;
 }
