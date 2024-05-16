@@ -1,6 +1,5 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include "bits-stdc++.h"
+
 using namespace std;
 
 class MySorting {
@@ -151,6 +150,7 @@ void printArr(vector<int> &nums) {
     }
 }
 
+// g++ -std=c++11 MySorting.cpp && ./a.out
 int main() {
     MySorting sort;
 
