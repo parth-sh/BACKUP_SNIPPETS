@@ -452,7 +452,7 @@ vector<int> sublist;
 sublist.assign(v.begin() + 1, v.end() - 1)); // 1 to n - 2
 
 // Vector Fill
-fill(vec.begin(), vec.end(), 10);
+fill(visited.begin(), visited.end(), false);
 
 // Resize
 vec.resize(newSize, 0);
