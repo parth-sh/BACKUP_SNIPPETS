@@ -37,7 +37,7 @@ class Graph {
                     int x = adjList[node][i];
                     if (!visited[x]) {
                         q.push(x);
-                        visited[node] = true;
+                        visited[x] = true;
                     }
                 }
             }
