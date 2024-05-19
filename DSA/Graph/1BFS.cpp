@@ -27,7 +27,7 @@ class Graph {
         visited[source] = true;
         while (!q.empty()) {
             int n = q.size();
-            for (int i = 0; i < n; i++) {
+            for (int lvlIdx = 0; lvlIdx < n; lvlIdx++) {
                 int cur = q.front();
                 q.pop();
 
