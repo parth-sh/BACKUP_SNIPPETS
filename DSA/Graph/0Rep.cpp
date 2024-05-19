@@ -28,7 +28,7 @@ class Graph {
             for (int v : adjList[u]) {
                 cout << v << " ";
             }
-            cout << "\n";
+            cout << '\n';
         }
     }
 
@@ -37,7 +37,7 @@ class Graph {
             for (int j = 0; j < numVertices; ++j) {
                 cout << adjMatrix[i][j] << " ";
             }
-            cout << "\n";
+            cout << '\n';
         }
     }
 };
