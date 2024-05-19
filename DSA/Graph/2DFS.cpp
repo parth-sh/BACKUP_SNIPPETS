@@ -4,14 +4,14 @@ using namespace std;
 
 class Graph {
    private:
-    int numVertices;
+    int vertexCount;
     vector<vector<int>> adjList;
     vector<int> visited;
 
    public:
-    Graph(int numVertices) : numVertices(numVertices) {
-        adjList.resize(numVertices);
-        visited.resize(numVertices, false);
+    Graph(int vertexCount) : vertexCount(vertexCount) {
+        adjList.resize(vertexCount);
+        visited.resize(vertexCount, false);
     }
 
     void addEdge(int u, int v) {
@@ -33,7 +33,7 @@ class Graph {
     }
 
     void dfsAll() {
-        for (int i = 0; i < numVertices; i++) {
+        for (int i = 0; i < vertexCount; i++) {
             if (!visited[i]) {
                 cout << "Starting new DFS from vertex " << i << ":\n";
                 dfs(i);

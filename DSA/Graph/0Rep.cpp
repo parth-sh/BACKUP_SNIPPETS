@@ -4,14 +4,14 @@ using namespace std;
 
 class Graph {
    private:
+    int vertexCount;
     vector<vector<int>> adjList;
     vector<vector<int>> adjMatrix;
-    int numVertices;
 
    public:
-    Graph(int numVertices) : numVertices(numVertices) {
-        adjList.resize(numVertices);
-        adjMatrix.resize(numVertices, vector<int>(numVertices, 0));
+    Graph(int vertexCount) : vertexCount(vertexCount) {
+        adjList.resize(vertexCount);
+        adjMatrix.resize(vertexCount, vector<int>(vertexCount, 0));
     }
 
     void addEdge(int u, int v) {
@@ -23,7 +23,7 @@ class Graph {
     }
 
     void printAdjList() {
-        for (int u = 0; u < numVertices; u++) {
+        for (int u = 0; u < vertexCount; u++) {
             cout << u << "-> ";
             for (int v : adjList[u]) {
                 cout << v << " ";
@@ -33,8 +33,8 @@ class Graph {
     }
 
     void printMatrix() {
-        for (int i = 0; i < numVertices; ++i) {
-            for (int j = 0; j < numVertices; ++j) {
+        for (int i = 0; i < vertexCount; ++i) {
+            for (int j = 0; j < vertexCount; ++j) {
                 cout << adjMatrix[i][j] << " ";
             }
             cout << '\n';
