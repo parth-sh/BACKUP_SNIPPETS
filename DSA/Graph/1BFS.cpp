@@ -22,23 +22,20 @@ class Graph {
     }
 
     void bfs(int source) {
-        queue<int> q;
-        q.push(source);
+        queue<int> queue;
+        queue.push(source);
         visited[source] = true;
-        while (!q.empty()) {
-            int n = q.size();
-            for (int i = 0; i < n; i++) {
-                int node = q.front();
-                q.pop();
+        while (!queue.empty()) {
+            int cur = queue.front();
+            queue.pop();
 
-                cout << node << " ";
+            cout << cur << " ";
 
-                for (int i = 0; i < adjList[node].size(); i++) {
-                    int x = adjList[node][i];
-                    if (!visited[x]) {
-                        q.push(x);
-                        visited[x] = true;
-                    }
+            for (int adjV = 0; adjV < adjList[cur].size(); adjV++) {
+                int nbr = adjList[cur][adjV];
+                if (!visited[nbr]) {
+                    queue.push(nbr);
+                    visited[nbr] = true;
                 }
             }
             cout << '\n';
