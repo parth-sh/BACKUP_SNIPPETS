@@ -44,6 +44,16 @@ class Graph {
             cout << '\n';
         }
     }
+
+    void bfsAll() {
+        for (int i = 0; i < numVertices; i++) {
+            if (!visited[i]) {
+                cout << "Starting new BFS from vertex " << i << ":\n";
+                bfs(i);
+                cout << "\n";
+            }
+        }
+    }
 };
 
 int main() {
@@ -56,6 +66,6 @@ int main() {
     g.addEdge(1, 6);
     g.addEdge(6, 2);
 
-    g.bfs(0);
+    g.bfsAll();
     return 0;
 }
