@@ -441,6 +441,8 @@ for (int i = 0; i < 3; i++)
 
 vector<vector<int>> vec_2d_initialized(rows, vector<int>(cols, 0)); // 2D vector with rows x cols, initialized to 0
 
+adjMatrix.resize(numVertices, vector<int>(numVertices, 0)); // Initialize zeroed matrix.
+
 
 // SubList creation / Vector copy initialization
 vector<int> sublist(v.begin(), v.begin() + idx + 1); // 0 to idx
