@@ -135,22 +135,8 @@ EDITOR="code --wait" bin/rails credentials:edit
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-AWS account shashank
-
-User name,Password,Access key ID,Secret access key,Console login link
-Parth_Sharma,lVuX94f4i5HHFve,AKIAULGBHFR2DXMM7CDO,M1smh2vi/cSw8v7+QqtddzTF5RWpkEmNGIoNtqk4,https://298905447540.signin.aws.amazon.com/console
-
-AWS account akul
-
-User name,Password,Access key ID,Secret access key,Console login link
-parth_sharma,j3bGxyYscTvDB6R,AKIAVUDDF23J56SMCGYY,3w5777va2qyRT3JGuEhw01Z/MzRGrEviHC4cyAWK,https://386755057363.signin.aws.amazon.com/console
-
 mvn clean package
 deploy jar file to the above aws account
-
-
-
 
 
 psql -h growfixdb-beta.c4n7cfhu8rw9.ap-south-1.rds.amazonaws.com -p 5432 -U postgres -d growfixdb
