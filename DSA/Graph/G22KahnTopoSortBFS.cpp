@@ -37,7 +37,6 @@ subtracted
 */
 #include <iostream>
 #include <queue>
-#include <unordered_map>
 #include <vector>
 
 using namespace std;
@@ -46,61 +45,64 @@ class Graph {
    private:
     int vertexCount;
     vector<vector<int>> adjList;
-    unordered_map<int, int> inDeg;
+    vector<bool> visited;
+    vector<int> indeg;
 
    public:
     Graph(int vertexCount) : vertexCount(vertexCount) {
         adjList.resize(vertexCount);
+        visited.resize(vertexCount, false);
+        indeg.resize(vertexCount, 0);
     }
 
     void addEdge(int u, int v) {
         adjList[u].push_back(v);
-        inDeg[v]++;
+        indeg[v]++;
     }
 
-    void topoSort() {
+    vector<int> topoSort() {
+        vector<int> topo;
         queue<int> q;
-        for (int node = 0; node < vertexCount; node++) {
-            if (inDeg[node] == 0) {
-                q.push(node);
-            }
+
+        for (int vertex = 0; vertex < vertexCount; vertex++) {
+            if (indeg[vertex] == 0) q.push(vertex);
         }
-        int count = 0;
+
         while (!q.empty()) {
-            count++;
             int node = q.front();
             q.pop();
 
-            cout << node << " ";
+            topo.push_back(node);
 
             for (int adjV = 0; adjV < adjList[node].size(); adjV++) {
                 int nbr = adjList[node][adjV];
-                inDeg[nbr]--;
+                indeg[nbr]--;
 
-                if (inDeg[nbr] == 0) {
+                if (indeg[nbr] == 0) {
                     q.push(nbr);
                 }
             }
         }
 
-        if (count != vertexCount) {
-            cout << "Cycle detected, topological sort not possible\n";
-        }
+        return topo;
     }
 };
 
 int main() {
-    // Graph g(4);
-    // g.addEdge(0, 1);
-    // g.addEdge(1, 2);
-    // g.addEdge(2, 3);
+    Graph g(6);
 
-    Graph g(3);
-    g.addEdge(0, 1);
-    g.addEdge(1, 2);
-    g.addEdge(2, 0);
+    g.addEdge(5, 0);
+    g.addEdge(5, 2);
+    g.addEdge(2, 3);
+    g.addEdge(3, 1);
+    g.addEdge(4, 1);
+    g.addEdge(4, 0);
 
-    g.topoSort();
+    vector<int> topo = g.topoSort();
+    for (int i : topo) {
+        cout << i << " ";
+    }
+    cout << "\n";
 
     return 0;
 }
