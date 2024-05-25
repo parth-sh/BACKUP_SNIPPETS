@@ -785,6 +785,7 @@ len(hashMap)
 // Declaration
 #include <unordered_set>
 unordered_set<int> hashSet;
+unordered_set<string> wordSet(words.begin(), words.end());
 
 // Insert
 hashSet.insert(1);
