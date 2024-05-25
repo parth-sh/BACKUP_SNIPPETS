@@ -21,6 +21,9 @@ class DisjointSet {
     }
 
     int findULP(int node) {  // find Ultimate Parent
+        if (node < 0 || node >= vertexCount) {
+            throw std::out_of_range("Node index out of range");
+        }
         if (parent[node] != node) {
             // If the current node is not the root, find the root of its parent
             // and apply path compression by setting the parent of the current
@@ -35,6 +38,9 @@ class DisjointSet {
     }
 
     void unionByRank(int u, int v) {
+        if (u < 0 || u >= vertexCount || v < 0 || v >= vertexCount) {
+            throw std::out_of_range("Node index out of range");
+        }
         int ulp_u = findULP(u);
         int ulp_v = findULP(v);
 
@@ -56,7 +62,7 @@ class DisjointSet {
 };
 
 int main() {
-    DisjointSet ds(7);
+    DisjointSet ds(8);
     ds.unionByRank(1, 2);
     ds.unionByRank(2, 3);
     ds.unionByRank(4, 5);
