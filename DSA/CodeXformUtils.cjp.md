@@ -492,16 +492,16 @@ Arrays.sort(arr);
 ```cpp
 // Variable Initialization
 #include <vector>
-vector<int> vec = {1, 2, 3, 4, 5}; // Initialize vec with values
-vector<int> indeg(n, 0); // Initialize with n zeros
+vector<int> vec = {1, 2, 3, 4, 5};
+vector<int> indeg(n, 0);
 
-vector<vector<int>> vec_2d(3); // 2D vector with 3 rows
+vector<vector<int>> vec_2d(3);
 for (int i = 0; i < 3; i++)
-    vec_2d[i].resize(4); // Resize each row to 4 columns
+    vec_2d[i].resize(4);
 
-vector<vector<int>> vec_2d_initialized(rows, vector<int>(cols, 0)); // 2D vector with rows x cols, initialized to 0
+vector<vector<int>> vec_2d_initialized(rows, vector<int>(cols, 0));
 
-adjMatrix.resize(numVertices, vector<int>(numVertices, 0)); // Initialize zeroed matrix.
+adjMatrix.resize(numVertices, vector<int>(numVertices, 0));
 
 
 // SubList creation / Vector copy initialization
@@ -515,7 +515,7 @@ sublist.assign(v.begin() + 1, v.end() - 1)); // 1 to n - 2
 #include <algorithm>
 fill(visited.begin(), visited.end(), false);
 #include <numeric>
-iota(parent.begin(), parent.end(), 0); // 0 1 2 3 4 ..
+iota(parent.begin(), parent.end(), 0); // 0 1 2 ..
 
 // Resize
 vec.resize(newSize, 0);
@@ -542,6 +542,10 @@ reverse(vec.begin(), vec.end());
 
 // Delete Element
 vec.erase(vec.begin() + index);
+
+// Access Element
+vec.at(index) // Bounds checking
+vec[index] // No bounds checking
 ```
 
 </td>
