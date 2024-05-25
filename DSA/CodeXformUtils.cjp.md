@@ -375,6 +375,7 @@ vector<int> adjacencyList[N]; // Array of N vectors for adjacency list
 
 // Array Fill
 fill_n(arr, 5, 10); // Fill an array `arr` of size 5 with 10s.
+iota(arr, arr + 5, 10); // 10 11 12 13 14
 
 // Length
 int size = sizeof(arr) / sizeof(arr[0]);
@@ -453,6 +454,7 @@ sublist.assign(v.begin() + 1, v.end() - 1)); // 1 to n - 2
 
 // Vector Fill
 fill(visited.begin(), visited.end(), false);
+iota(parent.begin(), parent.end(), 0); // 0 1 2 3 4 ..
 
 // Resize
 vec.resize(newSize, 0);
