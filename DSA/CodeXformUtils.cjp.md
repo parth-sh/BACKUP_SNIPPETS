@@ -211,6 +211,63 @@ pow(base, exponent)
 </table>
 
 
+# Constructors
+<table>
+<tr>
+<th>C++</th>
+<th>Java</th>
+<th>Python</th>
+</tr>
+<tr>
+<td>
+
+```cpp
+class Example {
+    int value;
+    vector<vector<int>> matrix;
+
+public:
+    // Example(int val, int size) {
+    //     value = val;
+    //     matrix.resize(size);
+    //     for (auto &row : matrix) {
+    //         row.resize(size, 0);
+    //     }
+    // }
+    Example(int val, int size) : value(val), matrix(size, vector<int>(size, 0)) {}
+};
+```
+
+</td>
+<td>
+
+```java
+public class Example {
+    int value;
+    List<Integer> numbers;
+
+    public Example(int val, List<Integer> nums) {
+        this.value = val;
+        this.numbers = new ArrayList<>(nums);
+    }
+}
+```
+
+</td>
+<td>
+
+```python
+class Example:
+    def __init__(self, val, nums):
+        self.value = val
+        self.numbers = nums.copy()  # Assuming nums is a list, .copy() ensures a new list is created
+```
+
+</td>
+</tr>
+</table>
+
+
 # Pairs
 <table>
 <tr>
