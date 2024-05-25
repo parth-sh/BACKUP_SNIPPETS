@@ -789,6 +789,7 @@ unordered_set<string> wordSet(words.begin(), words.end());
 
 // Insert
 hashSet.insert(1);
+wordSet.insert(wordDict.begin(), wordDict.end()); // Initialize separately
 
 // Check if contains
 hashSet.find(1) != hashSet.end()
