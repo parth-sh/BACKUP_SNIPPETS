@@ -374,7 +374,9 @@ int arr[5]; // Default, uninitialized
 vector<int> adjacencyList[N]; // Array of N vectors for adjacency list
 
 // Array Fill
+#include <algorithm>
 fill_n(arr, 5, 10); // Fill an array `arr` of size 5 with 10s.
+#include <numeric>
 iota(arr, arr + 5, 10); // 10 11 12 13 14
 
 // Length
@@ -453,7 +455,9 @@ vector<int> sublist;
 sublist.assign(v.begin() + 1, v.end() - 1)); // 1 to n - 2
 
 // Vector Fill
+#include <algorithm>
 fill(visited.begin(), visited.end(), false);
+#include <numeric>
 iota(parent.begin(), parent.end(), 0); // 0 1 2 3 4 ..
 
 // Resize
