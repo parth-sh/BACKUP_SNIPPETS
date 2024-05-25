@@ -1,0 +1,26 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit"
+        }
+    },
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-vscode.cpptools",
+    },
+    "files.associations": {
+        "iostream": "cpp",
+        "vector": "cpp",
+        "variant": "cpp",
+        "ios": "cpp",
+        "unordered_map": "cpp"
+    },
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never, ColumnLimit: 80}"
+    // "C_Cpp.clang_format_fallbackStyle": "{Language: Cpp ,BasedOnStyle: Google ,IndentWidth: 2 ,UseTab: Never ,TabWidth: 8 ,ColumnLimit: 99 ,PointerAlignment: Right ,AccessModifierOffset: -2 ,BreakBeforeBraces: Allman ,DerivePointerAlignment: true ,AllowShortFunctionsOnASingleLine: Empty ,AllowShortIfStatementsOnASingleLine: false ,AllowShortLoopsOnASingleLine: false ,AllowShortBlocksOnASingleLine: false ,AlwaysBreakAfterDefinitionReturnType: None ,AlwaysBreakTemplateDeclarations: true}"
+    // "C_Cpp.clang_format_fallbackStyle": "{ Language: Cpp, BasedOnStyle: Google, IndentWidth: 4, AccessModifierOffset: -4, AlignAfterOpenBracket: Align, AlignConsecutiveAssignments: false, AlignConsecutiveDeclarations: false, AlignEscapedNewlinesLeft: true, AlignOperands: true, AlignTrailingComments: true, AllowAllParametersOfDeclarationOnNextLine: false, AllowShortBlocksOnASingleLine: false, AllowShortCaseLabelsOnASingleLine: false, AllowShortFunctionsOnASingleLine: None, AllowShortIfStatementsOnASingleLine: false, AllowShortLoopsOnASingleLine: false, AlwaysBreakAfterDefinitionReturnType: None, AlwaysBreakAfterReturnType: None, AlwaysBreakBeforeMultilineStrings: false, AlwaysBreakTemplateDeclarations: true}"
+    
+}
