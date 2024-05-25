@@ -7,17 +7,19 @@ using namespace std;
 class DisjointSet {
    private:
     int vertexCount;
-    vector<int> rank, parent;
+    vector<int> rank, parent, size;
 
    public:
     DisjointSet(int vertexCount)
         : vertexCount(vertexCount),  // Set the number of vertices
           rank(vertexCount, 0),      // Initialize ranks of vertices to 0
-          parent(vertexCount)        // Reserve space for parent pointers
+          parent(vertexCount),       // Reserve space for parent pointers
+          size(vertexCount, 1)       // Initialize size of vertices to 1
     {
         // Fill parent vector where each vertex is its own parent
         iota(parent.begin(), parent.end(), 0);
         // Initially, every vertex is a parent of itself with rank 0
+        // Initially, every vertex is a parent of itself with size 1
     }
 
     int findULP(int node) {  // find Ultimate Parent
@@ -59,15 +61,53 @@ class DisjointSet {
             }
         }
     }
+
+    void unionBySize(int u, int v) {
+        if (u < 0 || u >= vertexCount || v < 0 || v >= vertexCount) {
+            throw std::out_of_range("Node index out of range");
+        }
+        int ulp_u = findULP(u);
+        int ulp_v = findULP(v);
+
+        if (ulp_u != ulp_v) {
+            if (size[ulp_u] <= size[ulp_v]) {
+                parent[ulp_u] = ulp_v;
+                size[ulp_v] += size[ulp_u];
+            } else {
+                parent[ulp_v] = ulp_u;
+                size[ulp_u] += size[ulp_v];
+            }
+        }
+    }
 };
 
 int main() {
     DisjointSet ds(8);
-    ds.unionByRank(1, 2);
-    ds.unionByRank(2, 3);
-    ds.unionByRank(4, 5);
-    ds.unionByRank(6, 7);
-    ds.unionByRank(5, 6);
+    // ds.unionByRank(1, 2);
+    // ds.unionByRank(2, 3);
+    // ds.unionByRank(4, 5);
+    // ds.unionByRank(6, 7);
+    // ds.unionByRank(5, 6);
+    // // if 3 and 7 belongs to same component or not ?
+    // if (ds.findULP(3) == ds.findULP(7)) {
+    //     cout << "Same\n";
+    // } else {
+    //     cout << "Not Same\n";
+    // }
+
+    // ds.unionByRank(3, 7);
+
+    // if (ds.findULP(3) == ds.findULP(7)) {
+    //     cout << "Same\n";
+    // } else {
+    //     cout << "Not Same\n";
+    // }
+
+    ds.unionBySize(1, 2);
+    ds.unionBySize(2, 3);
+    ds.unionBySize(4, 5);
+    ds.unionBySize(6, 7);
+    ds.unionBySize(5, 6);
     // if 3 and 7 belongs to same component or not ?
     if (ds.findULP(3) == ds.findULP(7)) {
         cout << "Same\n";
@@ -75,7 +115,7 @@ int main() {
         cout << "Not Same\n";
     }
 
-    ds.unionByRank(3, 7);
+    ds.unionBySize(3, 7);
 
     if (ds.findULP(3) == ds.findULP(7)) {
         cout << "Same\n";
