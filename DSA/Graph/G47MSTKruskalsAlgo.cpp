@@ -63,6 +63,7 @@ class Graph {
 
     void kruskalsAlgo() {
         vector<pair<int, pair<int, int>>> edges;  // {w, {u, v}} edge
+
         for (int u = 0; u < vertexCount; u++) {
             vector<pair<int, int>> adjNodes = adjList[u];
             for (pair<int, int> x : adjNodes) {
