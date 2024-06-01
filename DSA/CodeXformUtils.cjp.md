@@ -651,15 +651,7 @@ tuple_constructor = tuple(("dsa", "developement", "deep learning"))
 ```cpp
 // Declarartion
 #include <unordered_map>
-unordered_map<char, int> romanValues = {
-        {'I', 1},
-        {'V', 5},
-        {'X', 10},
-        {'L', 50},
-        {'C', 100},
-        {'D', 500},
-        {'M', 1000}
-    };
+unordered_map<char, int> ump = {{'I', 1}, {'V', 5}};
 
 // Key Check
 if (ump.find(key) != ump.end()) {}

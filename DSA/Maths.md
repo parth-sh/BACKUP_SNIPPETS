@@ -48,6 +48,21 @@ for (int i = 0; i < 4; i++) {
 // Repetition Rules:
 // The same symbol cannot be repeated more than three times in a row.
 // Symbols like V, L, and D are never repeated.
+
+unordered_map<char, int> romanValues = {
+    {'I', 1},
+    {'V', 5},
+    {'X', 10},
+    {'L', 50},
+    {'C', 100},
+    {'D', 500},
+    {'M', 1000}
+};
 ```
 
 - ASCII value of digits [0 – 9] ranges from [48 – 57]
+```cpp
+bool isDigit(char ch) {
+    return (int)ch >= 48 && (int)ch <= 57
+}
+```
