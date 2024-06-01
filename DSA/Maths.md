@@ -26,3 +26,26 @@ for (int i = 0; i < 4; i++) {
     cout << grid[newX][newY];
 }
 ```
+
+- Roman Numbers
+```cpp
+// Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+
+// Symbol       Value
+// I             1
+// V             5
+// X             10
+// L             50
+// C             100
+// D             500
+// M             1000
+
+// Combining Symbols:
+// Symbols are generally placed in descending order from left to right.
+// When smaller symbols precede larger symbols, they are subtracted (e.g., IV = 4).
+// When smaller symbols follow larger symbols, they are added (e.g., VI = 6).
+
+// Repetition Rules:
+// The same symbol cannot be repeated more than three times in a row.
+// Symbols like V, L, and D are never repeated.
+```
