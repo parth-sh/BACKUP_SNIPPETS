@@ -63,6 +63,6 @@ unordered_map<char, int> romanValues = {
 - ASCII value of digits [0 – 9] ranges from [48 – 57]
 ```cpp
 bool isDigit(char ch) {
-    return (int)ch >= 48 && (int)ch <= 57
+    return (int)ch >= 48 && (int)ch <= 57;
 }
 ```
