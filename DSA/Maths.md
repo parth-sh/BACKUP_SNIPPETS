@@ -49,3 +49,5 @@ for (int i = 0; i < 4; i++) {
 // The same symbol cannot be repeated more than three times in a row.
 // Symbols like V, L, and D are never repeated.
 ```
+
+- ASCII value of digits [0 – 9] ranges from [48 – 57]
