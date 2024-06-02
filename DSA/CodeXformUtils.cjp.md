@@ -514,6 +514,7 @@ sublist.assign(v.begin() + 1, v.end() - 1)); // 1 to n - 2
 // Vector Fill
 #include <algorithm>
 fill(visited.begin(), visited.end(), false);
+memset(visited, 0, sizeof(visited));
 #include <numeric>
 iota(parent.begin(), parent.end(), 0); // 0 1 2 ..
 
