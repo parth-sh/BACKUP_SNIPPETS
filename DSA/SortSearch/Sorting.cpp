@@ -1,4 +1,5 @@
-#include "bits-stdc++.h"
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -27,22 +28,18 @@ class MySorting {
         }
     }
 
-    int partition(vector<int> &arr, int low, int high) {
-        int pivotEle = arr[low];
-        int start = low, end = high;
-        while (start < end) {
-            while (start <= high - 1 && arr[start] <= pivotEle) {
-                start++;
-            }
-            while (end >= low + 1 && arr[end] > pivotEle) {
-                end--;
-            }
-            if (start < end) {
-                swap(arr[start], arr[end]);
+    int partition(vector<int> &nums, int start, int end) {
+        int pivot = nums[start];
+        int lo = start, hi = end;
+        while (lo < hi) {
+            while (lo <= end && nums[lo] <= pivot) lo++;
+            while (hi >= start && nums[hi] > pivot) hi--;
+            if (lo < hi) {
+                swap(nums[lo], nums[hi]);
             }
         }
-        swap(arr[low], arr[end]);
-        return end;
+        swap(nums[start], nums[hi]);
+        return hi;
     }
 
    public:
@@ -109,13 +106,13 @@ class MySorting {
         merge(arr, low, mid, high);
     }
 
-    void quickSort(vector<int> &nums, int low, int high) {
-        if (low >= high) {
+    void quickSort(vector<int> &nums, int start, int end) {
+        if (start > end) {
             return;
         }
-        int pivot = partition(nums, low, high);
-        quickSort(nums, low, pivot - 1);
-        quickSort(nums, pivot + 1, high);
+        int pivotIndex = partition(nums, start, end);
+        quickSort(nums, start, pivotIndex - 1);
+        quickSort(nums, pivotIndex + 1, end);
     }
 
     void cyclicSort(vector<int> &nums) {
@@ -165,9 +162,9 @@ int main() {
 
     // sort.mergeSort(nums, 0, nums.size() - 1);
 
-    // sort.quickSort(nums, 0, nums.size() - 1);
+    sort.quickSort(nums, 0, nums.size() - 1);
 
-    sort.cyclicSort(nums);
+    // sort.cyclicSort(nums);
 
     printArr(nums);
     return 0;
