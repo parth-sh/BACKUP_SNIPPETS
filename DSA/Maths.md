@@ -70,8 +70,6 @@ bool isDigit(char ch) {
 ```
 
 - Sudoku Box Index Calculation
-
-
 ```cpp
 The expression 
 
