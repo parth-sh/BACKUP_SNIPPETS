@@ -93,7 +93,9 @@ using namespace std;
 const int N = 1e5 + 2, MOD = 1e9 + 7;
 
 // Is alphanumeric
-isalnum(ch)
+bool isAlphanumeric(char c) {
+    return (c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
+}
 ```
 
 </td>
@@ -148,7 +150,9 @@ obj1 == obj3 // true
 Math.pow(base, exponent);
 
 // Is alphanumeric
-Character.isLetterOrDigit(ch)
+public static boolean isAlphanumeric(char c) {
+    return (c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
+}
 ```
 
 </td>
@@ -213,7 +217,8 @@ if obj1 is obj3: # true
 pow(base, exponent)
 
 # Is alphanumeric
-isalnum(ch)
+def is_alphanumeric(c):
+    return ('0' <= c <= '9') or ('A' <= c <= 'Z') or ('a' <= c <= 'z')
 ```
 
 </td>
