@@ -91,6 +91,9 @@ pow(base, exponent);
 using namespace std;
 
 const int N = 1e5 + 2, MOD = 1e9 + 7;
+
+// Is alphanumeric
+isalnum(ch)
 ```
 
 </td>
@@ -143,6 +146,9 @@ obj1 == obj3 // true
 
 // Pow
 Math.pow(base, exponent);
+
+// Is alphanumeric
+Character.isLetterOrDigit(ch)
 ```
 
 </td>
@@ -205,6 +211,9 @@ if obj1 is obj3: # true
 
 # Pow
 pow(base, exponent)
+
+# Is alphanumeric
+isalnum(ch)
 ```
 
 </td>

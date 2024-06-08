@@ -15,6 +15,8 @@ int gcd(int a, int b) {
 
 - LCM
 
+Information to be detailed.
+
 - Iterating Over Adjacent Cells in a Grid
 ```cpp
 vector<int> roww = {1, -1, 0, 0};
@@ -66,3 +68,27 @@ bool isDigit(char ch) {
     return (int)ch >= 48 && (int)ch <= 57;
 }
 ```
+
+- Sudoku Box Index Calculation
+
+The expression 
+```cpp
+int k = i / 3 * 3 + j / 3;
+
+i / 3: This part divides the row index i by 3. The division is integer division, so it truncates the decimal, effectively mapping rows 0-2, 3-5, and 6-8 into 0, 1, and 2, respectively.
+
+* 3: Multiplies the result by 3. This sets the base index for the rows of boxes. Each group of three rows starts at indices 0, 3, or 6.
+
+j / 3: Divides the column index j by 3 (also integer division), categorizing columns 0-2, 3-5, and 6-8 into 0, 1, and 2, respectively.
+
++-----+-----+-----+
+|  0  |  1  |  2  |
++-----+-----+-----+
+|  3  |  4  |  5  |
++-----+-----+-----+
+|  6  |  7  |  8  |
++-----+-----+-----+
+
+
+```
+is used in the context of Sudoku validation to determine which of the nine 3x3 boxes a cell belongs to on a 9x9 board.
