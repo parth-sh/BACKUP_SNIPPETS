@@ -92,3 +92,10 @@ j / 3: Divides the column index j by 3 (also integer division), categorizing col
 
 ```
 is used in the context of Sudoku validation to determine which of the nine 3x3 boxes a cell belongs to on a 9x9 board.
+
+- Character is alphanumeric 
+```cpp
+bool isAlphanumeric(char c) {
+    return (c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z');
+}
+```
