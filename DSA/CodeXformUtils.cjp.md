@@ -19,8 +19,9 @@ INT_MIN
 INT_MAX
 
 // To Int
-(int)x
-int a = ch - '0';
+int x = (int)ch - 48;
+int x = ch - '0';
+int x = ch; // narrowing on C
 
 // Int to Float
 float myFloat = myInt * 1.0f;
