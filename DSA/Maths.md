@@ -71,8 +71,10 @@ bool isDigit(char ch) {
 
 - Sudoku Box Index Calculation
 
-The expression 
+
 ```cpp
+The expression 
+
 int k = i / 3 * 3 + j / 3;
 
 i / 3: This part divides the row index i by 3. The division is integer division, so it truncates the decimal, effectively mapping rows 0-2, 3-5, and 6-8 into 0, 1, and 2, respectively.
