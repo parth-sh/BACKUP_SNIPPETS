@@ -688,6 +688,9 @@ sort(vec.begin(), vec.end(), sortDesc);
 
 // Size
 ump.size();
+
+// Clear
+ump.clear();
 ```
 
 </td>
@@ -726,6 +729,9 @@ hashMap.remove("key");
 
 // Size
 hashMap.size();
+
+// Clear
+hashMap.clear();
 ```
 
 </td>
@@ -766,6 +772,9 @@ hash = dict(sorted(hash.items(), key=lambda item: item[1], reverse=True))
 
 # Size
 len(hashMap)
+
+# Clear
+hashMap.clear()
 ```
 
 </td>
