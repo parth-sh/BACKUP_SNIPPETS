@@ -548,6 +548,9 @@ vec.erase(vec.begin() + index);
 // Access Element
 vec.at(index) // Bounds checking
 vec[index] // No bounds checking
+
+// Max Element
+*max_element(vec.begin(), vec.end());
 ```
 
 </td>
@@ -586,6 +589,9 @@ Collections.reverse(list);
 
 // Delete Element
 list.remove(index);
+
+// Max Element
+Collections.max(list);
 ```
 
 </td>
@@ -627,6 +633,9 @@ arr.reverse()
 
 # Delete Element
 arr.pop(index)
+
+# Max Element
+max(arr)
 ```
 
 ```python
