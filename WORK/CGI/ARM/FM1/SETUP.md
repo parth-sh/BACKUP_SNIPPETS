@@ -50,3 +50,38 @@ doLocalLoginProcess
 
 4. Database url in db.properties, mobile device id in user.properties
 
+<!-- Build -->
+In build.version.properties file increament version.properties.build property
+
+.\gradlew release
+
+copy assets.db, mobile.db, mobile.log to --> build\releases\2.3.3.1.0.2\Client\Field Manager\db
+
+build\releases\2.3.3.1.0.2\Client\Field Manager\Propertiesfiles\conf\user.properties.bak --> build\releases\2.3.3.1.0.2\Client\Field Manager\Propertiesfiles\conf\user.properties
+```
+#
+# configuration of Field Manager
+#
+ 
+# device id (previously stored in "faf.DeviceToolkit.device_id" in fieldit.properties file)
+mobile.device.id = SG11
+ 
+# previously stored in "comms.server.name" property
+comms.device.collection.id = LOCALHOST
+ 
+# corresponds to "SERVER_ID" property in NSClient.ini
+# ("SERVER_ID" in NSClient.ini is automatically populated by this property value)
+comms.server.ip_address = 127.0.0.1
+ 
+# corresponds to "SERVER_GROUP" property in NSClient.ini
+comms.server.group.ip_address = 127.0.0.1
+ 
+# if set to false nsclient.ini files for networks are not updated with IP and group IP
+comms.server.use.for.all.networks = true
+ 
+# rest service ip address and port
+server.dataservice =
+ 
+#----------------------------------------------------------------------------------------
+```
+ 
