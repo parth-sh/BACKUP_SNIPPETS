@@ -1,5 +1,6 @@
 ## ARM KT's
 Mail pdf available
+https://miro.com/app/board/uXjVNvQWZl0=/
 
 ## KT FOR FM1
 \\162.70.125.120\public\KT Folders\KT for FM1
@@ -9,11 +10,6 @@ http://w2k-armjen-02.ams.com/redmine/projects/armmobileproject/wiki/Workspace_se
 
 ## Repo Link
 https://paussource.ent.cgi.com/gitlab/usis/WAMAT/product/wam-fieldmanager
-
-## FM Admin url
-http://w2k-con-asc.ams.com:9080/fmadmin/fieldit/
-https://wutl-lqcgiaas02.ams.com:7002/fmadmin/fieldit/waf/wadmin/index.jsp
-http://wutl-lqcgiaas02.ams.com:7003/fmadmin/fieldit/waf/wadmin/index.jsp
 
 ## SysBase Software Link
 \\162.70.125.120\wrkproduct\Software\Sybase
@@ -29,10 +25,18 @@ PUNI/ password
 [3/5 4:59 PM] Sinha, Ritul
 QSUHRID/QSUHRID
 
-## Flow diagram made by me
-https://miro.com/app/board/uXjVNvQWZl0=/
+## ADMIN:
 
-FIELD MANAGER ADMIN:
+ITAGL ADMIN: http://W2K-AGIT-ASB.ams.com:9082/fmadmin/fieldit
+
+ITAGL SERVER MACHINE: w2k-agit-asb.ams.com
+
+CLIENT MACHINE: w16-st-clb.ams.com
+
+http://w2k-con-asc.ams.com:9080/fmadmin/fieldit/
+https://wutl-lqcgiaas02.ams.com:7002/fmadmin/fieldit/waf/wadmin/index.jsp
+http://wutl-lqcgiaas02.ams.com:7003/fmadmin/fieldit/waf/wadmin/index.jsp
+
 http://w2k-con-asc.ams.com:9080/fmadmin/fieldit/waf/wadmin/index.jsp?L_Message=Login%20failed%20due%20to%20technical%20reasons.%20%3Cbr%3E%20Please%20contact%20your%20help%20desk.
 
 QA ADMIN:
