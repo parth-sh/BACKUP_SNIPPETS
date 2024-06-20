@@ -25,7 +25,7 @@ PUNI/ password
 [3/5 4:59 PM] Sinha, Ritul
 QSUHRID/QSUHRID
 
-## ADMIN:
+## URL's and Machines:
 
 ITAGL ADMIN: http://W2K-AGIT-ASB.ams.com:9082/fmadmin/fieldit
 

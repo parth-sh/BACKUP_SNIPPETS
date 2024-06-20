@@ -19,7 +19,8 @@
         "ios": "cpp",
         "unordered_map": "cpp",
         "__node_handle": "cpp",
-        "stdexcept": "cpp"
+        "stdexcept": "cpp",
+        "string": "cpp"
     },
     "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never, ColumnLimit: 80}"
     // "C_Cpp.clang_format_fallbackStyle": "{Language: Cpp ,BasedOnStyle: Google ,IndentWidth: 2 ,UseTab: Never ,TabWidth: 8 ,ColumnLimit: 99 ,PointerAlignment: Right ,AccessModifierOffset: -2 ,BreakBeforeBraces: Allman ,DerivePointerAlignment: true ,AllowShortFunctionsOnASingleLine: Empty ,AllowShortIfStatementsOnASingleLine: false ,AllowShortLoopsOnASingleLine: false ,AllowShortBlocksOnASingleLine: false ,AlwaysBreakAfterDefinitionReturnType: None ,AlwaysBreakTemplateDeclarations: true}"
