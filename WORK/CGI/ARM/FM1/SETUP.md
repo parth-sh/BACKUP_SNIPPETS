@@ -50,18 +50,15 @@ setup, setup
 client/field_manager/src/presentation/java/com/stsjava/fieldit/mobile/login/ValidatorLogin.java
 doLocalLoginProcess
 
-3. Chnage the launch configuration, select java 32 bit in debugger or run JRE
+3. Database url in db.properties, mobile device id in user.properties
 
-4. Database url in db.properties, mobile device id in user.properties
+4. In build.version.properties file increament version.properties.build property
 
-<!-- Build -->
-In build.version.properties file increament version.properties.build property
+5. Create a build, ./gradlew release
 
-.\gradlew release
+6. copy assets.db, mobile.db, mobile.log to --> build\releases\2.3.3.1.0.2\Client\Field Manager\db
 
-copy assets.db, mobile.db, mobile.log to --> build\releases\2.3.3.1.0.2\Client\Field Manager\db
-
-build\releases\2.3.3.1.0.2\Client\Field Manager\Propertiesfiles\conf\user.properties.bak --> build\releases\2.3.3.1.0.2\Client\Field Manager\Propertiesfiles\conf\user.properties
+7. build\releases\2.3.3.1.0.2\Client\Field Manager\Propertiesfiles\conf\user.properties.bak --> build\releases\2.3.3.1.0.2\Client\Field Manager\Propertiesfiles\conf\user.properties
 ```
 #
 # configuration of Field Manager
@@ -85,7 +82,46 @@ comms.server.use.for.all.networks = true
  
 # rest service ip address and port
 server.dataservice =
- 
-#----------------------------------------------------------------------------------------
 ```
+
+8. Chnage the launch configuration
+Run Configurations > SHARED - Field Manager > JRE > Alternate JRE > 32 bit jdk
+
+9. In Eclipse,
+Windows > Preferences > Java > Build Path > ClassPath Variables > MOBILE_HOME
+Windows > Preferences > Run/Debug > String Substitution > MOBILE_HOME
+
+## FM1 Production Deployment
+1. Change build.version.properties, increase version.properties.version
+
+2. Create a build, ./gradlew release
+
+3. Set user.properties
+<!-- 
+mobile.device.id = ITDEV1               #id taken from ITAGL ADMIN: http://W2K-AGIT-ASB.ams.com:9082/fmadmin/fieldit
  
+comms.device.collection.id = COMMS1     #id taken from ITAGL ADMIN: http://W2K-AGIT-ASB.ams.com:9082/fmadmin/fieldit
+ 
+comms.server.ip_address = 172.18.6.31   #IP Address taken from ITAGL SERVER MACHINE: w2k-agit-asb.ams.com
+ 
+comms.server.group.ip_address = 172.18.6.31     #IP Address taken from ITAGL SERVER MACHINE: w2k-agit-asb.ams.com
+-->
+
+4. Paste baseline wala DB folder, Get assets.db, mobile.db, mobile.log from 2.3.6.0.1 into Client/Field Manager/db/
+or get it from, \\162.70.125.120\public\ritul\ITAGL_DB\db
+
+4. Open CSG CLIENT MACHINE: w16-st-clb.ams.com
+
+5. Go to path: F:\ARM_MAINTENANCE\FM1_WG
+
+6. Paste newly created Client/Field manager into Path
+
+7. Chnage the .\$internal.bat file,
+Paste
+<!-- Set ARM_APPLOCK=C:\FMLOCKS\ITDEV1      # around line 10 -->
+
+8. Create C:\FMLOCKS\ITDEV1 this folder for FMLOCKS
+
+9. Run .\$internal.bat
+
+10. if the baseline db is not pasted it create baseline db from ITAGL server/database.
