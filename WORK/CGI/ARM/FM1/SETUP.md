@@ -97,7 +97,7 @@ Windows > Preferences > Run/Debug > String Substitution > MOBILE_HOME
 2. Create a build, ./gradlew release
 
 3. Set user.properties
-<!-- 
+```
 mobile.device.id = ITDEV1               #id taken from ITAGL ADMIN: http://W2K-AGIT-ASB.ams.com:9082/fmadmin/fieldit
  
 comms.device.collection.id = COMMS1     #id taken from ITAGL ADMIN: http://W2K-AGIT-ASB.ams.com:9082/fmadmin/fieldit
@@ -105,7 +105,7 @@ comms.device.collection.id = COMMS1     #id taken from ITAGL ADMIN: http://W2K-A
 comms.server.ip_address = 172.18.6.31   #IP Address taken from ITAGL SERVER MACHINE: w2k-agit-asb.ams.com
  
 comms.server.group.ip_address = 172.18.6.31     #IP Address taken from ITAGL SERVER MACHINE: w2k-agit-asb.ams.com
--->
+```
 
 4. Paste baseline wala DB folder, Get assets.db, mobile.db, mobile.log from 2.3.6.0.1 into Client/Field Manager/db/
 or get it from, \\162.70.125.120\public\ritul\ITAGL_DB\db
@@ -118,7 +118,9 @@ or get it from, \\162.70.125.120\public\ritul\ITAGL_DB\db
 
 7. Chnage the .\$internal.bat file,
 Paste
-<!-- Set ARM_APPLOCK=C:\FMLOCKS\ITDEV1      # around line 10 -->
+``` 
+Set ARM_APPLOCK=C:\FMLOCKS\ITDEV1      # around line 10 
+```
 
 8. Create C:\FMLOCKS\ITDEV1 this folder for FMLOCKS
 
