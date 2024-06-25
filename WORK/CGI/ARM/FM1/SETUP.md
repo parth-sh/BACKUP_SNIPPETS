@@ -88,7 +88,9 @@ server.dataservice =
 Run Configurations > SHARED - Field Manager > JRE > Alternate JRE > 32 bit jdk
 
 9. In Eclipse,
+
 Windows > Preferences > Java > Build Path > ClassPath Variables > MOBILE_HOME
+
 Windows > Preferences > Run/Debug > String Substitution > MOBILE_HOME
 
 ## FM1 Production Deployment
