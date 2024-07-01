@@ -5,7 +5,8 @@ https://miro.com/app/board/uXjVNvQWZl0=/
 ## KT FOR FM1
 \\162.70.125.120\public\KT Folders\KT for FM1
 
-## Workspace Setup Readmine
+## Project workspace setup Readmine
+http://w2k-armjen-02.ams.com/redmine/projects/armmobileproject/wiki/Initial_computer_setup
 http://w2k-armjen-02.ams.com/redmine/projects/armmobileproject/wiki/Workspace_setup
 
 ## Repo Link
@@ -121,7 +122,7 @@ or get it from, \\162.70.125.120\public\ritul\ITAGL_DB\db
 7. Chnage the .\$internal.bat file,
 Paste
 ``` 
-Set ARM_APPLOCK=C:\FMLOCKS\ITDEV1      # around line 10 
+ARM_APPLOCK=C:\FMLOCKS\ITDEV1      # around line 10 
 ```
 
 8. Create C:\FMLOCKS\ITDEV1 this folder for FMLOCKS
