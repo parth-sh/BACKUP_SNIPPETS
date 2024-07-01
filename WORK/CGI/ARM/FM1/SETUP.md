@@ -100,6 +100,8 @@ Windows > Preferences > Run/Debug > String Substitution > MOBILE_HOME
 2. Create a build, ./gradlew release
 
 3. Set user.properties
+
+4. Set ownerQueueSetMap.properties
 ```
 mobile.device.id = ITDEV1               #id taken from ITAGL ADMIN: http://W2K-AGIT-ASB.ams.com:9082/fmadmin/fieldit
  
