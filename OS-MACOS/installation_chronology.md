@@ -81,3 +81,7 @@ clear && tail -f /var/log/system.log | grep sshd
 # Disable Google Chrome Incognito Mode
 defaults write com.google.chrome IncognitoModeAvailability -integer 1z
 defaults read com.google.chrome 
+
+# Disable Trackpad
+
+https://apple.stackexchange.com/a/411589
