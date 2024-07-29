@@ -2,13 +2,13 @@
 
 1. Create empty db model: http://w2k-armjen-02.ams.com/redmine/projects/armmobileproject/wiki/Model_build_213
 ```
-gradlew devtools:db_modeller:genModel
+.\gradlew devtools:db_modeller:genModel
 
-gradlew genModel
+.\gradlew genModel
 
-gradlew assemble
+.\gradlew assemble
 
-gradlew genClientDB, ythis generates client.bd, mobile.db
+.\gradlew genClientDB, this generates client.db, mobile.db
 ```
 
 2. Go to ITAGL machine, paste your empty db to C:\service_monitors\baseline\db\blank
@@ -20,9 +20,7 @@ http://w2k-armjen-02.ams.com/redmine/projects/armmobileproject/wiki/Deploy_and_r
 ```
 .\gradlew :tools:baseline:assemble
 
-Copy armfm_baseline.jar from tools\baseline\build\libs\
-
-to ITAGL machine at: C:\service_monitors\baseline\lib
+Copy armfm_baseline.jar from tools\baseline\build\libs\, to ITAGL machine at: C:\service_monitors\baseline\lib
 
 Change logback.xml log level to info from debug
 
