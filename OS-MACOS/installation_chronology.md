@@ -83,5 +83,7 @@ defaults write com.google.chrome IncognitoModeAvailability -integer 1z
 defaults read com.google.chrome 
 
 # Disable Trackpad
-
 https://apple.stackexchange.com/a/411589
+
+# Encrypt file/folders using ZIP
+zip -er folderName.zip folderName/*
