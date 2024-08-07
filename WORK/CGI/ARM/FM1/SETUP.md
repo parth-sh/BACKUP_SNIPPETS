@@ -85,6 +85,11 @@ comms.server.use.for.all.networks = true
 server.dataservice =
 ```
 
+7. ownerQueueSetMap.properties
+```
+LOCALHOST=queueset1
+```
+
 8. Chnage the launch configuration
 Run Configurations > SHARED - Field Manager > JRE > Alternate JRE > 32 bit jdk
 
