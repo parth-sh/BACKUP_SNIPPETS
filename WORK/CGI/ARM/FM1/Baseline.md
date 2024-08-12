@@ -1,6 +1,9 @@
-0. Change Mob_dbMap.properties, Check model.xml, Change mobile.sql
+0. [DB Modeller](./DBModeller.md)
 
-1. Create empty db model: http://w2k-armjen-02.ams.com/redmine/projects/armmobileproject/wiki/Model_build_213
+1. Change Mob_dbMap.properties, Check model.xml, Change mobile.sql
+
+2. http://lutl-armutilit.ams.com/redmine/projects/armmobileproject/wiki/Model_build_213
+
 ```
 .\gradlew devtools:db_modeller:genModel
 
