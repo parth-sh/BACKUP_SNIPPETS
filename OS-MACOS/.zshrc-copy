@@ -8,6 +8,7 @@ alias gp='git pull -r'
 alias gh='git push '
 alias gho='git push -u origin '
 alias up='git push '
+alias down='git pull '
 alias upo='git push -u origin '
 alias ga='git add '
 alias gaa='git add -A'
@@ -25,4 +26,5 @@ alias g='git '
 alias gm='git merge '
 alias gr='git reset '
 alias gdf='git clean -f'
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"

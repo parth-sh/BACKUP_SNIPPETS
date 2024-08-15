@@ -530,6 +530,7 @@ size_t size = vec.size();
 
 // Append
 vec.push_back(5);
+vec.push_back(vector<string>()); // Pushing an empty vector of strings
 
 // Sorting
 sort(vec.begin(), vec.end());
@@ -576,6 +577,7 @@ int size = list.size();
 
 // Append
 list.add(5);
+list.add(new ArrayList<String>());  // Adding an empty ArrayList of Strings
 
 // Sorting
 Collections.sort(list);
@@ -619,6 +621,7 @@ for element in arr:
 
 # Append
 arr.append(5)
+arr.append([])  # Appending an empty list
 
 # Sorting
 arr.sort()
