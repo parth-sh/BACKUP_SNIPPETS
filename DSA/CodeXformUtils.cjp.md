@@ -1,6 +1,7 @@
-
-# Short-circuit evaluation in Programming
-https://www.geeksforgeeks.org/short-circuit-evaluation-in-programming/
+# Insights
+  - [Short-circuit evaluation in Programming](https://www.geeksforgeeks.org/short-circuit-evaluation-in-programming/)
+  - [Pointers](https://youtu.be/2ybLD6_2gKM)
+  - [Yoda Conditions](https://en.wikipedia.org/wiki/Yoda_conditions)
 
 # Basics
 <table>
