@@ -95,3 +95,35 @@ PROMPT creating trigger Ist897CONDTYPES_B4del
 
 
 10. Now Run [Baseline](.\Baseline.md)
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+Further changes 13082024
+
+
+
+11. After running full baseline, we found data is not populating in 
+SELECT * FROM "DBA"."TFT897CONDTYPES" WHERE id_o_assignment IS NOT NULL;
+
+12. We have inserted wrong column in REF_CONDITION_TYPES, Assignment_ID is already present but we have added ID_ASSIGNMENT (Ritul notified)
+```sql
+ALTER TABLE REF_CONDITION_TYPES DROP COLUMN ID_ASSIGNMENT;
+```
+
+13. Now ran all things related to Condition Types in 
+ft_full_triggers.ddl
+ft_full.ddl
+
+14. Than ran full baseline which populated amobile.db, triggers populated the ITAGL databases
+
+15. In summary 
+open db_modeller, do the changes
+
+Click Create Server DDL
+
+Do the changes in ft_full_triggers.ddl, ft_full.ddl
+
+Run and check

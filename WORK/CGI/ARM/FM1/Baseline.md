@@ -14,7 +14,8 @@
 .\gradlew genClientDB, this generates client.db, mobile.db
 ```
 
-2. Go to ITAGL machine, paste your empty db to C:\service_monitors\baseline\db\blank
+2. Go to ITAGL machine, paste your empty db to C:\service_monitors\baseline\db\blank from
+C:\Users\parth.sharma\Desktop\ARM\wam-fieldmanager\devtools\model_gen\src\gen\db\sa12
  
 3. Delete any prexisting db from C:\service_monitors\baseline\db\baseline\ALL
 
@@ -27,7 +28,11 @@ Copy armfm_baseline.jar from tools\baseline\build\libs\, to ITAGL machine at: C:
 
 Change logback.xml log level to info from debug
 
-Run runBaseline_with specific to one msg.bat file
+Run "runBaseline_with specific to one msg.bat" file
+
+Note*: Remove line 
+set BL_ARGS=-F baseline.properties -L testM.log -M MSG_RT_CND_TYPE_CHG
+
 ```
 
 5. Copy from C:\service_monitors\baseline\db\baseline\ALL to the build of FM1 client
