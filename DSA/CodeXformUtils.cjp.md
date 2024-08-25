@@ -344,6 +344,10 @@ for (char ch : str)
 
 // SubString
 str.substr(start_index, length);
+
+// To lower case
+transform(s.begin(), s.end(), s.begin(), ::tolower);
+tolower(c);
 ```
 
 </td>
@@ -377,8 +381,9 @@ char[] arr = str.toCharArray();
 // Char array to String
 String.valueOf(arr);
 
-// String to lower case
+// To lower case
 str.toLowerCase();
+Character.toLowerCase(c);
 
 // Remove alphanumeric from string
 str.replaceAll("[^a-zA-Z0-9]", "");
@@ -409,6 +414,9 @@ for ch in str_var:
 
 # SubString
 str_var[start_index:end_index]
+
+# To lower case
+ch_or_str.lower()
 ```
 
 </td>
