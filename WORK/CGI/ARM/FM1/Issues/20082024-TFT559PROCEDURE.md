@@ -16,6 +16,8 @@ BEGIN
   END IF;
 END;
 
+ALTER TABLE TFV559PROCEDURE ADD ID_ASSIGNMENT NUMERIC(20, 0)
+
 -- DECLARE
 --   v_tab_exists NUMBER;
 -- BEGIN
@@ -53,3 +55,46 @@ END;
 --   END IF;
 -- END
 ```
+
+### Error 1: We were not getting ID_ASSIGNMENT in TFT559PROCEDURE table, while it was present in PROCEDURES table ASSIGNMENT_ID
+
+1. We checked for message MSG_RT_PROC_CHG and run baseline on that so we got what table it was changing
+
+2. Some error was coming related to assignment_id column that was added by us in TFT559PROCEDURE
+
+3. Copied Assignments.java from model_gen, checked Did not worked
+
+4. Did db modeller changes did id_assignment datatype, id_assignment column name
+changed assignment_id in db modeller to ID_ASSIGNMENT, that changes model.xml
+Now we have to run these to create files
+```
+.\gradlew devtools:db_modeller:genModel
+
+.\gradlew genModel
+
+.\gradlew assemble
+
+.\gradlew genClientDB, this generates client.db, mobile.db
+
+.\gradlew :tools:baseline:assemble
+```
+
+5. Followed afdl aful dtd changes on readmine
+http://lutl-armutilit.ams.com/redmine/projects/armmobileproject/wiki/MessagesDTD_change_process
+```
+gradlew :server:mss:afdl:generateComponents
+gradlew :server:mss:aful:generateComponents
+gradlew :server:mss:mss:clean :server:mss:mss:assemble
+
+.\gradlew devtools:db_modeller:genModel
+
+.\gradlew genModel
+
+.\gradlew assemble
+
+.\gradlew genClientDB, this generates client.db, mobile.db
+
+.\gradlew :tools:baseline:assemble
+```
+
+### Error 2: Now the baseline mobile.db is populating but when this db is placed in mobile device initial processing converts some id_assignment to null in mobile.db based on some messages

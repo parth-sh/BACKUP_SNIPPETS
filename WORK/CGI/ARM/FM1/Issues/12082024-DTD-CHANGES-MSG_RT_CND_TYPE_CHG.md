@@ -24,7 +24,7 @@ VALUES
 
 
 
-2. Still our data was not populating with runBaseline_with specific to one msg.bat
+2. Still our data was not populating with "runBaseline_with specific to one msg.bat"
 
 *Note:
 ```bat
