@@ -1,8 +1,8 @@
 # Production Build
 
-### https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EYChweu4FARKrGKAv2qWDdMBTuQuYLcyj5YSDsUdnIsynA?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EYChweu4FARKrGKAv2qWDdMBTuQuYLcyj5YSDsUdnIsynA?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
 
-### https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EaQEMv8P-jRElvDwIi2CqngBya8NHNtqtLeZE9SAm0goGQ?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EaQEMv8P-jRElvDwIi2CqngBya8NHNtqtLeZE9SAm0goGQ?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
 
 ## Update Client: 
 1. Copied the Client from ```C:\Users\parth.sharma\Desktop\ARM\wam-fieldmanager\build\releases\2.3.6.0.1.1\Client\Field Manager``` to ```\\162.70.125.120\InternalBuilds\OpenGrid_2.3.6\P00HF1\FieldManager\FieldManager2.3.6.0[1]\Client```
@@ -50,8 +50,9 @@ Fix the version in file: https://paussource.ent.cgi.com/gitlab/usis/WAMAT/produc
 api 'com.cgi.arm.fm:armfm_baseline:' + versionRange('2.3.6', 0, 0)
 
 
-### https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/Ef79mlZio_1Ar78reT4kHG4Ba0XO5xLc12eTfdVAJCiktw?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/Ef79mlZio_1Ar78reT4kHG4Ba0XO5xLc12eTfdVAJCiktw?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
 
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/Ean9jqlLmutCiEuB2pZHZecBBEreb5AXg9br8CQXeT5FNQ?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
 
 ## Update Database:
 
