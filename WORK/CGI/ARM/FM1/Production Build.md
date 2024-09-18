@@ -5,15 +5,15 @@
 ### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EaQEMv8P-jRElvDwIi2CqngBya8NHNtqtLeZE9SAm0goGQ?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
 
 ## Update Client: 
-1. Copied the Client from ```C:\Users\parth.sharma\Desktop\ARM\wam-fieldmanager\build\releases\2.3.6.0.1.1\Client\Field Manager``` to ```\\162.70.125.120\InternalBuilds\OpenGrid_2.3.6\P00HF1\FieldManager\FieldManager2.3.6.0[1]\Client```
+1. Copied the Client from ```wam-fieldmanager\build\releases\2.3.6.0.1.1\Client\Field Manager``` to ```\\162.70.125.120\InternalBuilds\OpenGrid_2.3.6\P00HF1\FieldManager\FieldManager2.3.6.0[1]\Client```
 
 
 ## Update ApplicationServer: 
-1. Copied MSS folder from ```C:\Users\parth.sharma\Desktop\ARM\wam-fieldmanager\build\releases\2.3.6.0.1.1\ApplicationServer\MSS``` to ```\\162.70.125.120\InternalBuilds\OpenGrid_2.3.6\P00HF1\FieldManager\FieldManager2.3.6.0[1]\ApplicationServer```
+1. Copied MSS folder from ```wam-fieldmanager\build\releases\2.3.6.0.1.1\ApplicationServer\MSS``` to ```\\162.70.125.120\InternalBuilds\OpenGrid_2.3.6\P00HF1\FieldManager\FieldManager2.3.6.0[1]\ApplicationServer```
 
 
 ## Update Extras: 
-1. Copied baseline folder from ```C:\Users\parth.sharma\Desktop\ARM\wam-fieldmanager\build\releases\2.3.6.0.1.1\Extras\baseline``` to ```\\162.70.125.120\InternalBuilds\OpenGrid_2.3.6\P00HF1\FieldManager\FieldManager2.3.6.0[1]\Extras```
+1. Copied baseline folder from ```wam-fieldmanager\build\releases\2.3.6.0.1.1\Extras\baseline``` to ```\\162.70.125.120\InternalBuilds\OpenGrid_2.3.6\P00HF1\FieldManager\FieldManager2.3.6.0[1]\Extras```
 
 2. Ran these commands
 ```
@@ -42,7 +42,7 @@
 ```
 
 3. Copied the blank DB from 
-```C:\Users\parth.sharma\Desktop\ARM\wam-fieldmanager\devtools\model_gen\src\gen\db\sa12``` to ```\\162.70.125.120\InternalBuilds\OpenGrid_2.3.6\P00HF1\FieldManager\FieldManager2.3.6.0[1]\Extras\baseline\db\blank```
+```wam-fieldmanager\devtools\model_gen\src\gen\db\sa12``` to ```\\162.70.125.120\InternalBuilds\OpenGrid_2.3.6\P00HF1\FieldManager\FieldManager2.3.6.0[1]\Extras\baseline\db\blank```
 
 
 ## Update Nexus: 
