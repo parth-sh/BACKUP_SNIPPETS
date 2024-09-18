@@ -18,14 +18,27 @@
 2. Ran these commands
 ```
 .\gradlew devtools:db_modeller:genModel
- 
 .\gradlew genModel
- 
 .\gradlew assemble
- 
 .\gradlew genClientDB
  
 .\gradlew :tools:baseline:assemble
+.\gradlew :tools:baseline:publish
+ 
+.\gradlew :server:http_data:assemble
+.\gradlew :server:http_data:publish
+ 
+.\gradlew :server:hub:assemble   
+.\gradlew :server:hub:publish
+ 
+.\gradlew :server:mss:imf_mss_rd:assemble
+.\gradlew :server:mss:imf_mss_rd:publish
+ 
+.\gradlew :client:maps:map_interface:assemble
+.\gradlew :client:maps:map_interface:publish
+ 
+.\gradlew :common:utils:assemble
+.\gradlew :common:utils:publish
 ```
 
 3. Copied the blank DB from 
@@ -56,9 +69,26 @@ api 'com.cgi.arm.fm:armfm_baseline:' + versionRange('2.3.6', 0, 0)
 
 ## Update Database:
 
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/Ean9jqlLmutCiEuB2pZHZecBBEreb5AXg9br8CQXeT5FNQ?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EchN4chI9ZtPveN0GIEqzCEB6XLkAFEfTN8bjiLQblPnuQ?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EfmVMRRiQgRDsXmnHXYGaMMBAtEUAMfySrSmBBFIVMOJUw?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/ESOnVNppGYtFiHZfTKByvDUBZYGjOUTLZOUkAoS9vwdD6w?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+
+### 8/27: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EY8U8-SED_VNrFh8ox8Bz9UBSWeIJe--fzLkUi4r3XjDVw?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+
+### 8/27: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EXgEdRNgjy1MhvXkWch8figBMc-swLZcR-eBk0-xEljopg?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+
+### 8/28: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EcQkUgXR7uFKhs_kiekbqM0BYZRG65EEe7Maq9pGDMHWzw?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
+
+### 8/29: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EXt3JbB2yLtOghCVerVC0sUBgckzDAREgYfTJGXK_fHF3g?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
 
 
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EbZWYy00gwlJiUJl2ILy0rgBS2z1XswoYaCueoi6JEqiIg?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
 
+### 8/23: https://groupecgi-my.sharepoint.com/:v:/g/personal/parth_sharma_cgi_com/EeBToI8et8NCgiadpIZpH8cBp15AYYZ1o2sYWQY8PY4ZoA?referrer=Teams.TEAMS-ELECTRON&referrerScenario=MeetingChicletGetLink.view
 
 
 
