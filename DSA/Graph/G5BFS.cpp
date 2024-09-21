@@ -33,8 +33,8 @@ class Graph {
 
                 cout << cur << " ";
 
-                for (int adjV = 0; adjV < adjList[cur].size(); adjV++) {
-                    int nbr = adjList[cur][adjV];
+                for (int adjI = 0; adjI < adjList[cur].size(); adjI++) {
+                    int nbr = adjList[cur][adjI];
                     if (!visited[nbr]) {
                         q.push(nbr);
                         visited[nbr] = true;

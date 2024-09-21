@@ -46,8 +46,8 @@ class Graph {
 
     bool dfsCycleDetection(int vertex, int parent) {
         visited[vertex] = true;
-        for (int adjV = 0; adjV < adjList[vertex].size(); adjV++) {
-            int nbr = adjList[vertex][adjV];
+        for (int adjI = 0; adjI < adjList[vertex].size(); adjI++) {
+            int nbr = adjList[vertex][adjI];
             if (visited[nbr]) {
                 cout << nbr;
                 return true;

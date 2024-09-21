@@ -73,8 +73,8 @@ class Graph {
     bool dfs(int vertex, int color) {
         colors[vertex] = color;
 
-        for (int adjV = 0; adjV < adjList[vertex].size(); adjV++) {
-            int nbr = adjList[vertex][adjV];
+        for (int adjI = 0; adjI < adjList[vertex].size(); adjI++) {
+            int nbr = adjList[vertex][adjI];
 
             if (colors[nbr] == -1) {
                 if (dfs(nbr, color xor 1)) {

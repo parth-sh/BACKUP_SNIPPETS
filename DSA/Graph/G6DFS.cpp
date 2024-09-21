@@ -24,8 +24,8 @@ class Graph {
 
         cout << vertex << " ";
 
-        for (int adjV = 0; adjV < adjList[vertex].size(); adjV++) {
-            int nbr = adjList[vertex][adjV];
+        for (int adjI = 0; adjI < adjList[vertex].size(); adjI++) {
+            int nbr = adjList[vertex][adjI];
             if (!visited[nbr]) {
                 dfs(nbr);
             }

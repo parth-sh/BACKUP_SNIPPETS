@@ -125,3 +125,6 @@ int main() {
 
     return 0;
 }
+
+// 128. Longest Consecutive Sequence
+// https://leetcode.com/problems/longest-consecutive-sequence/solutions/166544/union-find-thinking-process/

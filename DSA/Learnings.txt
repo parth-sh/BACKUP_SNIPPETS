@@ -7,3 +7,80 @@ Code
 Dry run
 
 Test Cases
+
+5342, 3478
+
+
+Not able to do questions on thursday and friday
+
+
+Array, Hashing, 2 pointer, sliding window. (Feeling better)
+Trees, LinkedList -> In progress
+Backtracking, Heaps -> To be finished today.
+Graph -> Tomorrow
+DP -> Day after tomorrow
+
+Speed. Using timer.
+Distractions are over.
+Correctness -> Drastic improvements
+// After thinking a little, able to come up with solution.
+// Make comments and intuitions
+// Convert that into code
+
+Focus on Neetcode 150 (Target by 12th June).
+
+Union-Find Set Data Structure/ Disjoint Set (very important) ->
+Interval Trees (less important)
+Randomness -> Playlist shuffle (Leetcode) -> understand that properly on what's happening.
+
+
+Sudoku Solver (Valid Sudoku) -> Backtracking
+Conditions -> 
+
+-> square root of a number.
+================================================
+
+Problem: Are you thinking of assumptions (where is unclarity?)
+Example input -> 
+
+Solution -> multiple approaches (time and space complexity).
+Coding -> Variables, function naming.
+
+// input Structure
+output function_name(inputs);
+
+Dry Run -> (input)
+
+// test inputs -> 
+
+
+-> you are given a sorted list of integers. You have to find a target integer.
+========================================================================
+- 0 +
+- 3 -2 -1 0 1 2 3 4 5
+target = -1
+
+// code, dry run
+// Test Cases you can think of. What are the scenarios that could happen.
+
+// binary search direction (left, direction)
+- 3 -2 -1 0 1 2 3 4 5
+target = -1
+
+- 3 -2 -1 0 1 2 3 4 5
+target = 6
+
+[] [1]
+target = 1
+
+
+
+shubham.1992aggarwal@gmail.com
+
+
+
+
+intuition (First Principles Thinking, break problem to its smallest part)
+approach
+code
+

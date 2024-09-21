@@ -45,13 +45,11 @@ class Graph {
    private:
     int vertexCount;
     vector<vector<int>> adjList;
-    vector<bool> visited;
     vector<int> indeg;
 
    public:
     Graph(int vertexCount) : vertexCount(vertexCount) {
         adjList.resize(vertexCount);
-        visited.resize(vertexCount, false);
         indeg.resize(vertexCount, 0);
     }
 
@@ -74,8 +72,8 @@ class Graph {
 
             topo.push_back(node);
 
-            for (int adjV = 0; adjV < adjList[node].size(); adjV++) {
-                int nbr = adjList[node][adjV];
+            for (int adjI = 0; adjI < adjList[node].size(); adjI++) {
+                int nbr = adjList[node][adjI];
                 indeg[nbr]--;
 
                 if (indeg[nbr] == 0) {

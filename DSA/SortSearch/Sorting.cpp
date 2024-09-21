@@ -29,17 +29,28 @@ class MySorting {
     }
 
     int partition(vector<int> &nums, int start, int end) {
+        // int pivot = nums[start];
+        // int lo = start, hi = end;
+        // while (lo < hi) {
+        //     while (lo <= end && nums[lo] <= pivot) lo++;
+        //     while (hi >= start && nums[hi] > pivot) hi--;
+        //     if (lo < hi) {
+        //         swap(nums[lo], nums[hi]);
+        //     }
+        // }
+        // swap(nums[start], nums[hi]);
+        // return hi;
+
         int pivot = nums[start];
-        int lo = start, hi = end;
-        while (lo < hi) {
-            while (lo <= end && nums[lo] <= pivot) lo++;
-            while (hi >= start && nums[hi] > pivot) hi--;
-            if (lo < hi) {
-                swap(nums[lo], nums[hi]);
+        int leftwall = start;
+        for (int i = start + 1; i <= end; i++) {
+            if (nums[i] < pivot) {
+                swap(nums[i], nums[leftwall]);
+                leftwall += 1;
             }
         }
-        swap(nums[start], nums[hi]);
-        return hi;
+        swap(pivot, nums[leftwall]);
+        return leftwall;
     }
 
    public:
