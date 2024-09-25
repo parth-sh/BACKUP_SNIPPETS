@@ -454,6 +454,9 @@ for(int i = 0; i < size; i++) {
     // Access each element as arr[i]
 }
 
+// Indexing
+arr[i]
+
 // Sorting
 sort(arr, arr + 5);
 ```
@@ -480,6 +483,9 @@ for(int i = 0; i < arr.length; i++) {
 for(int element : arr) {
     // Access each element as element
 }
+
+// Indexing
+arr[i]
 
 // Sorting
 Arrays.sort(arr);
@@ -537,6 +543,10 @@ size_t size = vec.size();
 // Looping
 // Same as static array
 
+// Indexing
+vec.at(index) // Bounds checking
+vec[index] // No bounds checking
+
 // Append
 vec.push_back(5);
 vec.push_back(vector<string>()); // Pushing an empty vector of strings
@@ -554,10 +564,6 @@ reverse(vec.begin(), vec.end());
 
 // Delete Element
 vec.erase(vec.begin() + index);
-
-// Access Element
-vec.at(index) // Bounds checking
-vec[index] // No bounds checking
 
 // Max Element
 *max_element(vec.begin(), vec.end());
@@ -583,6 +589,9 @@ int size = list.size();
 
 // Looping
 // Same as static array
+
+// Indexing
+list.get(i)
 
 // Append
 list.add(5);
@@ -627,6 +636,9 @@ for i in range(len(arr)):
     # Access each element as arr[i]
 for element in arr:
     # Access each element as element
+
+# Indexing
+arr[i]
 
 # Append
 arr.append(5)
