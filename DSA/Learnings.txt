@@ -46,41 +46,14 @@ Example input ->
 Solution -> multiple approaches (time and space complexity).
 Coding -> Variables, function naming.
 
-// input Structure
-output function_name(inputs);
-
-Dry Run -> (input)
-
-// test inputs -> 
-
-
--> you are given a sorted list of integers. You have to find a target integer.
-========================================================================
-- 0 +
-- 3 -2 -1 0 1 2 3 4 5
-target = -1
-
-// code, dry run
-// Test Cases you can think of. What are the scenarios that could happen.
-
-// binary search direction (left, direction)
-- 3 -2 -1 0 1 2 3 4 5
-target = -1
-
-- 3 -2 -1 0 1 2 3 4 5
-target = 6
-
-[] [1]
-target = 1
-
-
-
 shubham.1992aggarwal@gmail.com
 
 
 
 
-intuition (First Principles Thinking, break problem to its smallest part)
-approach
-code
-
+- Read problem and constraints.
+- Simplify for intuition.
+- Write code.
+- Test all cases.
+- Refine if needed.
+- Submit.
