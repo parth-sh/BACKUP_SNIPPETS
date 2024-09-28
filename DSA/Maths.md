@@ -51,6 +51,9 @@ for (int i = 0; i < 4; i++) {
 // The same symbol cannot be repeated more than three times in a row.
 // Symbols like V, L, and D are never repeated.
 
+// Subtractive Rules: Subtractive notation only allows one smaller numeral to precede a larger one. 
+// This means you can have "IV" (4) or "IX" (9), but not "IIV" or "IIX".
+
 unordered_map<char, int> romanValues = {
     {'I', 1},
     {'V', 5},

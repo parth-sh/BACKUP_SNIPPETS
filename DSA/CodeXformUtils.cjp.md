@@ -336,6 +336,9 @@ string str = "Hello, World!";
 // Length
 str.length()
 
+// Indexing
+str[index]
+
 // Sorting
 sort(str.begin(), str.end())
 
@@ -362,6 +365,9 @@ boolean result = str1.equals(str2);
 
 // Length
 str.length();
+
+// Indexing
+str.charAt(index)
 
 // Sorting
 char[] charArray = str.toCharArray();
@@ -405,6 +411,9 @@ str_var = "Hello, World!"
 
 # Length
 len(str_var)
+
+# Indexing
+str_var[index]
 
 # Sorting
 sorted_str = ''.join(sorted(str_var))
