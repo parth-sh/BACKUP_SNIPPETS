@@ -861,6 +861,9 @@ return ans;
 
 // Clear
 hashSet.clear()
+
+// Size
+hashSet.size()
 ```
 
 </td>
@@ -889,6 +892,9 @@ new ArrayList<>(hashSet);
 
 // Clear
 hashSet.clear();
+
+// Size
+hashSet.size();
 ```
 
 </td>
@@ -919,6 +925,9 @@ list(seen)
 
 # Clear
 seen.clear()
+
+# Size
+len(seen)
 ```
 
 </td>
