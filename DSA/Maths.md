@@ -123,5 +123,14 @@ char lowerCase(char ch) {
 
 ### 9. Removing Absolute Value from an Inequality  
 The inequality |i - j| ≤ k can be converted to:  
--k ≤ i - j ≤ k  
+
+|i - j| ≤ k
+
+-k ≤ (i - j) ≤ k
+
+-i - k ≤ -j ≤ -i + k
+
+i + k ≥ j ≥ i - k
+
+
 ---
