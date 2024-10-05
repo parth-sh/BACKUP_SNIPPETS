@@ -25,11 +25,13 @@ Refactor for optimization if needed.
 Validate correctness.
 Submit and review.
 
+---
 
 Notes on Progress
 
-Speed: Practice with a timer.
+- Speed: Practice with a timer.
 
-Focus: Eliminate distractions, track improvements.
+- Focus: Eliminate distractions, track improvements.
 
-Correctness: Improved understanding and debugging.
+- Correctness: Improved understanding and debugging.
+
