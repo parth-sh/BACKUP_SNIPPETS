@@ -8,6 +8,7 @@ brew install openjdk@17
 ```
 
 ```shell
+==> openjdk@17
 For the system Java wrappers to find this JDK, symlink it with
   sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
 
@@ -19,4 +20,5 @@ If you need to have openjdk@17 first in your PATH, run:
 
 For compilers to find openjdk@17 you may need to set:
   export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+z@Mac ~ % 
 ```
