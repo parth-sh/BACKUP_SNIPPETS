@@ -111,7 +111,15 @@ bool isAlphanumeric(char c) {
 ```cpp
 char lowerCase(char ch) {
     if (ch >= 'A' && ch <= 'Z') {
-        return ch = ch - 'A' + 'a';
+        return ch + ('a' - 'A');
+    }
+    return ch;
+}
+```
+```java
+static char lowerCase(char ch) {
+    if (ch >= 'A' && ch <= 'Z') {
+        return (char) (ch + ('a' - 'A'));
     }
     return ch;
 }
