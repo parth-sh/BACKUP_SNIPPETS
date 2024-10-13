@@ -455,7 +455,7 @@ fill_n(arr, 5, 10); // Fill an array `arr` of size 5 with 10s.
 #include <numeric>
 iota(arr, arr + 5, 10); // 10 11 12 13 14
 
-// Length
+// Size
 int size = sizeof(arr) / sizeof(arr[0]);
 
 // Looping
@@ -483,7 +483,7 @@ int[] arr = new int[5]; // Default initialization with zeroes
 Arrays.fill(arr, 10); // Fill the array `arr` with 10s.
 
 // Length
-int size = arr.length;
+int length = arr.length;
 
 // Looping
 for(int i = 0; i < arr.length; i++) {
