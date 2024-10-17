@@ -3,6 +3,50 @@
   - [Pointers](https://youtu.be/2ybLD6_2gKM)
   - [Yoda Conditions](https://en.wikipedia.org/wiki/Yoda_conditions)
 
+# ASCII
+<table>
+<tr>
+<th>C++</th>
+<th>Java</th>
+<th>Python</th>
+</tr>
+<tr>
+<td>
+
+```cpp
+
+// Get ASCII code
+(int)c
+
+
+
+```
+
+</td>
+<td>
+
+```java
+
+// Get ASCII code
+(int)c
+
+
+```
+
+</td>
+<td>
+
+```python
+
+# Get ASCII code
+ord(c)
+
+```
+
+</td>
+</tr>
+</table>
+
 # Basics
 <table>
 <tr>
@@ -29,9 +73,6 @@ float myFloat = myInt * 1.0f;
 
 // To String
 to_string(num)
-
-// ASCII code
-(int)c
 
 // Float Division
 float ans = (float)a / (float)b;
@@ -112,9 +153,6 @@ float myFloat = myInt * 1.0f;
 // To String
 Integer.toString(num);
 
-// ASCII code
-(int)c
-
 // Sqrt
 import java.lang.Math;
 Math.sqrt(x);
@@ -162,9 +200,6 @@ my_float = my_int * 1.0
 
 # To String
 str(num)
-
-# ASCII code
-ord(c)
 
 # Integer Division
 result = a // b

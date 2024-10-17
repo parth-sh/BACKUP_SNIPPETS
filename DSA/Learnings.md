@@ -35,3 +35,31 @@ Notes on Progress
 
 - Correctness: Improved understanding and debugging.
 
+---
+
+Learning Focus Areas
+
+Today:
+Backtracking, Heaps
+
+Tomorrow:
+Graphs
+
+Day After Tomorrow:
+Dynamic Programming (DP)
+
+Key Topics to Master
+Data Structures:
+
+Union-Find / Disjoint Set (important)
+Interval Trees (less critical)
+Problem Types:
+
+Array, Hashing
+2-pointer, Sliding window
+Trees, Linked Lists
+Algorithmic Techniques:
+
+Backtracking (Sudoku Solver, Valid Sudoku)
+Randomness in Playlist Shuffle
+

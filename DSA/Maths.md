@@ -142,3 +142,8 @@ i + k ≥ j ≥ i - k
 
 
 ---
+
+
+Bit Manipulation
+
+Sieve of Erathosness
